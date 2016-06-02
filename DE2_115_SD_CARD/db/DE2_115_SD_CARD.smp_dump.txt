@@ -1,0 +1,17 @@
+
+State Machine - |DE2_115_SD_CARD|io_module:io_module0|state
+Name state.SET_MEM_1 state.PREPARE state.WAIT state.RESET state.SET_MEM_2 
+state.RESET 0 0 0 0 0 
+state.WAIT 0 0 1 1 0 
+state.PREPARE 0 1 0 1 0 
+state.SET_MEM_1 1 0 0 1 0 
+state.SET_MEM_2 0 0 0 1 1 
+
+State Machine - |DE2_115_SD_CARD|DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_cpu:cpu|DE2_115_SD_CARD_NIOS_cpu_nios2_oci:the_DE2_115_SD_CARD_NIOS_cpu_nios2_oci|DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper:the_DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper|DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_tck:the_DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
