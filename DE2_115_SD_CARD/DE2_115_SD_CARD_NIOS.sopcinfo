@@ -5,11 +5,11 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 14.1 186 (Future versions may contain additional information.) -->
- <!-- 2016.05.31.19:50:56 -->
+ <!-- 2016.06.02.18:04:18 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1464742256</value>
+  <value>1464908658</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -2118,24 +2118,6 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>cpu</moduleName>
     <slaveName>clk</slaveName>
     <name>cpu.clk</name>
-   </clockDomainMember>
-   <clockDomainMember>
-    <isBridge>false</isBridge>
-    <moduleName>to_hw_port</moduleName>
-    <slaveName>clk</slaveName>
-    <name>to_hw_port.clk</name>
-   </clockDomainMember>
-   <clockDomainMember>
-    <isBridge>false</isBridge>
-    <moduleName>to_hw_sig</moduleName>
-    <slaveName>clk</slaveName>
-    <name>to_hw_sig.clk</name>
-   </clockDomainMember>
-   <clockDomainMember>
-    <isBridge>false</isBridge>
-    <moduleName>to_sw_sig</moduleName>
-    <slaveName>clk</slaveName>
-    <name>to_sw_sig.clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
@@ -4336,6 +4318,24 @@ parameters are a RESULT of the module parameters. -->
     <width>1</width>
     <role>clk</role>
    </port>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
+    <moduleName>to_hw_port</moduleName>
+    <slaveName>clk</slaveName>
+    <name>to_hw_port.clk</name>
+   </clockDomainMember>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
+    <moduleName>to_hw_sig</moduleName>
+    <slaveName>clk</slaveName>
+    <name>to_hw_sig.clk</name>
+   </clockDomainMember>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
+    <moduleName>to_sw_sig</moduleName>
+    <slaveName>clk</slaveName>
+    <name>to_sw_sig.clk</name>
+   </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
     <moduleName>altpll</moduleName>
@@ -24704,7 +24704,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FREQ</name>
-   <value>100000000</value>
+   <value>50000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_IN</name>
@@ -24840,7 +24840,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="clockRate">
    <type>long</type>
-   <value>100000000</value>
+   <value>50000000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -24974,7 +24974,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>java.lang.Long</type>
-    <value>100000000</value>
+    <value>50000000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -25482,7 +25482,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FREQ</name>
-   <value>100000000</value>
+   <value>50000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_IN</name>
@@ -25618,7 +25618,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="clockRate">
    <type>long</type>
-   <value>100000000</value>
+   <value>50000000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -25752,7 +25752,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>java.lang.Long</type>
-    <value>100000000</value>
+    <value>50000000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -26260,7 +26260,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FREQ</name>
-   <value>100000000</value>
+   <value>50000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_IN</name>
@@ -26396,7 +26396,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="clockRate">
    <type>long</type>
-   <value>100000000</value>
+   <value>50000000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -26530,7 +26530,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>java.lang.Long</type>
-    <value>100000000</value>
+    <value>50000000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -29974,87 +29974,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="altpll.c0/to_hw_port.clk"
-   kind="clock"
-   version="14.1"
-   start="altpll.c0"
-   end="to_hw_port.clk">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>altpll</startModule>
-  <startConnectionPoint>c0</startConnectionPoint>
-  <endModule>to_hw_port</endModule>
-  <endConnectionPoint>clk</endConnectionPoint>
- </connection>
- <connection
-   name="altpll.c0/to_hw_sig.clk"
-   kind="clock"
-   version="14.1"
-   start="altpll.c0"
-   end="to_hw_sig.clk">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>altpll</startModule>
-  <startConnectionPoint>c0</startConnectionPoint>
-  <endModule>to_hw_sig</endModule>
-  <endConnectionPoint>clk</endConnectionPoint>
- </connection>
- <connection
-   name="altpll.c0/to_sw_sig.clk"
-   kind="clock"
-   version="14.1"
-   start="altpll.c0"
-   end="to_sw_sig.clk">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>altpll</startModule>
-  <startConnectionPoint>c0</startConnectionPoint>
-  <endModule>to_sw_sig</endModule>
-  <endConnectionPoint>clk</endConnectionPoint>
- </connection>
- <connection
    name="altpll.c0/onchip_memory2.clk1"
    kind="clock"
    version="14.1"
@@ -30215,6 +30134,87 @@ parameters are a RESULT of the module parameters. -->
   <startConnectionPoint>c2</startConnectionPoint>
   <endModule>clock_crossing_io</endModule>
   <endConnectionPoint>m0_clk</endConnectionPoint>
+ </connection>
+ <connection
+   name="clk_50.clk/to_hw_port.clk"
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="to_hw_port.clk">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>clk_50</startModule>
+  <startConnectionPoint>clk</startConnectionPoint>
+  <endModule>to_hw_port</endModule>
+  <endConnectionPoint>clk</endConnectionPoint>
+ </connection>
+ <connection
+   name="clk_50.clk/to_hw_sig.clk"
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="to_hw_sig.clk">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>clk_50</startModule>
+  <startConnectionPoint>clk</startConnectionPoint>
+  <endModule>to_hw_sig</endModule>
+  <endConnectionPoint>clk</endConnectionPoint>
+ </connection>
+ <connection
+   name="clk_50.clk/to_sw_sig.clk"
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="to_sw_sig.clk">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>clk_50</startModule>
+  <startConnectionPoint>clk</startConnectionPoint>
+  <endModule>to_sw_sig</endModule>
+  <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
    name="clk_50.clk/altpll.inclk_interface"

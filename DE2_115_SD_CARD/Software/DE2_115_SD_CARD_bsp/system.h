@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Tue May 31 19:17:26 CDT 2016
+ * Generated: Thu Jun 02 18:08:34 CDT 2016
  */
 
 /*
@@ -763,7 +763,7 @@
 #define TO_HW_PORT_DO_TEST_BENCH_WIRING 0
 #define TO_HW_PORT_DRIVEN_SIM_VALUE 0
 #define TO_HW_PORT_EDGE_TYPE "NONE"
-#define TO_HW_PORT_FREQ 100000000
+#define TO_HW_PORT_FREQ 50000000
 #define TO_HW_PORT_HAS_IN 0
 #define TO_HW_PORT_HAS_OUT 1
 #define TO_HW_PORT_HAS_TRI 0
@@ -790,7 +790,7 @@
 #define TO_HW_SIG_DO_TEST_BENCH_WIRING 0
 #define TO_HW_SIG_DRIVEN_SIM_VALUE 0
 #define TO_HW_SIG_EDGE_TYPE "NONE"
-#define TO_HW_SIG_FREQ 100000000
+#define TO_HW_SIG_FREQ 50000000
 #define TO_HW_SIG_HAS_IN 0
 #define TO_HW_SIG_HAS_OUT 1
 #define TO_HW_SIG_HAS_TRI 0
@@ -817,7 +817,7 @@
 #define TO_SW_SIG_DO_TEST_BENCH_WIRING 0
 #define TO_SW_SIG_DRIVEN_SIM_VALUE 0
 #define TO_SW_SIG_EDGE_TYPE "NONE"
-#define TO_SW_SIG_FREQ 100000000
+#define TO_SW_SIG_FREQ 50000000
 #define TO_SW_SIG_HAS_IN 1
 #define TO_SW_SIG_HAS_OUT 0
 #define TO_SW_SIG_HAS_TRI 0

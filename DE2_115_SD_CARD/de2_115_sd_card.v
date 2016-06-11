@@ -304,7 +304,7 @@ inout		        [6:0]		EX_IO
 								  //.ledg_external_connection_export(LEDG),
 
 								 // the_ledr
-								  //.ledr_external_connection_export(LEDR),
+								  .ledr_external_connection_export(LEDR),
 
 								 // the_rs232
 								  .rs232_external_connection_cts_n(UART_CTS),
@@ -350,7 +350,7 @@ inout		        [6:0]		EX_IO
 	
 	
 	io_module io_module0 (.clk(CLOCK_50),
-								 .reset_n(reset_n),
+								 .reset_n(KEY[1]),
 								 .to_sw_sig(to_sw_sig),
 								 .to_hw_sig(to_hw_sig),
 								 .to_hw_port(to_hw_port),
@@ -362,7 +362,6 @@ inout		        [6:0]		EX_IO
 								 .UB(SRAM_UB_N), 
 								 .LB(SRAM_LB_N)
 					);
-	assign LEDR = {2'b00, SRAM_DQ};
 	assign LEDG = {5'b10000, to_sw_sig, to_hw_sig};
 					
 	HexDriver Hex0 (.In0(to_hw_port[15:12]), .Out0(HEX0));

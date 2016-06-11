@@ -1744,7 +1744,7 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="100000000" />
+  <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Output" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
@@ -1758,7 +1758,7 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="100000000" />
+  <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Output" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
@@ -1772,7 +1772,7 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="100000000" />
+  <parameter name="clockRate" value="50000000" />
   <parameter name="direction" value="Input" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
@@ -2110,9 +2110,6 @@
  <connection kind="clock" version="14.1" start="altpll.c0" end="ir.clk" />
  <connection kind="clock" version="14.1" start="altpll.c0" end="sd_dat.clk" />
  <connection kind="clock" version="14.1" start="altpll.c0" end="cpu.clk" />
- <connection kind="clock" version="14.1" start="altpll.c0" end="to_hw_port.clk" />
- <connection kind="clock" version="14.1" start="altpll.c0" end="to_hw_sig.clk" />
- <connection kind="clock" version="14.1" start="altpll.c0" end="to_sw_sig.clk" />
  <connection
    kind="clock"
    version="14.1"
@@ -2132,6 +2129,9 @@
    version="14.1"
    start="altpll.c2"
    end="clock_crossing_io.m0_clk" />
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="to_hw_port.clk" />
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="to_hw_sig.clk" />
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="to_sw_sig.clk" />
  <connection
    kind="clock"
    version="14.1"

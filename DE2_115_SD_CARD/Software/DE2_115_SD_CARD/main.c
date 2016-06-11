@@ -34,16 +34,18 @@
 // Supported SDCARD: SD, HCSD
 
 #include <stdio.h>
+#include <unistd.h>
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
 
 volatile unsigned int *TO_HW_PORT  	= (unsigned int*)0x140; //make a pointer to access the PIO block
 volatile unsigned int *TO_HW_SIG   	= (unsigned int*)0x150; //make a pointer to access the PIO block
 volatile unsigned int *TO_SW_SIG   	= (unsigned int*)0x160; //make a pointer to access the PIO block
+volatile unsigned int *LCD_SCREEN   = (unsigned int*)0x70;
+
 
 
 bool Fat_Test(FAT_HANDLE hFat){
-	int dummy;
 	*TO_HW_SIG = 0;
     bool bSuccess;
     int nCount = 0;
@@ -80,6 +82,7 @@ bool Fat_Test(FAT_HANDLE hFat){
         scanf("%s", pDumpFile);
     }
 
+
     if (bSuccess && pDumpFile && strlen(pDumpFile)){
         FAT_FILE_HANDLE hFile;
         unsigned int transfer_16bit = 0;
@@ -94,9 +97,7 @@ bool Fat_Test(FAT_HANDLE hFat){
 
             //Prepare io_module for data transfer
             *TO_HW_SIG = 1;
-            while(*TO_SW_SIG != 1) printf("OK, Whatever. \n");		//Wait for first prepare
-
-            printf("WTF\n");
+            while(*TO_SW_SIG != 1)printf("%c", 0);	//Wait for first prepare
 
             while(bSuccess && nTotalReadSize < nFileSize){
 
@@ -125,15 +126,17 @@ bool Fat_Test(FAT_HANDLE hFat){
                 printf("Begin Transfer...\n");
                	*TO_HW_PORT = transfer_16bit;
 
+
                	printf("Send 0...\n");
                	*TO_HW_SIG = 0;
-               	while(*TO_SW_SIG != 2)printf("%d\n", *TO_SW_SIG);		//Wait for set_mem
+               	while(*TO_SW_SIG != 2)printf("%c", 0);		//Wait for set_mem
+
 
                	printf("Send 1...\n");
                	*TO_HW_SIG = 1;
-               	while(*TO_SW_SIG != 1)printf("This shouldn't be necessary...\n");		//Wait for prepare
+               	while(*TO_SW_SIG != 1)printf("%c", 0);		//Wait for prepare
 
-               	printf("Press Key3 to continue...\n");
+               	//printf("Press Key3 to continue...\n");
 
                	//Debug: wait for key-press
 //               	while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & 0x08) == 0x08);
@@ -142,8 +145,9 @@ bool Fat_Test(FAT_HANDLE hFat){
 
             } // while
 
-           	*TO_HW_SIG = 2;
-           	while(*TO_SW_SIG != 0)printf("THIS GUY\n");	 //Wait to return to Wait
+            printf("Done reading %s to memory.\n", pDumpFile);
+            *TO_HW_SIG = 2;
+           	while(*TO_SW_SIG != 0)printf("%c", 0);	 //Wait to return to Wait
 
             if (bSuccess)
                 printf("\n");
@@ -163,8 +167,13 @@ int main()
     const alt_u32 LED_TEST_PATTERN = 0xF0;
     const alt_u32 LED_NG_PATTERN = 0xFF;
     const alt_u32 LED_PASS_PATTERN = 0x00;
+    const char temp[] = "Test String\0";
     FAT_HANDLE hFat;
-    
+
+
+
+
+
     printf("========== DE2-115 SDCARD Demo ==========\n");
     
     while(1){
