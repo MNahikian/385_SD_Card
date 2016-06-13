@@ -1,4 +1,4 @@
-// (C) 2001-2014 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/10/06 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 
 // -------------------------------------
@@ -27,9 +27,9 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
+//   output_name:         DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
 //   ST_DATA_W:           87
-//   ST_CHANNEL_W:        20
+//   ST_CHANNEL_W:        19
 //   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
 // ------------------------------------------
@@ -40,14 +40,14 @@
 // 15610 - Warning: Design contains x input pin(s) that do not drive logic
 //------------------------------------------
 
-module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
+module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
 (
     // -------------------
     // Sink
     // -------------------
     input  [1-1      : 0]   sink_valid,
     input  [87-1    : 0]   sink_data, // ST_DATA_W=87
-    input  [20-1 : 0]   sink_channel, // ST_CHANNEL_W=20
+    input  [19-1 : 0]   sink_channel, // ST_CHANNEL_W=19
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -57,7 +57,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
     // -------------------
     output reg                      src0_valid,
     output reg [87-1    : 0] src0_data, // ST_DATA_W=87
-    output reg [20-1 : 0] src0_channel, // ST_CHANNEL_W=20
+    output reg [19-1 : 0] src0_channel, // ST_CHANNEL_W=19
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
@@ -94,7 +94,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
     // -------------------
     assign ready_vector[0] = src0_ready;
 
-    assign sink_ready = |(sink_channel & {{19{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{18{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

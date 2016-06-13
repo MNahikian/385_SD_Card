@@ -1,6 +1,6 @@
 Assembler report for DE2_115_SD_CARD
-Thu Jun 02 18:07:38 2016
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Mon Jun 13 12:33:46 2016
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jun 02 18:07:38 2016 ;
+; Assembler Status      ; Successful - Mon Jun 13 12:33:46 2016 ;
 ; Revision Name         ; DE2_115_SD_CARD                       ;
 ; Top-level Entity Name ; DE2_115_SD_CARD                       ;
 ; Family                ; Cyclone IV E                          ;
@@ -81,7 +81,7 @@ agreement for further details.
 +----------------+----------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                                ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                   ;
-; Checksum       ; 0x00B46EE7                                                                                   ;
+; Checksum       ; 0x00AFB991                                                                                   ;
 +----------------+----------------------------------------------------------------------------------------------+
 
 
@@ -90,17 +90,17 @@ agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Jun 02 18:07:33 2016
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Mon Jun 13 12:33:40 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE2_115_SD_CARD -c DE2_115_SD_CARD
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 639 megabytes
-    Info: Processing ended: Thu Jun 02 18:07:38 2016
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 699 megabytes
+    Info: Processing ended: Mon Jun 13 12:33:47 2016
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

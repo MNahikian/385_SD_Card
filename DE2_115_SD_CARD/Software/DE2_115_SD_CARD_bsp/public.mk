@@ -57,8 +57,7 @@ ALT_LIBRARY_DIRS += $(ALT_LIBRARY_ROOT_DIR)
 #                               COMPILATION FLAGS
 #------------------------------------------------------------------------------
 # Default C pre-processor flags for a BSP:
-ALT_CPPFLAGS += -DSYSTEM_BUS_WIDTH=32 \
-                -pipe
+ALT_CPPFLAGS += -pipe
 
 
 #------------------------------------------------------------------------------
@@ -78,12 +77,12 @@ ALT_CPPFLAGS += -DSYSTEM_BUS_WIDTH=32 \
 
 # This following VERSION comment indicates the version of the tool used to 
 # generate this makefile. A makefile variable is provided for VERSION as well. 
-# ACDS_VERSION: 14.1
-ACDS_VERSION := 14.1
+# ACDS_VERSION: 15.0
+ACDS_VERSION := 15.0
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 186
+# BUILD_NUMBER: 145
 
 # Quartus Generated JDI File. Required for resolving node instance ID's with 
 # design component names. 

@@ -93,12 +93,12 @@ OBJ_DIR := ./obj
 
 # This following VERSION comment indicates the version of the tool used to 
 # generate this makefile. A makefile variable is provided for VERSION as well. 
-# ACDS_VERSION: 14.1
-ACDS_VERSION := 14.1
+# ACDS_VERSION: 15.0
+ACDS_VERSION := 15.0
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 186
+# BUILD_NUMBER: 145
 
 SETTINGS_FILE := settings.bsp
 SOPC_FILE := C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
@@ -229,14 +229,6 @@ altera_avalon_jtag_uart_driver_C_LIB_SRCS := \
 	$(altera_avalon_jtag_uart_driver_SRCS_ROOT)/src/altera_avalon_jtag_uart_ioctl.c \
 	$(altera_avalon_jtag_uart_driver_SRCS_ROOT)/src/altera_avalon_jtag_uart_fd.c
 
-# altera_avalon_lcd_16207_driver sources root 
-altera_avalon_lcd_16207_driver_SRCS_ROOT := drivers
-
-# altera_avalon_lcd_16207_driver sources 
-altera_avalon_lcd_16207_driver_C_LIB_SRCS := \
-	$(altera_avalon_lcd_16207_driver_SRCS_ROOT)/src/altera_avalon_lcd_16207.c \
-	$(altera_avalon_lcd_16207_driver_SRCS_ROOT)/src/altera_avalon_lcd_16207_fd.c
-
 # altera_avalon_pio_driver sources root 
 altera_avalon_pio_driver_SRCS_ROOT := drivers
 
@@ -361,7 +353,6 @@ hal_C_LIB_SRCS := \
 COMPONENT_C_LIB_SRCS += \
 	$(altera_avalon_cfi_flash_driver_C_LIB_SRCS) \
 	$(altera_avalon_jtag_uart_driver_C_LIB_SRCS) \
-	$(altera_avalon_lcd_16207_driver_C_LIB_SRCS) \
 	$(altera_avalon_timer_driver_C_LIB_SRCS) \
 	$(altera_avalon_uart_driver_C_LIB_SRCS) \
 	$(altera_nios2_qsys_hal_driver_C_LIB_SRCS) \

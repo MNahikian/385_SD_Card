@@ -85,7 +85,6 @@ void alt_main (void)
   int result;
 #endif
 
-
   /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
   ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
   /* Initialize the interrupt controller. */
@@ -149,18 +148,9 @@ void alt_main (void)
 
   ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
 
-
-
-  printf("Do we get here 1?\n");
-
-  const char temp[] = "Test String\0";
-  altera_avalon_lcd_16207_write(LCD_BASE, temp, 11, 0);
-
 #ifdef ALT_NO_EXIT
-  printf("Do we get here 2?\n");
   main (alt_argc, alt_argv, alt_envp);
 #else
-  printf("Do we get here 3?\n");
   result = main (alt_argc, alt_argv, alt_envp);
   close(STDOUT_FILENO);
   exit (result);

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Thu Jun 02 18:08:34 CDT 2016
+ * Generated: Mon Jun 13 12:46:30 CDT 2016
  */
 
 /*
@@ -128,7 +128,6 @@
  */
 
 #define __ALTERA_AVALON_JTAG_UART
-#define __ALTERA_AVALON_LCD_16207
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_TIMER
@@ -396,20 +395,6 @@
 #define KEY_RESET_VALUE 0
 #define KEY_SPAN 16
 #define KEY_TYPE "altera_avalon_pio"
-
-
-/*
- * lcd configuration
- *
- */
-
-#define ALT_MODULE_CLASS_lcd altera_avalon_lcd_16207
-#define LCD_BASE 0x70
-#define LCD_IRQ -1
-#define LCD_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define LCD_NAME "/dev/lcd"
-#define LCD_SPAN 16
-#define LCD_TYPE "altera_avalon_lcd_16207"
 
 
 /*

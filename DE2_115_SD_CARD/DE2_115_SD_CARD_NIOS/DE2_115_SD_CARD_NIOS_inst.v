@@ -13,10 +13,6 @@
 		.i2c_sda_external_connection_export                              (<connected-to-i2c_sda_external_connection_export>),                              //         i2c_sda_external_connection.export
 		.ir_external_connection_export                                   (<connected-to-ir_external_connection_export>),                                   //              ir_external_connection.export
 		.key_external_connection_export                                  (<connected-to-key_external_connection_export>),                                  //             key_external_connection.export
-		.lcd_external_RS                                                 (<connected-to-lcd_external_RS>),                                                 //                        lcd_external.RS
-		.lcd_external_RW                                                 (<connected-to-lcd_external_RW>),                                                 //                                    .RW
-		.lcd_external_data                                               (<connected-to-lcd_external_data>),                                               //                                    .data
-		.lcd_external_E                                                  (<connected-to-lcd_external_E>),                                                  //                                    .E
 		.ledg_external_connection_export                                 (<connected-to-ledg_external_connection_export>),                                 //            ledg_external_connection.export
 		.ledr_external_connection_export                                 (<connected-to-ledr_external_connection_export>),                                 //            ledr_external_connection.export
 		.reset_reset_n                                                   (<connected-to-reset_reset_n>),                                                   //                               reset.reset_n

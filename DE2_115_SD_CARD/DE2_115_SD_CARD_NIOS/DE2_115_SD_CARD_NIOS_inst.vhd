@@ -14,10 +14,6 @@
 			i2c_sda_external_connection_export                              : inout std_logic                     := 'X';             -- export
 			ir_external_connection_export                                   : in    std_logic                     := 'X';             -- export
 			key_external_connection_export                                  : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
-			lcd_external_RS                                                 : out   std_logic;                                        -- RS
-			lcd_external_RW                                                 : out   std_logic;                                        -- RW
-			lcd_external_data                                               : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
-			lcd_external_E                                                  : out   std_logic;                                        -- E
 			ledg_external_connection_export                                 : out   std_logic_vector(8 downto 0);                     -- export
 			ledr_external_connection_export                                 : out   std_logic_vector(17 downto 0);                    -- export
 			reset_reset_n                                                   : in    std_logic                     := 'X';             -- reset_n
@@ -60,10 +56,6 @@
 			i2c_sda_external_connection_export                              => CONNECTED_TO_i2c_sda_external_connection_export,                              --         i2c_sda_external_connection.export
 			ir_external_connection_export                                   => CONNECTED_TO_ir_external_connection_export,                                   --              ir_external_connection.export
 			key_external_connection_export                                  => CONNECTED_TO_key_external_connection_export,                                  --             key_external_connection.export
-			lcd_external_RS                                                 => CONNECTED_TO_lcd_external_RS,                                                 --                        lcd_external.RS
-			lcd_external_RW                                                 => CONNECTED_TO_lcd_external_RW,                                                 --                                    .RW
-			lcd_external_data                                               => CONNECTED_TO_lcd_external_data,                                               --                                    .data
-			lcd_external_E                                                  => CONNECTED_TO_lcd_external_E,                                                  --                                    .E
 			ledg_external_connection_export                                 => CONNECTED_TO_ledg_external_connection_export,                                 --            ledg_external_connection.export
 			ledr_external_connection_export                                 => CONNECTED_TO_ledr_external_connection_export,                                 --            ledr_external_connection.export
 			reset_reset_n                                                   => CONNECTED_TO_reset_reset_n,                                                   --                               reset.reset_n

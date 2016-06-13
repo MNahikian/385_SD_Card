@@ -5,6 +5,13 @@
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/HAL/inc"/>
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/"/>
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/drivers/inc"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++\x86_64-pc-cygwin"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++\backward"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include-fixed"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\usr\include"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\usr\include\w32api"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++\x86_64-pc-cygwin"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++\backward"/>
@@ -309,6 +316,10 @@
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/HAL/inc"/>
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/"/>
 <includePath path="C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/drivers/inc"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include-fixed"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\usr\include"/>
+<includePath path="C:\altera\15.0\quartus\bin64\cygwin\usr\include\w32api"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\lib\gcc\x86_64-pc-cygwin\4.8.3\include-fixed"/>
 <includePath path="C:\altera\14.1\quartus\bin64\cygwin\usr\include"/>
