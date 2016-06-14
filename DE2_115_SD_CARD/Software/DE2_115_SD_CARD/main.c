@@ -38,6 +38,29 @@
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
 
+static FILE*fp=0;
+
+bool LCD_Open(void){
+	fp = fopen(LCD_NAME, "w");
+	if(fp)
+		return TRUE;
+	return FALSE;
+}
+bool LCD_TextOut(char* pText){
+	if(!fp)return FALSE;
+	fwrite(pText, strlen(pText), 1, fp);
+	return TRUE;
+}
+bool LCD_Clear(void){
+	char szText[32]="\n\n";
+	if(!fp) return FALSE;
+	fwrite(szText, strlen(szText), 1, fp);
+	return TRUE;
+}
+void LCD_Close(void){
+	if(fp) fclose(fp);
+	fp = 0;
+}
 
 bool Fat_Test(FAT_HANDLE hFat){
     IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
@@ -155,6 +178,10 @@ int main()
     const alt_u32 LED_PASS_PATTERN = 0x00;
     const char temp[] = "Test String\0";
     FAT_HANDLE hFat;
+
+    LCD_Open();
+    LCD_TextOut(">This is a test.");
+    LCD_Close();
 
     printf("========== DE2-115 SDCARD Demo ==========\n");
     
