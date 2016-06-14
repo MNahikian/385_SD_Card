@@ -75,46 +75,47 @@ begin
 	case(LUT_INDEX)
 	//	Initial
 	LCD_INTIAL+0:	LUT_DATA	<=	9'h038; // Function Set (8-bit data length, 2-line, font: 5x8 dots)
-	LCD_INTIAL+1:	LUT_DATA	<=	9'h00C;
-	LCD_INTIAL+2:	LUT_DATA	<=	9'h001;
-	LCD_INTIAL+3:	LUT_DATA	<=	9'h006;
-	LCD_INTIAL+4:	LUT_DATA	<=	9'h080;
+	LCD_INTIAL+1:	LUT_DATA	<=	9'h00C; // Display Control (Display: on, Cursor: off, Blinking: off)
+	LCD_INTIAL+2:	LUT_DATA	<=	9'h001; // Clear Display
+	LCD_INTIAL+3:	LUT_DATA	<=	9'h006; // Entry Mode (Cursor Movement: Incremental, Display Shift: off)
+	LCD_INTIAL+4:	LUT_DATA	<=	9'h080; // Set DDRAM Address (0x00: Beginning of First Line)
 	//	Line 1
-	LCD_LINE1+0:	LUT_DATA	<=	9'h120;	//	Welcome to the
-	LCD_LINE1+1:	LUT_DATA	<=	9'h157;
-	LCD_LINE1+2:	LUT_DATA	<=	9'h165;
-	LCD_LINE1+3:	LUT_DATA	<=	9'h16C;
-	LCD_LINE1+4:	LUT_DATA	<=	9'h163;
-	LCD_LINE1+5:	LUT_DATA	<=	9'h16F;
-	LCD_LINE1+6:	LUT_DATA	<=	9'h16D;
-	LCD_LINE1+7:	LUT_DATA	<=	9'h165;
-	LCD_LINE1+8:	LUT_DATA	<=	9'h120;
-	LCD_LINE1+9:	LUT_DATA	<=	9'h174;
-	LCD_LINE1+10:	LUT_DATA	<=	9'h16F;
-	LCD_LINE1+11:	LUT_DATA	<=	9'h120;
-	LCD_LINE1+12:	LUT_DATA	<=	9'h174;
-	LCD_LINE1+13:	LUT_DATA	<=	9'h168;
-	LCD_LINE1+14:	LUT_DATA	<=	9'h165;
-	LCD_LINE1+15:	LUT_DATA	<=	9'h120;
+	LCD_LINE1+0:	LUT_DATA	<=	9'h120;	//	[Space]
+	LCD_LINE1+1:	LUT_DATA	<=	9'h157;	// W
+	LCD_LINE1+2:	LUT_DATA	<=	9'h165;  // e
+	LCD_LINE1+3:	LUT_DATA	<=	9'h16C;  // l
+	LCD_LINE1+4:	LUT_DATA	<=	9'h163;  // c
+	LCD_LINE1+5:	LUT_DATA	<=	9'h16F;  // o
+	LCD_LINE1+6:	LUT_DATA	<=	9'h16D;  // m
+	LCD_LINE1+7:	LUT_DATA	<=	9'h165;  // e
+	LCD_LINE1+8:	LUT_DATA	<=	9'h120;  // [Space]
+	LCD_LINE1+9:	LUT_DATA	<=	9'h174;  // t
+	LCD_LINE1+10:	LUT_DATA	<=	9'h16F;  // o
+	LCD_LINE1+11:	LUT_DATA	<=	9'h120;  // [Space]
+	LCD_LINE1+12:	LUT_DATA	<=	9'h174;  // t
+	LCD_LINE1+13:	LUT_DATA	<=	9'h168;  // h
+	LCD_LINE1+14:	LUT_DATA	<=	9'h165;  // e
+	LCD_LINE1+15:	LUT_DATA	<=	9'h120;  // [Space]
 	//	Change Line
-	LCD_CH_LINE:	LUT_DATA	<=	9'h0C0;
+	LCD_CH_LINE:	LUT_DATA	<=	9'h0C0;  // Set DDRAM Address (0x40: Beginning of Second Line)
 	//	Line 2
-	LCD_LINE2+0:	LUT_DATA	<=	9'h120;	//	Altera DE2-70
-	LCD_LINE2+1:	LUT_DATA	<=	9'h141;	
-	LCD_LINE2+2:	LUT_DATA	<=	9'h16C;
-	LCD_LINE2+3:	LUT_DATA	<=	9'h174;
-	LCD_LINE2+4:	LUT_DATA	<=	9'h165;
-	LCD_LINE2+5:	LUT_DATA	<=	9'h172;
-	LCD_LINE2+6:	LUT_DATA	<=	9'h161;
-	LCD_LINE2+7:	LUT_DATA	<=	9'h120;
-	LCD_LINE2+8:	LUT_DATA	<=	9'h144;
-	LCD_LINE2+9:	LUT_DATA	<=	9'h145;
-	LCD_LINE2+10:	LUT_DATA	<=	9'h132;
-	LCD_LINE2+11:	LUT_DATA	<=	9'h1B0;
-	LCD_LINE2+12:	LUT_DATA	<=	9'h131;
-	LCD_LINE2+13:	LUT_DATA	<=	9'h131;
-	LCD_LINE2+14:	LUT_DATA	<=	9'h135;
-	LCD_LINE2+15:	LUT_DATA	<=	9'h120;
+	LCD_LINE2+0:	LUT_DATA	<=	9'h120;	//	[Space]Altera DE2-70
+	LCD_LINE2+1:	LUT_DATA	<=	9'h141;	// A
+	LCD_LINE2+2:	LUT_DATA	<=	9'h16C;  // l
+	LCD_LINE2+3:	LUT_DATA	<=	9'h174;  // t
+	LCD_LINE2+4:	LUT_DATA	<=	9'h165;  // e
+	LCD_LINE2+5:	LUT_DATA	<=	9'h172;  // r
+	LCD_LINE2+6:	LUT_DATA	<=	9'h161;  // a
+	LCD_LINE2+7:	LUT_DATA	<=	9'h120;  // [Space]
+	LCD_LINE2+8:	LUT_DATA	<=	9'h144;  // D
+	LCD_LINE2+9:	LUT_DATA	<=	9'h145;  // E
+	LCD_LINE2+10:	LUT_DATA	<=	9'h132;  // 2
+	LCD_LINE2+11:	LUT_DATA	<=	9'h1B0;  // -
+	LCD_LINE2+12:	LUT_DATA	<=	9'h131;  // 1
+	LCD_LINE2+13:	LUT_DATA	<=	9'h131;  // 1
+	LCD_LINE2+14:	LUT_DATA	<=	9'h135;  // 5
+	LCD_LINE2+15:	LUT_DATA	<=	9'h120;  // [Space]
+	
 	default:		LUT_DATA	<=	9'h120;
 	endcase
 end

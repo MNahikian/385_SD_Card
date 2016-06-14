@@ -14,6 +14,10 @@ module DE2_115_SD_CARD_NIOS (
 	i2c_sda_external_connection_export,
 	ir_external_connection_export,
 	key_external_connection_export,
+	lcd_external_RS,
+	lcd_external_RW,
+	lcd_external_data,
+	lcd_external_E,
 	ledg_external_connection_export,
 	ledr_external_connection_export,
 	reset_reset_n,
@@ -52,6 +56,10 @@ module DE2_115_SD_CARD_NIOS (
 	inout		i2c_sda_external_connection_export;
 	input		ir_external_connection_export;
 	input	[3:0]	key_external_connection_export;
+	output		lcd_external_RS;
+	output		lcd_external_RW;
+	inout	[7:0]	lcd_external_data;
+	output		lcd_external_E;
 	output	[8:0]	ledg_external_connection_export;
 	output	[17:0]	ledr_external_connection_export;
 	input		reset_reset_n;

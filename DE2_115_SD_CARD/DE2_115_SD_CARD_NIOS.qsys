@@ -972,7 +972,7 @@
    internal="key.external_connection"
    type="conduit"
    dir="end" />
- <interface name="lcd_external" internal="lcd.external" />
+ <interface name="lcd_external" internal="lcd.external" type="conduit" dir="end" />
  <interface
    name="ledg_external_connection"
    internal="ledg.external_connection"
@@ -1321,7 +1321,7 @@
   <parameter name="cpuReset" value="false" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="dataAddrWidth" value="26" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='seg7.avalon_slave' start='0x0' end='0x20' /><slave name='timer.s1' start='0x20' end='0x40' /><slave name='rs232.s1' start='0x40' end='0x60' /><slave name='key.s1' start='0x60' end='0x70' /><slave name='sd_clk.s1' start='0x80' end='0x90' /><slave name='sd_cmd.s1' start='0x90' end='0xA0' /><slave name='sd_dat.s1' start='0xA0' end='0xB0' /><slave name='sd_wp_n.s1' start='0xB0' end='0xC0' /><slave name='epp_i2c_scl.s1' start='0xC0' end='0xD0' /><slave name='epp_i2c_sda.s1' start='0xD0' end='0xE0' /><slave name='sw.s1' start='0xE0' end='0xF0' /><slave name='i2c_scl.s1' start='0xF0' end='0x100' /><slave name='i2c_sda.s1' start='0x100' end='0x110' /><slave name='ledg.s1' start='0x110' end='0x120' /><slave name='ledr.s1' start='0x120' end='0x130' /><slave name='ir.s1' start='0x130' end='0x140' /><slave name='to_hw_port.s1' start='0x140' end='0x150' /><slave name='to_hw_sig.s1' start='0x150' end='0x160' /><slave name='to_sw_sig.s1' start='0x160' end='0x170' /><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /><slave name='altpll.pll_slave' start='0x2081020' end='0x2081030' /><slave name='sma_in.s1' start='0x2081030' end='0x2081040' /><slave name='sma_out.s1' start='0x2081040' end='0x2081050' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2081050' end='0x2081058' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='seg7.avalon_slave' start='0x0' end='0x20' /><slave name='timer.s1' start='0x20' end='0x40' /><slave name='rs232.s1' start='0x40' end='0x60' /><slave name='key.s1' start='0x60' end='0x70' /><slave name='lcd.control_slave' start='0x70' end='0x80' /><slave name='sd_clk.s1' start='0x80' end='0x90' /><slave name='sd_cmd.s1' start='0x90' end='0xA0' /><slave name='sd_dat.s1' start='0xA0' end='0xB0' /><slave name='sd_wp_n.s1' start='0xB0' end='0xC0' /><slave name='epp_i2c_scl.s1' start='0xC0' end='0xD0' /><slave name='epp_i2c_sda.s1' start='0xD0' end='0xE0' /><slave name='sw.s1' start='0xE0' end='0xF0' /><slave name='i2c_scl.s1' start='0xF0' end='0x100' /><slave name='i2c_sda.s1' start='0x100' end='0x110' /><slave name='ledg.s1' start='0x110' end='0x120' /><slave name='ledr.s1' start='0x120' end='0x130' /><slave name='ir.s1' start='0x130' end='0x140' /><slave name='to_hw_port.s1' start='0x140' end='0x150' /><slave name='to_hw_sig.s1' start='0x150' end='0x160' /><slave name='to_sw_sig.s1' start='0x160' end='0x170' /><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /><slave name='altpll.pll_slave' start='0x2081020' end='0x2081030' /><slave name='sma_in.s1' start='0x2081030' end='0x2081040' /><slave name='sma_out.s1' start='0x2081040' end='0x2081050' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2081050' end='0x2081058' /></address-map>]]></parameter>
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dcache_lineSize" value="32" />
   <parameter name="dcache_numTCDM" value="0" />
@@ -1549,7 +1549,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="4" />
  </module>
- <module name="lcd" kind="altera_avalon_lcd_16207" version="15.0" enabled="0" />
+ <module name="lcd" kind="altera_avalon_lcd_16207" version="15.0" enabled="1" />
  <module name="ledg" kind="altera_avalon_pio" version="15.0" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -2103,13 +2103,13 @@
  <connection kind="clock" version="15.0" start="altpll.c0" end="epp_i2c_scl.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="epp_i2c_sda.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="sd_clk.clk" />
- <connection kind="clock" version="15.0" start="altpll.c0" end="lcd.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="sd_cmd.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="sd_wp_n.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="rs232.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="ir.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="sd_dat.clk" />
  <connection kind="clock" version="15.0" start="altpll.c0" end="cpu.clk" />
+ <connection kind="clock" version="15.0" start="altpll.c0" end="lcd.clk" />
  <connection
    kind="clock"
    version="15.0"
@@ -2198,7 +2198,6 @@
    start="clk_50.clk_reset"
    end="jtag_uart.reset" />
  <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="key.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="lcd.reset" />
  <connection
    kind="reset"
    version="15.0"
@@ -2268,6 +2267,7 @@
    version="15.0"
    start="clk_50.clk_reset"
    end="to_hw_sig.reset" />
+ <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="lcd.reset" />
  <connection
    kind="reset"
    version="15.0"
@@ -2328,11 +2328,6 @@
    version="15.0"
    start="cpu.jtag_debug_module_reset"
    end="key.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="cpu.jtag_debug_module_reset"
-   end="lcd.reset" />
  <connection
    kind="reset"
    version="15.0"
@@ -2423,6 +2418,11 @@
    version="15.0"
    start="cpu.jtag_debug_module_reset"
    end="to_sw_sig.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="cpu.jtag_debug_module_reset"
+   end="lcd.reset" />
  <connection
    kind="reset"
    version="15.0"

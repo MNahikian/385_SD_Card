@@ -27,9 +27,9 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
+//   output_name:         DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
 //   ST_DATA_W:           87
-//   ST_CHANNEL_W:        19
+//   ST_CHANNEL_W:        20
 //   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
 // ------------------------------------------
@@ -40,14 +40,14 @@
 // 15610 - Warning: Design contains x input pin(s) that do not drive logic
 //------------------------------------------
 
-module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
+module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017
 (
     // -------------------
     // Sink
     // -------------------
     input  [1-1      : 0]   sink_valid,
     input  [87-1    : 0]   sink_data, // ST_DATA_W=87
-    input  [19-1 : 0]   sink_channel, // ST_CHANNEL_W=19
+    input  [20-1 : 0]   sink_channel, // ST_CHANNEL_W=20
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -57,7 +57,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
     // -------------------
     output reg                      src0_valid,
     output reg [87-1    : 0] src0_data, // ST_DATA_W=87
-    output reg [19-1 : 0] src0_channel, // ST_CHANNEL_W=19
+    output reg [20-1 : 0] src0_channel, // ST_CHANNEL_W=20
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
@@ -94,7 +94,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_016
     // -------------------
     assign ready_vector[0] = src0_ready;
 
-    assign sink_ready = |(sink_channel & {{18{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{19{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 
