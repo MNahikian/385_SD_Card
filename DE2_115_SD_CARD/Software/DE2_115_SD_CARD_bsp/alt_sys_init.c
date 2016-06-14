@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Mon Jun 13 12:46:30 CDT 2016
+ * Generated: Tue Jun 14 14:48:33 CDT 2016
  */
 
 /*
@@ -61,6 +61,7 @@
 #include "altera_nios2_qsys_irq.h"
 #include "altera_avalon_cfi_flash.h"
 #include "altera_avalon_jtag_uart.h"
+#include "altera_avalon_lcd_16207.h"
 #include "altera_avalon_timer.h"
 #include "altera_avalon_uart.h"
 
@@ -71,6 +72,7 @@
 ALTERA_NIOS2_QSYS_IRQ_INSTANCE ( CPU, cpu);
 ALTERA_AVALON_CFI_FLASH_INSTANCE ( CFI_FLASH, cfi_flash);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
+ALTERA_AVALON_LCD_16207_INSTANCE ( LCD, lcd);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER, timer);
 ALTERA_AVALON_UART_INSTANCE ( RS232, rs232);
 
@@ -98,5 +100,6 @@ void alt_sys_init( void )
     ALTERA_AVALON_TIMER_INIT ( TIMER, timer);
     ALTERA_AVALON_CFI_FLASH_INIT ( CFI_FLASH, cfi_flash);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
+    ALTERA_AVALON_LCD_16207_INIT ( LCD, lcd);
     ALTERA_AVALON_UART_INIT ( RS232, rs232);
 }

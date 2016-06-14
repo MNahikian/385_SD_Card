@@ -80,8 +80,8 @@ begin
 	LCD_INTIAL+3:	LUT_DATA	<=	9'h006; // Entry Mode (Cursor Movement: Incremental, Display Shift: off)
 	LCD_INTIAL+4:	LUT_DATA	<=	9'h080; // Set DDRAM Address (0x00: Beginning of First Line)
 	//	Line 1
-	LCD_LINE1+0:	LUT_DATA	<=	9'h120;	//	[Space]
-	LCD_LINE1+1:	LUT_DATA	<=	9'h157;	// W
+	LCD_LINE1+0:	LUT_DATA	<=	9'h120;	 //	[Space]
+	LCD_LINE1+1:	LUT_DATA	<=	9'h157;	 // W
 	LCD_LINE1+2:	LUT_DATA	<=	9'h165;  // e
 	LCD_LINE1+3:	LUT_DATA	<=	9'h16C;  // l
 	LCD_LINE1+4:	LUT_DATA	<=	9'h163;  // c
@@ -99,8 +99,8 @@ begin
 	//	Change Line
 	LCD_CH_LINE:	LUT_DATA	<=	9'h0C0;  // Set DDRAM Address (0x40: Beginning of Second Line)
 	//	Line 2
-	LCD_LINE2+0:	LUT_DATA	<=	9'h120;	//	[Space]Altera DE2-70
-	LCD_LINE2+1:	LUT_DATA	<=	9'h141;	// A
+	LCD_LINE2+0:	LUT_DATA	<=	9'h120;	 //	[Space]Altera DE2-70
+	LCD_LINE2+1:	LUT_DATA	<=	9'h141;	 // A
 	LCD_LINE2+2:	LUT_DATA	<=	9'h16C;  // l
 	LCD_LINE2+3:	LUT_DATA	<=	9'h174;  // t
 	LCD_LINE2+4:	LUT_DATA	<=	9'h165;  // e

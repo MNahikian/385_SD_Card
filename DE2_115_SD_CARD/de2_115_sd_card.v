@@ -295,10 +295,10 @@ inout		        [6:0]		EX_IO
 								  .ir_external_connection_export(IRDA_RXD),
 
 								 // the_lcd
-//								  .lcd_external_E(LCD_EN),
-//								  .lcd_external_RS(LCD_RS),
-//								  .lcd_external_RW(LCD_RW),
-//								  .lcd_external_data(LCD_DATA),
+								  .lcd_external_E(LCD_EN),
+								  .lcd_external_RS(LCD_RS),
+								  .lcd_external_RW(LCD_RW),
+								  .lcd_external_data(LCD_DATA),
 
 								 // the_ledg
 								  //.ledg_external_connection_export(LEDG),
@@ -363,13 +363,13 @@ inout		        [6:0]		EX_IO
 								 .LB(SRAM_LB_N)
 					);
 					
-	LCD_TEST lcd_test_1 (.iCLK(CLOCK_50),
-							.iRST_N(KEY[1]),
-							.LCD_DATA(LCD_DATA),
-							.LCD_RW(LCD_RW),
-							.LCD_EN(LCD_EN),
-							.LCD_RS(LCD_RS)
-					);
+//	LCD_TEST lcd_test_1 (.iCLK(CLOCK_50),
+//							.iRST_N(KEY[1]),
+//							.LCD_DATA(LCD_DATA),
+//							.LCD_RW(LCD_RW),
+//							.LCD_EN(LCD_EN),
+//							.LCD_RS(LCD_RS)
+//					);
 					
 	assign LEDG = {5'b10000, to_sw_sig, to_hw_sig};
 					
