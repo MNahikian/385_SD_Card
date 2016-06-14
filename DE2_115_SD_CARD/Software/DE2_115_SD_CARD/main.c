@@ -40,7 +40,7 @@
 
 
 bool Fat_Test(FAT_HANDLE hFat){
-	*TO_HW_SIG = 0;
+    IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
     bool bSuccess;
     int nCount = 0;
     char* pDumpFile[256];

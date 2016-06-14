@@ -151,7 +151,6 @@ C_SRCS += terasic_sdcard/crc7.c
 C_SRCS += terasic_sdcard/sd_hal.c
 C_SRCS += terasic_sdcard/sd_lib.c
 C_SRCS += terasic_sdcard/sd_protocol.c
-C_SRCS += altera_up_avalon_character_lcd.c
 CXX_SRCS :=
 ASM_SRCS :=
 

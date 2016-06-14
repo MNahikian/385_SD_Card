@@ -350,7 +350,7 @@ inout		        [6:0]		EX_IO
 	
 	
 	io_module io_module0 (.clk(CLOCK_50),
-								 .reset_n(KEY[1]),
+								 .reset_n(KEY[3]),
 								 .to_sw_sig(to_sw_sig),
 								 .to_hw_sig(to_hw_sig),
 								 .to_hw_port(to_hw_port),
