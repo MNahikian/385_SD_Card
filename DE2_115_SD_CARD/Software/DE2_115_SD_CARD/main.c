@@ -71,6 +71,28 @@ void LCD_Close(void){
 	fp = 0;
 }
 
+char *substring(char *string, int position, int length)
+{
+   char *pointer;
+   int c;
+
+   pointer = malloc(length+1);
+
+   if (pointer == NULL){
+      printf("Unable to allocate memory.\n");
+      exit(1);
+   }
+
+   for (c = 0 ; c < length ; c++){
+      *(pointer+c) = *(string+position);
+      string++;
+   }
+
+   *(pointer+c) = '\0';
+
+   return pointer;
+}
+
 int selectionList(char selections[][255], int numSelections){
 	char updown = UP;
 	int numSelected = 0;
@@ -80,10 +102,10 @@ int selectionList(char selections[][255], int numSelections){
 	while(!selected){
 		if(changed){
 			LCD_TextOut(selector[updown]);
-			LCD_TextOut(selections[numSelected-updown]);
+			LCD_TextOut(substring(selections[numSelected-updown], 0, 15));
 			LCD_TextOut("\n");
 			LCD_TextOut(selector[!updown]);
-			LCD_TextOut(selections[numSelected+(!updown)]);
+			LCD_TextOut(substring(selections[numSelected+(!updown)], 0, 15));
 			LCD_TextOut("\n");
 			changed = FALSE;
 		}
