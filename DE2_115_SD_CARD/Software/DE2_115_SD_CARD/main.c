@@ -34,11 +34,20 @@
 // Supported SDCARD: SD, HCSD
 
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
 
+#define UP 0
+#define DOWN 1
+#define KEY0 0x1
+#define KEY1 0x2
+#define KEY2 0x4
+#define KEY3 0x8
+
 static FILE*fp=0;
+static const char* selector[] = {">\0", " \0"};
 
 bool LCD_Open(void){
 	fp = fopen(LCD_NAME, "w");
@@ -62,41 +71,119 @@ void LCD_Close(void){
 	fp = 0;
 }
 
+int selectionList(char selections[][255], int numSelections){
+	char updown = UP;
+	int numSelected = 0;
+	bool selected = FALSE;
+	bool changed = TRUE;
+
+	while(!selected){
+		if(changed){
+			LCD_TextOut(selector[updown]);
+			LCD_TextOut(selections[numSelected-updown]);
+			LCD_TextOut("\n");
+			LCD_TextOut(selector[!updown]);
+			LCD_TextOut(selections[numSelected+(!updown)]);
+			LCD_TextOut("\n");
+			changed = FALSE;
+		}
+
+		switch((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f){
+			case KEY0:
+				selected = TRUE;
+				break;
+			case KEY1:
+				updown = DOWN;
+				numSelected++;
+				changed = TRUE;
+		        while ((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f & KEY1);
+				break;
+			case KEY2:
+				updown = UP;
+				numSelected--;
+				changed = TRUE;
+		        while ((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f & KEY2);
+				break;
+			default:
+				changed = FALSE;
+				break;
+		}
+
+		if(numSelected < 0) numSelected = 0;
+		if(numSelected >= numSelections) numSelected = numSelections-1;
+
+	}
+
+	return numSelected;
+}
+
 bool Fat_Test(FAT_HANDLE hFat){
     IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
     bool bSuccess;
     int nCount = 0;
-    char* pDumpFile[256];
+    char pDumpFile[256];
+    char filenames[Fat_FileCount(hFat)][255]; // Filename buffer
+    char tempName[255];
+    alt_u8 numWrite;
+    int i;
+
     FAT_BROWSE_HANDLE hBrowse;
     FILE_CONTEXT FileContext;
-    
+
+//    LCD_TextOut("TEST");
+//    LCD_TextOut("\n");
+//    LCD_TextOut("Strings");
+//    LCD_TextOut(" BRO");
+//    LCD_TextOut("\n");
+
     bSuccess = Fat_FileBrowseBegin(hFat, &hBrowse);
     if (bSuccess){
         while(Fat_FileBrowseNext(&hBrowse, &FileContext)){
             if (FileContext.bLongFilename){
+            	numWrite = 0;
                 alt_u16 *pData16;
                 alt_u8 *pData8;
                 pData16 = (alt_u16 *)FileContext.szName;
                 pData8 = FileContext.szName;
                 printf("[%d]", nCount);
+
                 while(*pData16){
-                    if (*pData8)
+
+                    if (*pData8){
                         printf("%c", *pData8);
-                    pData8++;
-                    if (*pData8)
+                        tempName[numWrite++] = *pData8;
+                    }pData8++;
+
+                    if (*pData8){
                         printf("%c", *pData8);
-                    pData8++;                    
-                    //    
+                        tempName[numWrite++] = *pData8;
+                    }pData8++;
+
                     pData16++;
                 }
+
                 printf("\n");
             }else{
                 printf("[%d]%s\n", nCount, FileContext.szName);
-            }                
+                numWrite = strlen(FileContext.szName);
+                strcpy(tempName, FileContext.szName);
+            }
+            printf("numWrite: %d\n", numWrite);
+            tempName[numWrite] = '\0';
+            printf("tempName: %s\n", tempName);
+            strcpy(filenames[nCount], tempName);
+            printf("filenames[%d]: %s\n", nCount, filenames[nCount]);
             nCount++;
-        }    
+        }
+
+        for(i=0; i<sizeof(filenames)/sizeof(filenames[0]); i++)
+        	printf("%s\n", filenames[i]);
+
+        //printf("File Number Selected: %d", selectionList(filenames, sizeof(filenames)/sizeof(filenames[0])));
+
         printf("Select file by Name: \n");
-        scanf("%s", pDumpFile);
+        //scanf("%s", pDumpFile);
+        strcpy(pDumpFile, filenames[selectionList(filenames, sizeof(filenames)/sizeof(filenames[0]))]);
     }
 
 
@@ -180,17 +267,20 @@ int main()
     FAT_HANDLE hFat;
 
     LCD_Open();
-    LCD_TextOut(">This is a test.");
-    LCD_Close();
 
     printf("========== DE2-115 SDCARD Demo ==========\n");
+    LCD_TextOut("SD -> Memory\n");usleep(1000000);
     
     while(1){
         printf("Processing...\r\n");
+        LCD_TextOut("Mounting...\n");usleep(1000000);
+
         IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_TEST_PATTERN);
+
         hFat = Fat_Mount(FAT_SD_CARD, 0);
         if (hFat){
             printf("sdcard mount success!\n");
+            LCD_TextOut("Mount success!\n");usleep(1000000);
             printf("Root Directory Item Count:%d\n", Fat_FileCount(hFat));
             Fat_Test(hFat);
             Fat_Unmount(hFat);
@@ -202,7 +292,7 @@ int main()
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_NG_PATTERN);
         }
         // wait users to press BUTTON3
-        while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & 0x08) == 0x08);
+        while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & KEY3) == KEY3);
         IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_TEST_PATTERN);
         usleep(400*1000); // debounce
     } // while            
