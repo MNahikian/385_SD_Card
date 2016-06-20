@@ -2,9 +2,9 @@
  * alt_sys_init.c - HAL initialization source
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
- * SOPC Builder design path: C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
+ * SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Tue Jun 14 14:48:33 CDT 2016
+ * Generated: Mon Jun 20 11:28:58 CDT 2016
  */
 
 /*

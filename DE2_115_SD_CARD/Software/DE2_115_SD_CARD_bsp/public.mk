@@ -86,11 +86,11 @@ ACDS_VERSION := 15.0
 
 # Quartus Generated JDI File. Required for resolving node instance ID's with 
 # design component names. 
-JDI_FILE := C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD.jdi
+JDI_FILE := $(ABS_BSP_ROOT_DIR)/../../DE2_115_SD_CARD.jdi
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
+SOPCINFO_FILE := $(ABS_BSP_ROOT_DIR)/../../DE2_115_SD_CARD_NIOS.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -126,8 +126,8 @@ ELF_PATCH_FLAG  += --cpu_name $(CPU_NAME)
 ALT_CFLAGS += -mno-hw-div
 
 # Hardware Multiplier present. 
-# setting HARDWARE_MULTIPLY is true
-ALT_CFLAGS += -mhw-mul
+# setting HARDWARE_MULTIPLY is false
+ALT_CFLAGS += -mno-hw-mul
 
 # Hardware Mulx present. 
 # setting HARDWARE_MULX is false

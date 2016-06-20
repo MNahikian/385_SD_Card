@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/cfi_flash.dat" type="DAT" initParamName="INIT_FILE" memoryPath="cfi_flash" />
+<file path="hdl_sim/DE2_115_SD_CARD_NIOS_onchip_memory2.dat" type="DAT" initParamName="INIT_FILE" memoryPath="onchip_memory2" />
+<file path="DE2_115_SD_CARD_NIOS_onchip_memory2.hex" type="HEX" initParamName="INIT_FILE" memoryPath="onchip_memory2" />
+</simPackage>

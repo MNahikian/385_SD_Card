@@ -1346,7 +1346,7 @@
   <parameter name="icache_ramBlockType" value="Automatic" />
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
-  <parameter name="impl" value="Fast" />
+  <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="26" />
   <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /></address-map>]]></parameter>
   <parameter name="internalIrqMaskSystemInfo" value="31" />
@@ -1593,7 +1593,7 @@
   <parameter name="dualPort" value="false" />
   <parameter name="ecc_enabled" value="false" />
   <parameter name="initMemContent" value="true" />
-  <parameter name="initializationFileName" value="onchip_memory2" />
+  <parameter name="initializationFileName">C:\dev\385_SD_Card\DE2_115_SD_CARD\Software\DE2_115_SD_CARD\mem_init\DE2_115_SD_CARD_NIOS_onchip_memory2.hex</parameter>
   <parameter name="instanceID" value="NONE" />
   <parameter name="memorySize" value="262144" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
@@ -1603,7 +1603,7 @@
   <parameter name="singleClockOperation" value="false" />
   <parameter name="slave1Latency" value="1" />
   <parameter name="slave2Latency" value="1" />
-  <parameter name="useNonDefaultInitFile" value="false" />
+  <parameter name="useNonDefaultInitFile" value="true" />
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>

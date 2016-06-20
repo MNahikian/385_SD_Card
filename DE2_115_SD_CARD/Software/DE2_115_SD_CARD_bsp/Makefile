@@ -101,7 +101,7 @@ ACDS_VERSION := 15.0
 # BUILD_NUMBER: 145
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
+SOPC_FILE := ../../DE2_115_SD_CARD_NIOS.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

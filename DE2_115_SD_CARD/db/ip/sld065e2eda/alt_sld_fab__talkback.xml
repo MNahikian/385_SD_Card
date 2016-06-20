@@ -11,12 +11,12 @@
    <SOPCModuleParameter>
     <C>2</C>
     <Name>DESIGN_HASH</Name>
-    <Value>16778152c84240981915</Value>
+    <Value>c02c21efa18ba978f98c</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>3</C>
     <Name>NODE_COUNT</Name>
-    <Value>3</Value>
+    <Value>2</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>4</C>
@@ -26,12 +26,12 @@
    <SOPCModuleParameter>
     <C>5</C>
     <Name>SETTINGS</Name>
-    <Value>{fabric sld dir agent mfr_code 110 type_code 128 version 1 instance -1 ir_width 1 prefer_host { } psig f63706bb} {fabric sld dir agent mfr_code 70 type_code 34 version 3 instance 0 ir_width 2 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 1 version 0 instance 0 ir_width 2 psig f63706bb} </Value>
+    <Value>{fabric sld dir agent mfr_code 110 type_code 128 version 1 instance -1 ir_width 1 prefer_host { } psig f63706bb} {fabric sld dir agent mfr_code 70 type_code 34 version 3 instance 0 ir_width 2 psig f63706bb} </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>6</C>
     <Name>CLOCKS</Name>
-    <Value>{id {} } {id {} } {id {} } </Value>
+    <Value>{id {} } {id {} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>7</C>
@@ -41,7 +41,7 @@
    <SOPCModuleParameter>
     <C>8</C>
     <Name>EP_INFOS</Name>
-    <Value>{hpath {DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_jtag_uart:jtag_uart|alt_jtag_atlantic:DE2_115_SD_CARD_NIOS_jtag_uart_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_cpu:cpu|DE2_115_SD_CARD_NIOS_cpu_nios2_oci:the_DE2_115_SD_CARD_NIOS_cpu_nios2_oci|DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper:the_DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {pzdyqx:nabboc} } </Value>
+    <Value>{hpath {DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_jtag_uart:jtag_uart|alt_jtag_atlantic:DE2_115_SD_CARD_NIOS_jtag_uart_alt_jtag_atlantic|altera_sld_agent_endpoint:inst|altera_fabric_endpoint:ep} } {hpath {DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_cpu:cpu|DE2_115_SD_CARD_NIOS_cpu_nios2_oci:the_DE2_115_SD_CARD_NIOS_cpu_nios2_oci|DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper:the_DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:DE2_115_SD_CARD_NIOS_cpu_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>9</C>
@@ -69,7 +69,7 @@
     <Value>Unknown</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>1350867108</SystemID>
+  <SystemID>1858706899</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>

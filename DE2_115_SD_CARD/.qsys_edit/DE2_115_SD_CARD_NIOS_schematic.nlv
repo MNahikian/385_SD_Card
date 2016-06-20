@@ -1,36 +1,37 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_flash_bridge_pinSharer_0 -pg 1 -lvl 3 -y 1490
-preplace inst DE2_115_SD_CARD_NIOS.to_hw_port -pg 1 -lvl 4 -y 530
+preplace inst DE2_115_SD_CARD_NIOS.to_hw_port -pg 1 -lvl 4 -y 590
 preplace inst DE2_115_SD_CARD_NIOS.ledr -pg 1 -lvl 4 -y 1500
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_flash_bridge_pinSharer_0.clock -pg 1
-preplace inst DE2_115_SD_CARD_NIOS.sw -pg 1 -lvl 4 -y 400
+preplace inst DE2_115_SD_CARD_NIOS.sw -pg 1 -lvl 4 -y 470
 preplace inst DE2_115_SD_CARD_NIOS.sma_in -pg 1 -lvl 4 -y 2270
-preplace inst DE2_115_SD_CARD_NIOS.clock_crossing_io -pg 1 -lvl 3 -y 1320
+preplace inst DE2_115_SD_CARD_NIOS.clock_crossing_io -pg 1 -lvl 3 -y 1300
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_flash_bridge_pinSharer_0.reset -pg 1
-preplace inst DE2_115_SD_CARD_NIOS.timer -pg 1 -lvl 4 -y 1050
+preplace inst DE2_115_SD_CARD_NIOS.timer -pg 1 -lvl 4 -y 1090
 preplace inst DE2_115_SD_CARD_NIOS.sd_wp_n -pg 1 -lvl 4 -y 2050
 preplace inst DE2_115_SD_CARD_NIOS.ledg -pg 1 -lvl 4 -y 2930
 preplace inst DE2_115_SD_CARD_NIOS.ir -pg 1 -lvl 4 -y 2490
-preplace inst DE2_115_SD_CARD_NIOS.c0 -pg 1 -lvl 4 -y 1200
-preplace inst DE2_115_SD_CARD_NIOS.key -pg 1 -lvl 4 -y 140
+preplace inst DE2_115_SD_CARD_NIOS.c0 -pg 1 -lvl 4 -y 1210
+preplace inst DE2_115_SD_CARD_NIOS.key -pg 1 -lvl 4 -y 230
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash.tda -pg 1
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash.reset -pg 1
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_bridge_flash_bridge_0 -pg 1 -lvl 4 -y 1940
-preplace inst DE2_115_SD_CARD_NIOS.onchip_memory2 -pg 1 -lvl 4 -y 970
+preplace inst DE2_115_SD_CARD_NIOS.onchip_memory2 -pg 1 -lvl 4 -y 990
 preplace inst DE2_115_SD_CARD_NIOS.i2c_sda -pg 1 -lvl 4 -y 2710
 preplace inst DE2_115_SD_CARD_NIOS.cpu -pg 1 -lvl 1 -y 1340
 preplace inst DE2_115_SD_CARD_NIOS.c2 -pg 1 -lvl 4 -y 1250
 preplace inst DE2_115_SD_CARD_NIOS.altpll -pg 1 -lvl 3 -y 1040
-preplace inst DE2_115_SD_CARD_NIOS.to_hw_sig -pg 1 -lvl 4 -y 640
+preplace inst DE2_115_SD_CARD_NIOS.to_hw_sig -pg 1 -lvl 4 -y 690
+preplace inst DE2_115_SD_CARD_NIOS.lcd -pg 1 -lvl 4 -y 130
 preplace inst DE2_115_SD_CARD_NIOS.seg7 -pg 1 -lvl 4 -y 2160
 preplace inst DE2_115_SD_CARD_NIOS.epp_i2c_sda -pg 1 -lvl 4 -y 3040
 preplace inst DE2_115_SD_CARD_NIOS.epp_i2c_scl -pg 1 -lvl 4 -y 30
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_flash_bridge_pinSharer_0.pin_sharer -pg 1
 preplace inst DE2_115_SD_CARD_NIOS.sd_clk -pg 1 -lvl 4 -y 1610
-preplace inst DE2_115_SD_CARD_NIOS.rs232 -pg 1 -lvl 4 -y 270
+preplace inst DE2_115_SD_CARD_NIOS.rs232 -pg 1 -lvl 4 -y 350
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash.slave_translator -pg 1
-preplace inst DE2_115_SD_CARD_NIOS.to_sw_sig -pg 1 -lvl 4 -y 750
+preplace inst DE2_115_SD_CARD_NIOS.to_sw_sig -pg 1 -lvl 4 -y 790
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash.tdt -pg 1
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash -pg 1 -lvl 2 -y 1350
 preplace inst DE2_115_SD_CARD_NIOS.tri_state_flash_bridge_pinSharer_0.arbiter -pg 1
@@ -38,48 +39,49 @@ preplace inst DE2_115_SD_CARD_NIOS.sd_dat -pg 1 -lvl 4 -y 1830
 preplace inst DE2_115_SD_CARD_NIOS.i2c_scl -pg 1 -lvl 4 -y 2600
 preplace inst DE2_115_SD_CARD_NIOS.sma_out -pg 1 -lvl 4 -y 2380
 preplace inst DE2_115_SD_CARD_NIOS.sd_cmd -pg 1 -lvl 4 -y 1720
-preplace inst DE2_115_SD_CARD_NIOS.jtag_uart -pg 1 -lvl 4 -y 860
+preplace inst DE2_115_SD_CARD_NIOS.jtag_uart -pg 1 -lvl 4 -y 890
 preplace inst DE2_115_SD_CARD_NIOS.clk_50 -pg 1 -lvl 1 -y 1240
 preplace inst DE2_115_SD_CARD_NIOS.cfi_flash.clk -pg 1
 preplace inst DE2_115_SD_CARD_NIOS -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)DE2_115_SD_CARD_NIOS.reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.i2c_scl_external_connection,(SLAVE)i2c_scl.external_connection) 1 0 4 NJ 2630 NJ 2630 NJ 2630 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.altpll_locked_conduit,(SLAVE)altpll.locked_conduit) 1 0 3 NJ 1110 NJ 1110 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.ir_external_connection,(SLAVE)ir.external_connection) 1 0 4 NJ 2520 NJ 2520 NJ 2520 NJ
 preplace netloc POINT_TO_POINT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)tri_state_flash_bridge_pinSharer_0.tcs0,(MASTER)cfi_flash.tcm) 1 2 1 720
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.altpll_phasedone_conduit,(SLAVE)altpll.phasedone_conduit) 1 0 3 NJ 1130 NJ 1130 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)DE2_115_SD_CARD_NIOS.altpll_c1,(MASTER)altpll.c1) 1 3 2 NJ 1160 NJ
-preplace netloc INTERCONNECT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)cpu.data_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)clock_crossing_io.s0,(SLAVE)cfi_flash.uas,(SLAVE)sma_in.s1,(SLAVE)sma_out.s1,(SLAVE)altpll.pll_slave,(SLAVE)onchip_memory2.s1,(SLAVE)cpu.jtag_debug_module,(MASTER)cpu.instruction_master) 1 0 4 230 1490 500 1450 760 1290 1270
+preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)to_hw_sig.s1,(SLAVE)ledr.s1,(SLAVE)timer.s1,(SLAVE)rs232.s1,(SLAVE)to_hw_port.s1,(SLAVE)sd_dat.s1,(SLAVE)i2c_sda.s1,(SLAVE)seg7.avalon_slave,(SLAVE)key.s1,(SLAVE)sd_cmd.s1,(SLAVE)to_sw_sig.s1,(SLAVE)sw.s1,(SLAVE)i2c_scl.s1,(SLAVE)epp_i2c_scl.s1,(SLAVE)lcd.control_slave,(SLAVE)sd_wp_n.s1,(SLAVE)ledg.s1,(SLAVE)ir.s1,(MASTER)clock_crossing_io.m0,(SLAVE)sd_clk.s1,(SLAVE)epp_i2c_sda.s1) 1 3 1 1270
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sma_in.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.sma_in_external_connection) 1 0 4 NJ 2300 NJ 2300 NJ 2300 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)DE2_115_SD_CARD_NIOS.altpll_c1,(MASTER)altpll.c1) 1 3 2 NJ 1200 NJ
+preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)cpu.d_irq,(SLAVE)sw.irq,(SLAVE)rs232.irq,(SLAVE)key.irq,(SLAVE)timer.irq,(SLAVE)jtag_uart.irq) 1 1 3 500 1210 NJ 1210 1230
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)key.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.key_external_connection) 1 0 4 NJ 260 NJ 260 NJ 260 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)i2c_sda.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.i2c_sda_external_connection) 1 0 4 NJ 2740 NJ 2740 NJ 2740 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)i2c_scl.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.i2c_scl_external_connection) 1 0 4 NJ 2630 NJ 2630 NJ 2630 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.clk_50_clk_in,(SLAVE)clk_50.clk_in) 1 0 1 NJ
-preplace netloc INTERCONNECT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sw.reset,(SLAVE)ledr.reset,(MASTER)clk_50.clk_reset,(SLAVE)cfi_flash.reset,(SLAVE)sma_in.reset,(SLAVE)ledg.reset,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)onchip_memory2.reset1,(SLAVE)rs232.reset,(SLAVE)seg7.clock_sink_reset,(SLAVE)ir.reset,(SLAVE)tri_state_bridge_flash_bridge_0.reset,(SLAVE)sd_wp_n.reset,(SLAVE)sma_out.reset,(SLAVE)cpu.reset_n,(SLAVE)i2c_sda.reset,(SLAVE)clock_crossing_io.m0_reset,(SLAVE)altpll.inclk_interface_reset,(SLAVE)sd_dat.reset,(SLAVE)clock_crossing_io.s0_reset,(SLAVE)jtag_uart.reset,(SLAVE)sd_cmd.reset,(SLAVE)epp_i2c_sda.reset,(SLAVE)epp_i2c_scl.reset,(SLAVE)to_sw_sig.reset,(SLAVE)tri_state_flash_bridge_pinSharer_0.reset,(SLAVE)to_hw_port.reset,(SLAVE)to_hw_sig.reset,(SLAVE)key.reset,(SLAVE)sd_clk.reset,(SLAVE)i2c_scl.reset,(SLAVE)timer.reset) 1 0 4 250 1470 520 1290 740 1590 1230
-preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sma_in.clk,(SLAVE)sw.clk,(SLAVE)epp_i2c_sda.clk,(SLAVE)sd_dat.clk,(SLAVE)clock_crossing_io.s0_clk,(SLAVE)sd_wp_n.clk,(SLAVE)tri_state_flash_bridge_pinSharer_0.clk,(MASTER)altpll.c0,(SLAVE)sd_clk.clk,(SLAVE)cpu.clk,(SLAVE)timer.clk,(SLAVE)sd_cmd.clk,(SLAVE)onchip_memory2.clk1,(SLAVE)jtag_uart.clk,(SLAVE)c0.in_clk,(SLAVE)ledg.clk,(SLAVE)ledr.clk,(SLAVE)rs232.clk,(SLAVE)tri_state_bridge_flash_bridge_0.clk,(SLAVE)key.clk,(SLAVE)epp_i2c_scl.clk,(SLAVE)cfi_flash.clk,(SLAVE)i2c_scl.clk,(SLAVE)ir.clk,(SLAVE)seg7.clock_sink,(SLAVE)sma_out.clk,(SLAVE)i2c_sda.clk) 1 0 4 230 1330 540 1310 800 1310 1170
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sw.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.sw_external_connection) 1 0 4 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc INTERCONNECT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)cpu.data_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sma_out.s1,(SLAVE)clock_crossing_io.s0,(SLAVE)cpu.jtag_debug_module,(SLAVE)altpll.pll_slave,(MASTER)cpu.instruction_master,(SLAVE)onchip_memory2.s1,(SLAVE)sma_in.s1,(SLAVE)cfi_flash.uas) 1 0 4 230 1490 500 1450 740 1290 1290
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.to_hw_sig,(SLAVE)to_hw_sig.external_connection) 1 0 4 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.lcd_external,(SLAVE)lcd.external) 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)to_hw_sig.clk,(SLAVE)to_hw_port.clk,(MASTER)clk_50.clk,(SLAVE)altpll.inclk_interface,(SLAVE)to_sw_sig.clk) 1 1 3 NJ 1250 720 1190 1150
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sma_out_external_connection,(SLAVE)sma_out.external_connection) 1 0 4 NJ 2410 NJ 2410 NJ 2410 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.rs232_external_connection,(SLAVE)rs232.external_connection) 1 0 4 NJ 300 NJ 300 NJ 300 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.epp_i2c_scl_external_connection,(SLAVE)epp_i2c_scl.external_connection) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sd_dat.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.sd_dat_external_connection) 1 0 4 NJ 1860 NJ 1860 NJ 1860 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)altpll.c3,(MASTER)DE2_115_SD_CARD_NIOS.altpll_c3) 1 3 2 NJ 1180 NJ
-preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)jtag_uart.irq,(SLAVE)timer.irq,(MASTER)cpu.d_irq,(SLAVE)key.irq,(SLAVE)rs232.irq,(SLAVE)sw.irq) 1 1 3 500 1190 NJ 1190 1190
-preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)to_hw_port.clk,(SLAVE)to_sw_sig.clk,(SLAVE)altpll.inclk_interface,(MASTER)clk_50.clk,(SLAVE)to_hw_sig.clk) 1 1 3 NJ 1250 720 1030 1210
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sd_dat_external_connection,(SLAVE)sd_dat.external_connection) 1 0 4 NJ 1860 NJ 1860 NJ 1860 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)altpll.locked_conduit,(SLAVE)DE2_115_SD_CARD_NIOS.altpll_locked_conduit) 1 0 3 NJ 1110 NJ 1110 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)altpll.c3,(MASTER)DE2_115_SD_CARD_NIOS.altpll_c3) 1 3 2 NJ 1080 NJ
+preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)altpll.c2,(SLAVE)clock_crossing_io.m0_clk,(SLAVE)c2.in_clk) 1 2 2 820 1260 1130
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)to_hw_port.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.to_hw_port) 1 0 4 NJ 620 NJ 620 NJ 620 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)altpll.areset_conduit,(SLAVE)DE2_115_SD_CARD_NIOS.altpll_areset_conduit) 1 0 3 NJ 1050 NJ 1050 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.to_sw_sig,(SLAVE)to_sw_sig.external_connection) 1 0 4 NJ 780 NJ 780 NJ 780 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sd_clk_external_connection,(SLAVE)sd_clk.external_connection) 1 0 4 NJ 1660 NJ 1660 NJ 1660 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.to_sw_sig,(SLAVE)to_sw_sig.external_connection) 1 0 4 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.reset,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.ledg_external_connection,(SLAVE)ledg.external_connection) 1 0 4 NJ 2960 NJ 2960 NJ 2960 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)DE2_115_SD_CARD_NIOS.c2_out_clk,(MASTER)c2.out_clk) 1 4 1 NJ
-preplace netloc POINT_TO_POINT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)tri_state_bridge_flash_bridge_0.tcs,(MASTER)tri_state_flash_bridge_pinSharer_0.tcm) 1 3 1 1130
-preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)c2.in_clk,(MASTER)altpll.c2,(SLAVE)clock_crossing_io.m0_clk) 1 2 2 820 1260 1130
+preplace netloc POINT_TO_POINT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)tri_state_bridge_flash_bridge_0.tcs,(MASTER)tri_state_flash_bridge_pinSharer_0.tcm) 1 3 1 1150
+preplace netloc INTERCONNECT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)clock_crossing_io.m0_reset,(SLAVE)sd_wp_n.reset,(SLAVE)epp_i2c_sda.reset,(SLAVE)key.reset,(MASTER)clk_50.clk_reset,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)sma_out.reset,(SLAVE)altpll.inclk_interface_reset,(SLAVE)epp_i2c_scl.reset,(SLAVE)to_hw_sig.reset,(SLAVE)sd_cmd.reset,(SLAVE)ir.reset,(SLAVE)onchip_memory2.reset1,(SLAVE)sma_in.reset,(SLAVE)ledr.reset,(SLAVE)tri_state_bridge_flash_bridge_0.reset,(SLAVE)sd_dat.reset,(SLAVE)jtag_uart.reset,(SLAVE)lcd.reset,(SLAVE)tri_state_flash_bridge_pinSharer_0.reset,(SLAVE)timer.reset,(SLAVE)cfi_flash.reset,(SLAVE)i2c_sda.reset,(SLAVE)i2c_scl.reset,(SLAVE)cpu.reset_n,(SLAVE)to_sw_sig.reset,(SLAVE)sd_clk.reset,(SLAVE)to_hw_port.reset,(SLAVE)seg7.clock_sink_reset,(SLAVE)rs232.reset,(SLAVE)sw.reset,(SLAVE)ledg.reset,(SLAVE)clock_crossing_io.s0_reset) 1 0 4 250 1470 520 1470 800 1230 1250
+preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)epp_i2c_scl.clk,(SLAVE)i2c_sda.clk,(SLAVE)c0.in_clk,(SLAVE)sd_dat.clk,(SLAVE)seg7.clock_sink,(SLAVE)onchip_memory2.clk1,(SLAVE)cpu.clk,(SLAVE)i2c_scl.clk,(SLAVE)sd_clk.clk,(SLAVE)lcd.clk,(SLAVE)timer.clk,(SLAVE)sd_wp_n.clk,(SLAVE)ir.clk,(SLAVE)sma_in.clk,(SLAVE)clock_crossing_io.s0_clk,(SLAVE)key.clk,(MASTER)altpll.c0,(SLAVE)ledr.clk,(SLAVE)jtag_uart.clk,(SLAVE)sma_out.clk,(SLAVE)sd_cmd.clk,(SLAVE)cfi_flash.clk,(SLAVE)tri_state_bridge_flash_bridge_0.clk,(SLAVE)rs232.clk,(SLAVE)tri_state_flash_bridge_pinSharer_0.clk,(SLAVE)epp_i2c_sda.clk,(SLAVE)ledg.clk,(SLAVE)sw.clk) 1 0 4 230 1330 540 1310 780 1430 1190
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.tri_state_bridge_flash_bridge_0_out,(SLAVE)tri_state_bridge_flash_bridge_0.out) 1 0 4 NJ 1970 NJ 1970 NJ 1970 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.to_hw_port,(SLAVE)to_hw_port.external_connection) 1 0 4 NJ 560 NJ 560 NJ 560 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)ir.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.ir_external_connection) 1 0 4 NJ 2520 NJ 2520 NJ 2520 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)DE2_115_SD_CARD_NIOS.c0_out_clk,(MASTER)c0.out_clk) 1 4 1 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)to_hw_sig.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.to_hw_sig) 1 0 4 NJ 670 NJ 670 NJ 670 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)epp_i2c_sda.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.epp_i2c_sda_external_connection) 1 0 4 NJ 3070 NJ 3070 NJ 3070 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)altpll.phasedone_conduit,(SLAVE)DE2_115_SD_CARD_NIOS.altpll_phasedone_conduit) 1 0 3 NJ 1130 NJ 1130 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sd_cmd.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.sd_cmd_external_connection) 1 0 4 NJ 1750 NJ 1750 NJ 1750 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sw_external_connection,(SLAVE)sw.external_connection) 1 0 4 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)rs232.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.rs232_external_connection) 1 0 4 NJ 380 NJ 380 NJ 380 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)ledr.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.ledr_external_connection) 1 0 4 NJ 1510 NJ 1510 NJ 1450 NJ
-preplace netloc FAN_OUT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sw.s1,(SLAVE)key.s1,(SLAVE)epp_i2c_sda.s1,(SLAVE)seg7.avalon_slave,(SLAVE)to_hw_sig.s1,(SLAVE)i2c_sda.s1,(SLAVE)ledg.s1,(SLAVE)epp_i2c_scl.s1,(SLAVE)sd_wp_n.s1,(SLAVE)to_sw_sig.s1,(SLAVE)timer.s1,(SLAVE)sd_cmd.s1,(SLAVE)i2c_scl.s1,(SLAVE)sd_clk.s1,(SLAVE)sd_dat.s1,(MASTER)clock_crossing_io.m0,(SLAVE)ir.s1,(SLAVE)ledr.s1,(SLAVE)rs232.s1,(SLAVE)to_hw_port.s1) 1 3 1 1250
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.epp_i2c_sda_external_connection,(SLAVE)epp_i2c_sda.external_connection) 1 0 4 NJ 3070 NJ 3070 NJ 3070 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.seg7_conduit_end,(SLAVE)seg7.conduit_end) 1 0 4 NJ 2230 NJ 2230 NJ 2230 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sd_cmd_external_connection,(SLAVE)sd_cmd.external_connection) 1 0 4 NJ 1750 NJ 1750 NJ 1750 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.key_external_connection,(SLAVE)key.external_connection) 1 0 4 NJ 170 NJ 170 NJ 170 NJ
-preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sma_in_external_connection,(SLAVE)sma_in.external_connection) 1 0 4 NJ 2300 NJ 2300 NJ 2300 NJ
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)sd_clk.external_connection,(SLAVE)DE2_115_SD_CARD_NIOS.sd_clk_external_connection) 1 0 4 NJ 1640 NJ 1640 NJ 1640 NJ
 preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(SLAVE)DE2_115_SD_CARD_NIOS.sd_wp_n_external_connection,(SLAVE)sd_wp_n.external_connection) 1 0 4 NJ 2080 NJ 2080 NJ 2080 NJ
-levelinfo -pg 1 0 200 1590
-levelinfo -hier DE2_115_SD_CARD_NIOS 210 280 620 940 1340 1490
+preplace netloc EXPORT<net_container>DE2_115_SD_CARD_NIOS</net_container>(MASTER)c2.out_clk,(MASTER)DE2_115_SD_CARD_NIOS.c2_out_clk) 1 4 1 NJ
+levelinfo -pg 1 0 200 1610
+levelinfo -hier DE2_115_SD_CARD_NIOS 210 280 620 940 1360 1510

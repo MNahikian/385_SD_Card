@@ -35,7 +35,7 @@ module DE2_115_SD_CARD_NIOS_onchip_memory2 (
                                            )
 ;
 
-  parameter INIT_FILE = "DE2_115_SD_CARD_NIOS_onchip_memory2.hex";
+  parameter INIT_FILE = "C:/dev/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/mem_init/DE2_115_SD_CARD_NIOS_onchip_memory2.hex";
 
 
   output  [ 31: 0] readdata;
