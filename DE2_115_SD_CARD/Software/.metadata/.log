@@ -3661,3 +3661,1859 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:15:52.222
 !MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:21:18.680
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:21:19.053
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:21:20.747
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:44:59.582
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:44:59.962
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 16:45:01.652
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+                                                                                                                                               !SESSION 2016-06-23 17:21:46.358 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-06-23 17:21:58.062
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-23 17:22:04.332
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-23 17:24:11.104 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-06-23 17:24:13.719
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-23 17:24:18.790
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:24:45.127
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:24:46.843
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:25:47.623
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:25:47.960
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:25:49.652
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:28:05.097
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:292)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:274)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.putRecPtr(Database.java:482)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMMacro.setMacroField(PDOMMacro.java:206)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMMacro.setNextInContainer(PDOMMacro.java:201)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMMacro.delete(PDOMMacro.java:134)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.clear(PDOMFile.java:558)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.clearUncommittedFile(WritablePDOM.java:134)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.clearUncommittedFile(WritableCIndex.java:71)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:621)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2016-06-23 17:28:05.098
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:28:11.937
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:28:11.996
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:28:12.020
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:28:16.540
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:28:16.877
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:28:18.575
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:18.459
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:18.477
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:23.137
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:23.156
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:23.177
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:30:23.192
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:30:27.405
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:30:27.753
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:30:29.446
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:23.291
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:23.306
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:27.691
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:27.710
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:27.729
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:31:27.743
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:31:31.505
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:31:31.838
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:31:33.531
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:16.464
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:16.476
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:21.032
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:21.050
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:21.067
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:21.079
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:32:25.155
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:32:25.480
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:32:27.172
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:54.478
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:32:54.503
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:33:04.254
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:33:04.275
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:33:04.299
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:33:04.315
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:33:07.397
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:33:07.725
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:33:09.420
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:35:55.675
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:35:55.686
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:35:59.458
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:35:59.482
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:28.647
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:28.662
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:33.118
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:33.134
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:34.631
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:36:34.642
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:36:49.230
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:36:49.560
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:36:51.253
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:52.242
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:52.255
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:56.449
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:56.464
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:56.478
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:37:56.491
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:38:01.727
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:38:02.056
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:38:03.746
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:39:52.173
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:39:52.345
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:39:59.890
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:39:59.904
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:40:05.620
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:40:05.635
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:40:05.651
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-06-23 17:40:05.666
+!MESSAGE Error while parsing /C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/terasic_fat/FatFileSystem.c.
+!STACK 0
+java.nio.BufferUnderflowException
+	at java.nio.CharBuffer.get(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.getChars(Chunk.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.getChars(LongString.java:119)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.compareCompatibleWithIgnoreCase(LongString.java:244)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.doAdaptBinding(PDOMCLinkage.java:283)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.adaptBinding(PDOMCLinkage.java:269)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:96)
+	at org.eclipse.cdt.internal.core.pdom.dom.c.PDOMCLinkage.addBinding(PDOMCLinkage.java:190)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:510)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:477)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:155)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:613)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:269)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1050)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:891)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:40:09.670
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:40:10.004
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:40:11.695
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:41:02.137
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-23 17:41:03.831
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD/DE2_115_SD_CARD.elf]

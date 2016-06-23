@@ -60,7 +60,7 @@
 
 //VOLUME_INFO gVolumeInfo;
 void fatComposeShortFilename(FAT_DIRECTORY *pDir, char *szFilename);
-bool fatSameLongFilename(alt_u16 *p1, alt_u16 *p2);
+bool fatSameLongFilename(alt_u16 *p1, alt_u8 *p2);
 
 
 
@@ -227,13 +227,14 @@ unsigned int Fat_FileCount(FAT_HANDLE Fat){
     return nCount;
 }
 
-bool fatSameLongFilename(alt_u16 *p1, alt_u16 *p2){
+bool fatSameLongFilename(alt_u16 *p1, alt_u8 *p2){
     bool bSame = TRUE;
     
     while(bSame && ((*p1 != 0) || (*p2 != 0))){
         if (*p1 != *p2){
             bSame = FALSE;
         }
+        //printf("Char1: %x / Char2: %x\n", *p1, *p2);
         p1++;
         p2++;
         
@@ -261,9 +262,6 @@ void fatComposeShortFilename(FAT_DIRECTORY *pDir, char *szFilename){
 }
 
 
-
-
-
 bool Fat_FileExist(FAT_HANDLE Fat, const char *pFilename){
     bool bFind = FALSE;
     FAT_BROWSE_HANDLE hBrowse;     
@@ -289,11 +287,15 @@ FAT_FILE_HANDLE Fat_FileOpen(FAT_HANDLE Fat, const char *pFilename){
     FILE_CONTEXT FileContext;
     FAT_FILE_INFO *pFile = 0;
     
+    //printf("Searching for: %s\n", pFilename);
+
     if (Fat_FileBrowseBegin(Fat, &hBrowse)){
         while (!bFind && Fat_FileBrowseNext(&hBrowse, &FileContext)){
             if (FileContext.bLongFilename){
-                bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+            	//printf("Long Comparing : %s\n", FileContext.szName);
+                bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u8 *)pFilename);
             }else{
+            	//printf("Short Comparing : %s\n", FileContext.szName);
                 if (strcmpi(FileContext.szName, pFilename) == 0)
                     bFind = TRUE;
             }    

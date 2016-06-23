@@ -27422,3 +27422,574 @@ Info: Building ../DE2_115_SD_CARD_bsp/
 C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
 [BSP build complete]
 [DE2_115_SD_CARD build complete]
+16:21:12 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'selectionList':
+main.c:104:4: warning: array subscript has type 'char' [-Wchar-subscripts]
+    LCD_TextOut(selector[updown]);
+    ^
+main.c:104:4: warning: passing argument 1 of 'LCD_TextOut' discards 'const' qualifier from pointer target type
+main.c:58:6: note: expected 'char *' but argument is of type 'const char *'
+ bool LCD_TextOut(char* pText){
+      ^
+main.c:107:4: warning: passing argument 1 of 'LCD_TextOut' discards 'const' qualifier from pointer target type
+    LCD_TextOut(selector[!updown]);
+    ^
+main.c:58:6: note: expected 'char *' but argument is of type 'const char *'
+ bool LCD_TextOut(char* pText){
+      ^
+main.c: In function 'Fat_Test':
+main.c:163:24: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+                 pData8 = FileContext.szName;
+                        ^
+main.c:205:18: warning: the address of 'pDumpFile' will always evaluate as 'true' [-Waddress]
+     if (bSuccess && pDumpFile && strlen(pDumpFile)){
+                  ^
+main.c:239:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'alt_u32' [-Wformat=]
+                     printf("instruction: %04x\n", transfer_16bit);
+                     ^
+main.c:239:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'alt_u32' [-Wformat=]
+main.c:150:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+main.c: In function 'main':
+main.c:289:16: warning: unused variable 'temp' [-Wunused-variable]
+     const char temp[] = "Test String\0";
+                ^
+main.c: In function 'Fat_Test':
+main.c:216:27: warning: 'nReadSize' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             if (nReadSize > sizeof(szRead))
+                           ^
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       119 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+16:21:14 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+16:21:17 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+16:44:57 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'selectionList':
+main.c:104:4: warning: array subscript has type 'char' [-Wchar-subscripts]
+    LCD_TextOut(selector[updown]);
+    ^
+main.c:104:4: warning: passing argument 1 of 'LCD_TextOut' discards 'const' qualifier from pointer target type
+main.c:58:6: note: expected 'char *' but argument is of type 'const char *'
+ bool LCD_TextOut(char* pText){
+      ^
+main.c:107:4: warning: passing argument 1 of 'LCD_TextOut' discards 'const' qualifier from pointer target type
+    LCD_TextOut(selector[!updown]);
+    ^
+main.c:58:6: note: expected 'char *' but argument is of type 'const char *'
+ bool LCD_TextOut(char* pText){
+      ^
+main.c: In function 'Fat_Test':
+main.c:163:24: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+                 pData8 = FileContext.szName;
+                        ^
+main.c:205:18: warning: the address of 'pDumpFile' will always evaluate as 'true' [-Waddress]
+     if (bSuccess && pDumpFile && strlen(pDumpFile)){
+                  ^
+main.c:239:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'alt_u32' [-Wformat=]
+                     printf("instruction: %04x\n", transfer_16bit);
+                     ^
+main.c:239:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'alt_u32' [-Wformat=]
+main.c:150:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+main.c: In function 'main':
+main.c:289:16: warning: unused variable 'temp' [-Wunused-variable]
+     const char temp[] = "Test String\0";
+                ^
+main.c: In function 'Fat_Test':
+main.c:216:27: warning: 'nReadSize' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             if (nReadSize > sizeof(szRead))
+                           ^
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       119 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:14:43 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               17:24:43 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+obj/default/terasic_fat/FatFileSystem.d:1: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:2: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:3: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:4: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:5: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:6: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:7: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:8: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:9: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:10: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:11: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:12: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:13: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:14: warning: NUL character seen; rest of line ignored
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:25:42 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+obj/default/terasic_fat/FatFileSystem.d:1: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:2: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:3: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:4: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:5: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:6: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:7: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:8: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:9: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:10: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:11: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:12: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:13: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:14: warning: NUL character seen; rest of line ignored
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:25:43 **** Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:25:46 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+obj/default/terasic_fat/FatFileSystem.d:1: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:2: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:3: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:4: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:5: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:6: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:7: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:8: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:9: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:10: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:11: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:12: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:13: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:14: warning: NUL character seen; rest of line ignored
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:28:07 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+obj/default/terasic_fat/FatFileSystem.d:1: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:2: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:3: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:4: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:5: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:6: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:7: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:8: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:9: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:10: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:11: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:12: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:13: warning: NUL character seen; rest of line ignored
+obj/default/terasic_fat/FatFileSystem.d:14: warning: NUL character seen; rest of line ignored
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:453:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:507:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:507:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:28:11 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:28:15 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:30:20 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'fatSameLongFilename':
+terasic_fat/FatFileSystem.c:237:9: warning: format '%c' expects argument of type 'int', but argument 2 has type 'alt_u16 *' [-Wformat=]
+         printf("Char1: %c / Char2: %c\n", p1, p2);
+         ^
+terasic_fat/FatFileSystem.c:237:9: warning: format '%c' expects argument of type 'int', but argument 3 has type 'alt_u16 *' [-Wformat=]
+terasic_fat/FatFileSystem.c:237:9: warning: format '%c' expects argument of type 'int', but argument 2 has type 'alt_u16 *' [-Wformat=]
+terasic_fat/FatFileSystem.c:237:9: warning: format '%c' expects argument of type 'int', but argument 3 has type 'alt_u16 *' [-Wformat=]
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:454:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:508:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:508:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:30:22 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:30:26 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:31:25 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:454:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:508:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:508:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:31:27 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:31:30 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:32:18 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:455:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:509:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:509:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:32:20 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:32:24 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:33:01 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:455:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:509:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:509:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:33:03 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:33:06 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:35:57 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c:230:6: error: conflicting types for 'fatSameLongFilename'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c:63:6: note: previous declaration of 'fatSameLongFilename' was here
+ bool fatSameLongFilename(alt_u16 *p1, alt_u16 *p2);
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileExist':
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 1 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 2 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:452:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:506:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:506:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+make: *** [obj/default/terasic_fat/FatFileSystem.o] Error 1
+17:35:58 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:36:02 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c:230:6: error: conflicting types for 'fatSameLongFilename'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c:63:6: note: previous declaration of 'fatSameLongFilename' was here
+ bool fatSameLongFilename(alt_u16 *p1, alt_u16 *p2);
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileExist':
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 1 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 2 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:452:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:506:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:506:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+make: *** [obj/default/terasic_fat/FatFileSystem.o] Error 1
+17:36:30 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileExist':
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 1 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 2 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u8 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:452:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:506:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:506:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:36:32 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:36:48 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:37:54 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileExist':
+terasic_fat/FatFileSystem.c:273:25: warning: passing argument 2 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u16 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:452:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:506:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:506:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       118 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:37:55 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:38:00 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:40:03 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+Info: Compiling terasic_fat/FatFileSystem.c to obj/default/terasic_fat/FatFileSystem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DE2_115_SD_CARD_bsp//HAL/inc -I../DE2_115_SD_CARD_bsp/ -I../DE2_115_SD_CARD_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/terasic_fat/FatFileSystem.o terasic_fat/FatFileSystem.c
+terasic_fat/FatFileSystem.c: In function 'Fat_FileExist':
+terasic_fat/FatFileSystem.c:272:25: warning: passing argument 2 of 'fatSameLongFilename' from incompatible pointer type
+                 bFind = fatSameLongFilename((alt_u16 *)FileContext.szName, (alt_u16 *)pFilename);
+                         ^
+terasic_fat/FatFileSystem.c:230:6: note: expected 'alt_u8 *' but argument is of type 'alt_u16 *'
+ bool fatSameLongFilename(alt_u16 *p1, alt_u8 *p2){
+      ^
+terasic_fat/FatFileSystem.c: In function 'Fat_FileSeek':
+terasic_fat/FatFileSystem.c:451:18: warning: variable 'pVol' set but not used [-Wunused-but-set-variable]
+     VOLUME_INFO *pVol;
+                  ^
+terasic_fat/FatFileSystem.c: In function 'Fat_SpeedTest':
+terasic_fat/FatFileSystem.c:505:20: warning: pointer targets in passing argument 3 of 'pVol->ReadBlock512' differ in signedness [-Wpointer-sign]
+         bSuccess = pVol->ReadBlock512(pVol->DiskHandle, nSecter, szBlock);
+                    ^
+terasic_fat/FatFileSystem.c:505:20: note: expected 'alt_u8 *' but argument is of type 'char *'
+Info: Linking DE2_115_SD_CARD.elf
+nios2-elf-g++  -T'../DE2_115_SD_CARD_bsp//linker.x' -msys-crt0='../DE2_115_SD_CARD_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DE2_115_SD_CARD_bsp/   -Wl,-Map=DE2_115_SD_CARD.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o DE2_115_SD_CARD.elf obj/default/main.o obj/default/terasic_fat/FatFileSystem.o obj/default/terasic_fat/FatInternal.o obj/default/terasic_lib/debug.o obj/default/terasic_sdcard/crc16.o obj/default/terasic_sdcard/crc7.o obj/default/terasic_sdcard/sd_hal.o obj/default/terasic_sdcard/sd_lib.o obj/default/terasic_sdcard/sd_protocol.o -lm 
+nios2-elf-insert DE2_115_SD_CARD.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SD_CARD_NIOS --quartus_project_dir "C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD" --jdi C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD.jdi --sopcinfo C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/Software/DE2_115_SD_CARD_bsp/../../DE2_115_SD_CARD_NIOS.sopcinfo
+Info: (DE2_115_SD_CARD.elf) 129 KBytes program size (code + initialized data).
+Info:                       119 KBytes free for stack + heap.
+Info: Creating DE2_115_SD_CARD.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_115_SD_CARD.elf >DE2_115_SD_CARD.objdump
+[DE2_115_SD_CARD build complete]
+17:40:04 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+make all 
+[BSP build complete]
+17:40:08 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
+17:41:00 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
+make all 
+Info: Building ../DE2_115_SD_CARD_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
+[BSP build complete]
+[DE2_115_SD_CARD build complete]
