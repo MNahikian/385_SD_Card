@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Mon Jun 20 12:05:23 CDT 2016
+ * Generated: Thu Jun 23 15:51:20 CDT 2016
  */
 
 /*

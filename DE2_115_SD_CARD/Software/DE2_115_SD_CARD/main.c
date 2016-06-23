@@ -152,12 +152,6 @@ bool Fat_Test(FAT_HANDLE hFat){
     FAT_BROWSE_HANDLE hBrowse;
     FILE_CONTEXT FileContext;
 
-//    LCD_TextOut("TEST");
-//    LCD_TextOut("\n");
-//    LCD_TextOut("Strings");
-//    LCD_TextOut(" BRO");
-//    LCD_TextOut("\n");
-
     bSuccess = Fat_FileBrowseBegin(hFat, &hBrowse);
     if (bSuccess){
         while(Fat_FileBrowseNext(&hBrowse, &FileContext)){
@@ -190,18 +184,17 @@ bool Fat_Test(FAT_HANDLE hFat){
                 numWrite = strlen(FileContext.szName);
                 strcpy(tempName, FileContext.szName);
             }
-            printf("numWrite: %d\n", numWrite);
+            //printf("numWrite: %d\n", numWrite);
             tempName[numWrite] = '\0';
-            printf("tempName: %s\n", tempName);
+            //printf("tempName: %s\n", tempName);
             strcpy(filenames[nCount], tempName);
-            printf("filenames[%d]: %s\n", nCount, filenames[nCount]);
+            //printf("filenames[%d]: %s\n", nCount, filenames[nCount]);
             nCount++;
         }
 
-        for(i=0; i<sizeof(filenames)/sizeof(filenames[0]); i++)
-        	printf("%s\n", filenames[i]);
+        //for(i=0; i<sizeof(filenames)/sizeof(filenames[0]); i++)
+        	//printf("%s\n", filenames[i]);
 
-        //printf("File Number Selected: %d", selectionList(filenames, sizeof(filenames)/sizeof(filenames[0])));
 
         printf("Select file by Name: \n");
         //scanf("%s", pDumpFile);
@@ -212,6 +205,9 @@ bool Fat_Test(FAT_HANDLE hFat){
     if (bSuccess && pDumpFile && strlen(pDumpFile)){
         FAT_FILE_HANDLE hFile;
         alt_u32 transfer_16bit = 0;
+
+        LCD_TextOut("Writing File...\n");usleep(1000000);
+
         hFile =  Fat_FileOpen(hFat, pDumpFile);
         if (hFile){
             char szRead[2];
@@ -244,28 +240,32 @@ bool Fat_Test(FAT_HANDLE hFat){
                     nTotalReadSize += nReadSize;
                 }else{
                     bSuccess = FALSE;
+                    LCD_TextOut("File read fail!\n");usleep(1000000);
                     printf("\nFaied to read the file \"%s\"\n", pDumpFile);
                 }     
 
                 //Transfer 16 bits
 
-                printf("Begin Transfer...\n");
+                //printf("Begin Transfer...\n");
                	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_PORT_BASE, transfer_16bit);
 
-               	printf("Send 0...\n");
+               	//printf("Send 0...\n");
                	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
                	while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 2);	//Wait for set_mem
 
-               	printf("Send 1...\n");
+               	//printf("Send 1...\n");
                	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x1);
                 while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 1);	//Wait for prepare
 
             } // while
 
-            printf("Done reading %s to memory.\n", pDumpFile);
            	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x2);
            	while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 0);	 //Wait to return to Wait
 
+           	if(bSuccess){
+           		printf("Done reading %s to memory.\n", pDumpFile);
+           		LCD_TextOut("Done Writing!\n");usleep(1000000);
+           	}
 
             if (bSuccess)
                 printf("\n");
@@ -273,6 +273,7 @@ bool Fat_Test(FAT_HANDLE hFat){
         }else{            
             bSuccess = FALSE;
             printf("Cannot find the file \"%s\"\n", pDumpFile);
+       		LCD_TextOut("File not found!\n");usleep(1000000);
         }            
     }
     
@@ -308,10 +309,13 @@ int main()
             Fat_Unmount(hFat);
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_PASS_PATTERN);
             
+            LCD_TextOut("Press KEY3 to\nrestart.\n");
             printf("===== Test Done =====\r\nPress KEY3 to test again.\r\n");
         }else{
             printf("Failed to mount the SDCARD!\r\nPlease insert the SDCARD into DE2-115 board and press KEY3.\r\n");
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_NG_PATTERN);
+
+            LCD_TextOut("Mount failed!\nKEY3: Re-mount\n");usleep(1000000);
         }
         // wait users to press BUTTON3
         while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & KEY3) == KEY3);
