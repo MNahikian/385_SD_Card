@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
 # SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
 #
-# Generated: Thu Jun 23 15:51:20 CDT 2016
+# Generated: Mon Jun 27 15:53:06 CDT 2016
 
 # DO NOT MODIFY THIS FILE
 #
@@ -51,3 +51,6 @@ memory 0x1800000 0x2000000 cache
 
 # onchip_memory2
 memory 0x2040000 0x2080000 cache
+
+# sdram_controller
+memory 0x10000000 0x18000000 cache

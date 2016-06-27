@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Thu Jun 23 15:51:20 CDT 2016
+ * Generated: Mon Jun 27 15:53:06 CDT 2016
  */
 
 /*
@@ -53,11 +53,13 @@ MEMORY
     cfi_flash : ORIGIN = 0x1800000, LENGTH = 8388608
     reset : ORIGIN = 0x2040000, LENGTH = 32
     onchip_memory2 : ORIGIN = 0x2040020, LENGTH = 262112
+    sdram_controller : ORIGIN = 0x10000000, LENGTH = 134217728
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_cfi_flash = 0x1800000;
 __alt_mem_onchip_memory2 = 0x2040000;
+__alt_mem_sdram_controller = 0x10000000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -338,6 +340,23 @@ SECTIONS
     } > onchip_memory2
 
     PROVIDE (_alt_partition_onchip_memory2_load_addr = LOADADDR(.onchip_memory2));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .sdram_controller : AT ( LOADADDR (.onchip_memory2) + SIZEOF (.onchip_memory2) )
+    {
+        PROVIDE (_alt_partition_sdram_controller_start = ABSOLUTE(.));
+        *(.sdram_controller .sdram_controller. sdram_controller.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_sdram_controller_end = ABSOLUTE(.));
+    } > sdram_controller
+
+    PROVIDE (_alt_partition_sdram_controller_load_addr = LOADADDR(.sdram_controller));
 
     /*
      * Stabs debugging sections.

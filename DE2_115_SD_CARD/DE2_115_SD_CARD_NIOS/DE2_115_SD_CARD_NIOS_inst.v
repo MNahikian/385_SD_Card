@@ -39,6 +39,15 @@
 		.tri_state_bridge_flash_bridge_0_out_tri_state_bridge_flash_data (<connected-to-tri_state_bridge_flash_bridge_0_out_tri_state_bridge_flash_data>), //                                    .tri_state_bridge_flash_data
 		.tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash    (<connected-to-tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash>),    //                                    .write_n_to_the_cfi_flash
 		.tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash   (<connected-to-tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash>),   //                                    .select_n_to_the_cfi_flash
-		.tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash     (<connected-to-tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash>)      //                                    .read_n_to_the_cfi_flash
+		.tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash     (<connected-to-tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash>),     //                                    .read_n_to_the_cfi_flash
+		.sdram_controller_addr                                           (<connected-to-sdram_controller_addr>),                                           //                    sdram_controller.addr
+		.sdram_controller_ba                                             (<connected-to-sdram_controller_ba>),                                             //                                    .ba
+		.sdram_controller_cas_n                                          (<connected-to-sdram_controller_cas_n>),                                          //                                    .cas_n
+		.sdram_controller_cke                                            (<connected-to-sdram_controller_cke>),                                            //                                    .cke
+		.sdram_controller_cs_n                                           (<connected-to-sdram_controller_cs_n>),                                           //                                    .cs_n
+		.sdram_controller_dq                                             (<connected-to-sdram_controller_dq>),                                             //                                    .dq
+		.sdram_controller_dqm                                            (<connected-to-sdram_controller_dqm>),                                            //                                    .dqm
+		.sdram_controller_ras_n                                          (<connected-to-sdram_controller_ras_n>),                                          //                                    .ras_n
+		.sdram_controller_we_n                                           (<connected-to-sdram_controller_we_n>)                                            //                                    .we_n
 	);
 

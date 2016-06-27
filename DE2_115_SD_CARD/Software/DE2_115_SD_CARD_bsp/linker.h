@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Thu Jun 23 15:51:20 CDT 2016
+ * Generated: Mon Jun 27 15:53:06 CDT 2016
  */
 
 /*
@@ -71,6 +71,8 @@
 #define ONCHIP_MEMORY2_REGION_SPAN 262112
 #define RESET_REGION_BASE 0x2040000
 #define RESET_REGION_SPAN 32
+#define SDRAM_CONTROLLER_REGION_BASE 0x10000000
+#define SDRAM_CONTROLLER_REGION_SPAN 134217728
 
 
 /*

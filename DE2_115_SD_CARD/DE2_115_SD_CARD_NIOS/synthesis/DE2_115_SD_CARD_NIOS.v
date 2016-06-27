@@ -33,6 +33,15 @@ module DE2_115_SD_CARD_NIOS (
 		inout  wire        sd_cmd_external_connection_export,                               //          sd_cmd_external_connection.export
 		inout  wire [3:0]  sd_dat_external_connection_export,                               //          sd_dat_external_connection.export
 		input  wire        sd_wp_n_external_connection_export,                              //         sd_wp_n_external_connection.export
+		output wire [12:0] sdram_controller_addr,                                           //                    sdram_controller.addr
+		output wire [1:0]  sdram_controller_ba,                                             //                                    .ba
+		output wire        sdram_controller_cas_n,                                          //                                    .cas_n
+		output wire        sdram_controller_cke,                                            //                                    .cke
+		output wire        sdram_controller_cs_n,                                           //                                    .cs_n
+		inout  wire [31:0] sdram_controller_dq,                                             //                                    .dq
+		output wire [3:0]  sdram_controller_dqm,                                            //                                    .dqm
+		output wire        sdram_controller_ras_n,                                          //                                    .ras_n
+		output wire        sdram_controller_we_n,                                           //                                    .we_n
 		output wire [63:0] seg7_conduit_end_export,                                         //                    seg7_conduit_end.export
 		input  wire        sma_in_external_connection_export,                               //          sma_in_external_connection.export
 		output wire        sma_out_external_connection_export,                              //         sma_out_external_connection.export
@@ -47,7 +56,9 @@ module DE2_115_SD_CARD_NIOS (
 		output wire [0:0]  tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash      //                                    .read_n_to_the_cfi_flash
 	);
 
-	wire         cpu_jtag_debug_module_reset_reset;                                        // cpu:jtag_debug_module_resetrequest -> [epp_i2c_scl:reset_n, mm_interconnect_1:epp_i2c_scl_reset_reset_bridge_in_reset_reset, rst_controller:reset_in1, rst_controller_001:reset_in1, rst_controller_002:reset_in1]
+	wire         sys_sdram_pll_0_sdram_clk_clk;                                            // sys_sdram_pll_0:sdram_clk_clk -> [mm_interconnect_0:sys_sdram_pll_0_sdram_clk_clk, rst_controller_004:clk, sdram_controller:clk]
+	wire         sys_sdram_pll_0_sys_clk_clk;                                              // sys_sdram_pll_0:sys_clk_clk -> [altpll:clk, mm_interconnect_0:sys_sdram_pll_0_sys_clk_clk, mm_interconnect_1:sys_sdram_pll_0_sys_clk_clk, rst_controller:clk, to_hw_port:clk, to_hw_sig:clk, to_sw_sig:clk]
+	wire         cpu_jtag_debug_module_reset_reset;                                        // cpu:jtag_debug_module_resetrequest -> [epp_i2c_scl:reset_n, mm_interconnect_1:epp_i2c_scl_reset_reset_bridge_in_reset_reset, rst_controller:reset_in0, rst_controller_001:reset_in0, rst_controller_002:reset_in0]
 	wire         tri_state_flash_bridge_pinsharer_0_tcm_request;                           // tri_state_flash_bridge_pinSharer_0:request -> tri_state_bridge_flash_bridge_0:request
 	wire   [0:0] tri_state_flash_bridge_pinsharer_0_tcm_read_n_to_the_cfi_flash_out;       // tri_state_flash_bridge_pinSharer_0:read_n_to_the_cfi_flash -> tri_state_bridge_flash_bridge_0:tcs_read_n_to_the_cfi_flash
 	wire  [22:0] tri_state_flash_bridge_pinsharer_0_tcm_address_to_the_cfi_flash_out;      // tri_state_flash_bridge_pinSharer_0:address_to_the_cfi_flash -> tri_state_bridge_flash_bridge_0:tcs_address_to_the_cfi_flash
@@ -69,14 +80,14 @@ module DE2_115_SD_CARD_NIOS (
 	wire  [31:0] cpu_data_master_readdata;                                                 // mm_interconnect_0:cpu_data_master_readdata -> cpu:d_readdata
 	wire         cpu_data_master_waitrequest;                                              // mm_interconnect_0:cpu_data_master_waitrequest -> cpu:d_waitrequest
 	wire         cpu_data_master_debugaccess;                                              // cpu:jtag_debug_module_debugaccess_to_roms -> mm_interconnect_0:cpu_data_master_debugaccess
-	wire  [25:0] cpu_data_master_address;                                                  // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
+	wire  [28:0] cpu_data_master_address;                                                  // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
 	wire   [3:0] cpu_data_master_byteenable;                                               // cpu:d_byteenable -> mm_interconnect_0:cpu_data_master_byteenable
 	wire         cpu_data_master_read;                                                     // cpu:d_read -> mm_interconnect_0:cpu_data_master_read
 	wire         cpu_data_master_write;                                                    // cpu:d_write -> mm_interconnect_0:cpu_data_master_write
 	wire  [31:0] cpu_data_master_writedata;                                                // cpu:d_writedata -> mm_interconnect_0:cpu_data_master_writedata
 	wire  [31:0] cpu_instruction_master_readdata;                                          // mm_interconnect_0:cpu_instruction_master_readdata -> cpu:i_readdata
 	wire         cpu_instruction_master_waitrequest;                                       // mm_interconnect_0:cpu_instruction_master_waitrequest -> cpu:i_waitrequest
-	wire  [25:0] cpu_instruction_master_address;                                           // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
+	wire  [28:0] cpu_instruction_master_address;                                           // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
 	wire         cpu_instruction_master_read;                                              // cpu:i_read -> mm_interconnect_0:cpu_instruction_master_read
 	wire         mm_interconnect_0_jtag_uart_avalon_jtag_slave_chipselect;                 // mm_interconnect_0:jtag_uart_avalon_jtag_slave_chipselect -> jtag_uart:av_chipselect
 	wire  [31:0] mm_interconnect_0_jtag_uart_avalon_jtag_slave_readdata;                   // jtag_uart:av_readdata -> mm_interconnect_0:jtag_uart_avalon_jtag_slave_readdata
@@ -122,6 +133,15 @@ module DE2_115_SD_CARD_NIOS (
 	wire   [1:0] mm_interconnect_0_sma_out_s1_address;                                     // mm_interconnect_0:sma_out_s1_address -> sma_out:address
 	wire         mm_interconnect_0_sma_out_s1_write;                                       // mm_interconnect_0:sma_out_s1_write -> sma_out:write_n
 	wire  [31:0] mm_interconnect_0_sma_out_s1_writedata;                                   // mm_interconnect_0:sma_out_s1_writedata -> sma_out:writedata
+	wire         mm_interconnect_0_sdram_controller_s1_chipselect;                         // mm_interconnect_0:sdram_controller_s1_chipselect -> sdram_controller:az_cs
+	wire  [31:0] mm_interconnect_0_sdram_controller_s1_readdata;                           // sdram_controller:za_data -> mm_interconnect_0:sdram_controller_s1_readdata
+	wire         mm_interconnect_0_sdram_controller_s1_waitrequest;                        // sdram_controller:za_waitrequest -> mm_interconnect_0:sdram_controller_s1_waitrequest
+	wire  [24:0] mm_interconnect_0_sdram_controller_s1_address;                            // mm_interconnect_0:sdram_controller_s1_address -> sdram_controller:az_addr
+	wire         mm_interconnect_0_sdram_controller_s1_read;                               // mm_interconnect_0:sdram_controller_s1_read -> sdram_controller:az_rd_n
+	wire   [3:0] mm_interconnect_0_sdram_controller_s1_byteenable;                         // mm_interconnect_0:sdram_controller_s1_byteenable -> sdram_controller:az_be_n
+	wire         mm_interconnect_0_sdram_controller_s1_readdatavalid;                      // sdram_controller:za_valid -> mm_interconnect_0:sdram_controller_s1_readdatavalid
+	wire         mm_interconnect_0_sdram_controller_s1_write;                              // mm_interconnect_0:sdram_controller_s1_write -> sdram_controller:az_wr_n
+	wire  [31:0] mm_interconnect_0_sdram_controller_s1_writedata;                          // mm_interconnect_0:sdram_controller_s1_writedata -> sdram_controller:az_data
 	wire   [7:0] mm_interconnect_0_cfi_flash_uas_readdata;                                 // cfi_flash:uas_readdata -> mm_interconnect_0:cfi_flash_uas_readdata
 	wire         mm_interconnect_0_cfi_flash_uas_waitrequest;                              // cfi_flash:uas_waitrequest -> mm_interconnect_0:cfi_flash_uas_waitrequest
 	wire         mm_interconnect_0_cfi_flash_uas_debugaccess;                              // mm_interconnect_0:cfi_flash_uas_debugaccess -> cfi_flash:uas_debugaccess
@@ -244,14 +264,17 @@ module DE2_115_SD_CARD_NIOS (
 	wire         irq_mapper_receiver4_irq;                                                 // timer:irq -> irq_mapper:receiver4_irq
 	wire  [31:0] cpu_d_irq_irq;                                                            // irq_mapper:sender_irq -> cpu:d_irq
 	wire         rst_controller_reset_out_reset;                                           // rst_controller:reset_out -> [altpll:reset, mm_interconnect_0:altpll_inclk_interface_reset_reset_bridge_in_reset_reset, mm_interconnect_1:to_sw_sig_reset_reset_bridge_in_reset_reset, to_hw_port:reset_n, to_hw_sig:reset_n, to_sw_sig:reset_n]
+	wire         sys_sdram_pll_0_reset_source_reset;                                       // sys_sdram_pll_0:reset_source_reset -> [rst_controller:reset_in1, rst_controller_001:reset_in1, rst_controller_002:reset_in1, rst_controller_003:reset_in0]
 	wire         rst_controller_001_reset_out_reset;                                       // rst_controller_001:reset_out -> [cfi_flash:reset_reset, clock_crossing_io:s0_reset, cpu:reset_n, epp_i2c_sda:reset_n, i2c_scl:reset_n, i2c_sda:reset_n, irq_mapper:reset, jtag_uart:rst_n, key:reset_n, lcd:reset_n, ledg:reset_n, ledr:reset_n, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, mm_interconnect_1:seg7_clock_sink_reset_reset_bridge_in_reset_reset, rs232:reset_n, rst_translator:in_reset, sd_clk:reset_n, sd_cmd:reset_n, sd_dat:reset_n, sd_wp_n:reset_n, seg7:s_reset, sma_in:reset_n, sma_out:reset_n, sw:reset_n, timer:reset_n, tri_state_bridge_flash_bridge_0:reset, tri_state_flash_bridge_pinSharer_0:reset_reset]
 	wire         rst_controller_001_reset_out_reset_req;                                   // rst_controller_001:reset_req -> [cpu:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_002_reset_out_reset;                                       // rst_controller_002:reset_out -> [clock_crossing_io:m0_reset, mm_interconnect_1:clock_crossing_io_m0_reset_reset_bridge_in_reset_reset]
 	wire         rst_controller_003_reset_out_reset;                                       // rst_controller_003:reset_out -> [ir:reset_n, mm_interconnect_0:onchip_memory2_reset1_reset_bridge_in_reset_reset, mm_interconnect_1:ir_reset_reset_bridge_in_reset_reset, onchip_memory2:reset, rst_translator_001:in_reset]
 	wire         rst_controller_003_reset_out_reset_req;                                   // rst_controller_003:reset_req -> [onchip_memory2:reset_req, rst_translator_001:reset_req_in]
+	wire         rst_controller_004_reset_out_reset;                                       // rst_controller_004:reset_out -> [mm_interconnect_0:sdram_controller_reset_reset_bridge_in_reset_reset, sdram_controller:reset_n]
+	wire         rst_controller_005_reset_out_reset;                                       // rst_controller_005:reset_out -> sys_sdram_pll_0:ref_reset_reset
 
 	DE2_115_SD_CARD_NIOS_altpll altpll (
-		.clk       (clk_50_clk_in_clk),                            //       inclk_interface.clk
+		.clk       (sys_sdram_pll_0_sys_clk_clk),                  //       inclk_interface.clk
 		.reset     (rst_controller_reset_out_reset),               // inclk_interface_reset.reset
 		.read      (mm_interconnect_0_altpll_pll_slave_read),      //             pll_slave.read
 		.write     (mm_interconnect_0_altpll_pll_slave_write),     //                      .write
@@ -580,6 +603,29 @@ module DE2_115_SD_CARD_NIOS (
 		.in_port  (sd_wp_n_external_connection_export)     // external_connection.export
 	);
 
+	DE2_115_SD_CARD_NIOS_sdram_controller sdram_controller (
+		.clk            (sys_sdram_pll_0_sdram_clk_clk),                       //   clk.clk
+		.reset_n        (~rst_controller_004_reset_out_reset),                 // reset.reset_n
+		.az_addr        (mm_interconnect_0_sdram_controller_s1_address),       //    s1.address
+		.az_be_n        (~mm_interconnect_0_sdram_controller_s1_byteenable),   //      .byteenable_n
+		.az_cs          (mm_interconnect_0_sdram_controller_s1_chipselect),    //      .chipselect
+		.az_data        (mm_interconnect_0_sdram_controller_s1_writedata),     //      .writedata
+		.az_rd_n        (~mm_interconnect_0_sdram_controller_s1_read),         //      .read_n
+		.az_wr_n        (~mm_interconnect_0_sdram_controller_s1_write),        //      .write_n
+		.za_data        (mm_interconnect_0_sdram_controller_s1_readdata),      //      .readdata
+		.za_valid       (mm_interconnect_0_sdram_controller_s1_readdatavalid), //      .readdatavalid
+		.za_waitrequest (mm_interconnect_0_sdram_controller_s1_waitrequest),   //      .waitrequest
+		.zs_addr        (sdram_controller_addr),                               //  wire.export
+		.zs_ba          (sdram_controller_ba),                                 //      .export
+		.zs_cas_n       (sdram_controller_cas_n),                              //      .export
+		.zs_cke         (sdram_controller_cke),                                //      .export
+		.zs_cs_n        (sdram_controller_cs_n),                               //      .export
+		.zs_dq          (sdram_controller_dq),                                 //      .export
+		.zs_dqm         (sdram_controller_dqm),                                //      .export
+		.zs_ras_n       (sdram_controller_ras_n),                              //      .export
+		.zs_we_n        (sdram_controller_we_n)                                //      .export
+	);
+
 	SEG7_IF #(
 		.SEG7_NUM       (8),
 		.ADDR_WIDTH     (3),
@@ -627,6 +673,14 @@ module DE2_115_SD_CARD_NIOS (
 		.irq        (irq_mapper_receiver2_irq)             //                 irq.irq
 	);
 
+	DE2_115_SD_CARD_NIOS_sys_sdram_pll_0 sys_sdram_pll_0 (
+		.ref_clk_clk        (clk_50_clk_in_clk),                  //      ref_clk.clk
+		.ref_reset_reset    (rst_controller_005_reset_out_reset), //    ref_reset.reset
+		.sys_clk_clk        (sys_sdram_pll_0_sys_clk_clk),        //      sys_clk.clk
+		.sdram_clk_clk      (sys_sdram_pll_0_sdram_clk_clk),      //    sdram_clk.clk
+		.reset_source_reset (sys_sdram_pll_0_reset_source_reset)  // reset_source.reset
+	);
+
 	DE2_115_SD_CARD_NIOS_timer timer (
 		.clk        (c0_out_clk_clk),                        //   clk.clk
 		.reset_n    (~rst_controller_001_reset_out_reset),   // reset.reset_n
@@ -639,7 +693,7 @@ module DE2_115_SD_CARD_NIOS (
 	);
 
 	DE2_115_SD_CARD_NIOS_to_hw_port to_hw_port (
-		.clk        (clk_50_clk_in_clk),                          //                 clk.clk
+		.clk        (sys_sdram_pll_0_sys_clk_clk),                //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),            //               reset.reset_n
 		.address    (mm_interconnect_1_to_hw_port_s1_address),    //                  s1.address
 		.write_n    (~mm_interconnect_1_to_hw_port_s1_write),     //                    .write_n
@@ -650,7 +704,7 @@ module DE2_115_SD_CARD_NIOS (
 	);
 
 	DE2_115_SD_CARD_NIOS_to_hw_sig to_hw_sig (
-		.clk        (clk_50_clk_in_clk),                         //                 clk.clk
+		.clk        (sys_sdram_pll_0_sys_clk_clk),               //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),           //               reset.reset_n
 		.address    (mm_interconnect_1_to_hw_sig_s1_address),    //                  s1.address
 		.write_n    (~mm_interconnect_1_to_hw_sig_s1_write),     //                    .write_n
@@ -661,7 +715,7 @@ module DE2_115_SD_CARD_NIOS (
 	);
 
 	DE2_115_SD_CARD_NIOS_to_sw_sig to_sw_sig (
-		.clk      (clk_50_clk_in_clk),                       //                 clk.clk
+		.clk      (sys_sdram_pll_0_sys_clk_clk),             //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
 		.address  (mm_interconnect_1_to_sw_sig_s1_address),  //                  s1.address
 		.readdata (mm_interconnect_1_to_sw_sig_s1_readdata), //                    .readdata
@@ -712,10 +766,12 @@ module DE2_115_SD_CARD_NIOS (
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_0 mm_interconnect_0 (
 		.altpll_c0_clk                                            (c0_out_clk_clk),                                            //                                          altpll_c0.clk
-		.clk_50_clk_clk                                           (clk_50_clk_in_clk),                                         //                                         clk_50_clk.clk
+		.sys_sdram_pll_0_sdram_clk_clk                            (sys_sdram_pll_0_sdram_clk_clk),                             //                          sys_sdram_pll_0_sdram_clk.clk
+		.sys_sdram_pll_0_sys_clk_clk                              (sys_sdram_pll_0_sys_clk_clk),                               //                            sys_sdram_pll_0_sys_clk.clk
 		.altpll_inclk_interface_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                            // altpll_inclk_interface_reset_reset_bridge_in_reset.reset
 		.cpu_reset_n_reset_bridge_in_reset_reset                  (rst_controller_001_reset_out_reset),                        //                  cpu_reset_n_reset_bridge_in_reset.reset
 		.onchip_memory2_reset1_reset_bridge_in_reset_reset        (rst_controller_003_reset_out_reset),                        //        onchip_memory2_reset1_reset_bridge_in_reset.reset
+		.sdram_controller_reset_reset_bridge_in_reset_reset       (rst_controller_004_reset_out_reset),                        //       sdram_controller_reset_reset_bridge_in_reset.reset
 		.cpu_data_master_address                                  (cpu_data_master_address),                                   //                                    cpu_data_master.address
 		.cpu_data_master_waitrequest                              (cpu_data_master_waitrequest),                               //                                                   .waitrequest
 		.cpu_data_master_byteenable                               (cpu_data_master_byteenable),                                //                                                   .byteenable
@@ -776,6 +832,15 @@ module DE2_115_SD_CARD_NIOS (
 		.onchip_memory2_s1_byteenable                             (mm_interconnect_0_onchip_memory2_s1_byteenable),            //                                                   .byteenable
 		.onchip_memory2_s1_chipselect                             (mm_interconnect_0_onchip_memory2_s1_chipselect),            //                                                   .chipselect
 		.onchip_memory2_s1_clken                                  (mm_interconnect_0_onchip_memory2_s1_clken),                 //                                                   .clken
+		.sdram_controller_s1_address                              (mm_interconnect_0_sdram_controller_s1_address),             //                                sdram_controller_s1.address
+		.sdram_controller_s1_write                                (mm_interconnect_0_sdram_controller_s1_write),               //                                                   .write
+		.sdram_controller_s1_read                                 (mm_interconnect_0_sdram_controller_s1_read),                //                                                   .read
+		.sdram_controller_s1_readdata                             (mm_interconnect_0_sdram_controller_s1_readdata),            //                                                   .readdata
+		.sdram_controller_s1_writedata                            (mm_interconnect_0_sdram_controller_s1_writedata),           //                                                   .writedata
+		.sdram_controller_s1_byteenable                           (mm_interconnect_0_sdram_controller_s1_byteenable),          //                                                   .byteenable
+		.sdram_controller_s1_readdatavalid                        (mm_interconnect_0_sdram_controller_s1_readdatavalid),       //                                                   .readdatavalid
+		.sdram_controller_s1_waitrequest                          (mm_interconnect_0_sdram_controller_s1_waitrequest),         //                                                   .waitrequest
+		.sdram_controller_s1_chipselect                           (mm_interconnect_0_sdram_controller_s1_chipselect),          //                                                   .chipselect
 		.sma_in_s1_address                                        (mm_interconnect_0_sma_in_s1_address),                       //                                          sma_in_s1.address
 		.sma_in_s1_readdata                                       (mm_interconnect_0_sma_in_s1_readdata),                      //                                                   .readdata
 		.sma_out_s1_address                                       (mm_interconnect_0_sma_out_s1_address),                      //                                         sma_out_s1.address
@@ -788,7 +853,7 @@ module DE2_115_SD_CARD_NIOS (
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1 mm_interconnect_1 (
 		.altpll_c0_clk                                          (c0_out_clk_clk),                                    //                                        altpll_c0.clk
 		.altpll_c2_clk                                          (c2_out_clk_clk),                                    //                                        altpll_c2.clk
-		.clk_50_clk_clk                                         (clk_50_clk_in_clk),                                 //                                       clk_50_clk.clk
+		.sys_sdram_pll_0_sys_clk_clk                            (sys_sdram_pll_0_sys_clk_clk),                       //                          sys_sdram_pll_0_sys_clk.clk
 		.clock_crossing_io_m0_reset_reset_bridge_in_reset_reset (rst_controller_002_reset_out_reset),                // clock_crossing_io_m0_reset_reset_bridge_in_reset.reset
 		.epp_i2c_scl_reset_reset_bridge_in_reset_reset          (cpu_jtag_debug_module_reset_reset),                 //          epp_i2c_scl_reset_reset_bridge_in_reset.reset
 		.ir_reset_reset_bridge_in_reset_reset                   (rst_controller_003_reset_out_reset),                //                   ir_reset_reset_bridge_in_reset.reset
@@ -937,41 +1002,41 @@ module DE2_115_SD_CARD_NIOS (
 		.USE_RESET_REQUEST_IN15    (0),
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller (
-		.reset_in0      (~reset_reset_n),                    // reset_in0.reset
-		.reset_in1      (cpu_jtag_debug_module_reset_reset), // reset_in1.reset
-		.clk            (clk_50_clk_in_clk),                 //       clk.clk
-		.reset_out      (rst_controller_reset_out_reset),    // reset_out.reset
-		.reset_req      (),                                  // (terminated)
-		.reset_req_in0  (1'b0),                              // (terminated)
-		.reset_req_in1  (1'b0),                              // (terminated)
-		.reset_in2      (1'b0),                              // (terminated)
-		.reset_req_in2  (1'b0),                              // (terminated)
-		.reset_in3      (1'b0),                              // (terminated)
-		.reset_req_in3  (1'b0),                              // (terminated)
-		.reset_in4      (1'b0),                              // (terminated)
-		.reset_req_in4  (1'b0),                              // (terminated)
-		.reset_in5      (1'b0),                              // (terminated)
-		.reset_req_in5  (1'b0),                              // (terminated)
-		.reset_in6      (1'b0),                              // (terminated)
-		.reset_req_in6  (1'b0),                              // (terminated)
-		.reset_in7      (1'b0),                              // (terminated)
-		.reset_req_in7  (1'b0),                              // (terminated)
-		.reset_in8      (1'b0),                              // (terminated)
-		.reset_req_in8  (1'b0),                              // (terminated)
-		.reset_in9      (1'b0),                              // (terminated)
-		.reset_req_in9  (1'b0),                              // (terminated)
-		.reset_in10     (1'b0),                              // (terminated)
-		.reset_req_in10 (1'b0),                              // (terminated)
-		.reset_in11     (1'b0),                              // (terminated)
-		.reset_req_in11 (1'b0),                              // (terminated)
-		.reset_in12     (1'b0),                              // (terminated)
-		.reset_req_in12 (1'b0),                              // (terminated)
-		.reset_in13     (1'b0),                              // (terminated)
-		.reset_req_in13 (1'b0),                              // (terminated)
-		.reset_in14     (1'b0),                              // (terminated)
-		.reset_req_in14 (1'b0),                              // (terminated)
-		.reset_in15     (1'b0),                              // (terminated)
-		.reset_req_in15 (1'b0)                               // (terminated)
+		.reset_in0      (cpu_jtag_debug_module_reset_reset),  // reset_in0.reset
+		.reset_in1      (sys_sdram_pll_0_reset_source_reset), // reset_in1.reset
+		.clk            (sys_sdram_pll_0_sys_clk_clk),        //       clk.clk
+		.reset_out      (rst_controller_reset_out_reset),     // reset_out.reset
+		.reset_req      (),                                   // (terminated)
+		.reset_req_in0  (1'b0),                               // (terminated)
+		.reset_req_in1  (1'b0),                               // (terminated)
+		.reset_in2      (1'b0),                               // (terminated)
+		.reset_req_in2  (1'b0),                               // (terminated)
+		.reset_in3      (1'b0),                               // (terminated)
+		.reset_req_in3  (1'b0),                               // (terminated)
+		.reset_in4      (1'b0),                               // (terminated)
+		.reset_req_in4  (1'b0),                               // (terminated)
+		.reset_in5      (1'b0),                               // (terminated)
+		.reset_req_in5  (1'b0),                               // (terminated)
+		.reset_in6      (1'b0),                               // (terminated)
+		.reset_req_in6  (1'b0),                               // (terminated)
+		.reset_in7      (1'b0),                               // (terminated)
+		.reset_req_in7  (1'b0),                               // (terminated)
+		.reset_in8      (1'b0),                               // (terminated)
+		.reset_req_in8  (1'b0),                               // (terminated)
+		.reset_in9      (1'b0),                               // (terminated)
+		.reset_req_in9  (1'b0),                               // (terminated)
+		.reset_in10     (1'b0),                               // (terminated)
+		.reset_req_in10 (1'b0),                               // (terminated)
+		.reset_in11     (1'b0),                               // (terminated)
+		.reset_req_in11 (1'b0),                               // (terminated)
+		.reset_in12     (1'b0),                               // (terminated)
+		.reset_req_in12 (1'b0),                               // (terminated)
+		.reset_in13     (1'b0),                               // (terminated)
+		.reset_req_in13 (1'b0),                               // (terminated)
+		.reset_in14     (1'b0),                               // (terminated)
+		.reset_req_in14 (1'b0),                               // (terminated)
+		.reset_in15     (1'b0),                               // (terminated)
+		.reset_req_in15 (1'b0)                                // (terminated)
 	);
 
 	altera_reset_controller #(
@@ -1000,8 +1065,8 @@ module DE2_115_SD_CARD_NIOS (
 		.USE_RESET_REQUEST_IN15    (0),
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller_001 (
-		.reset_in0      (~reset_reset_n),                         // reset_in0.reset
-		.reset_in1      (cpu_jtag_debug_module_reset_reset),      // reset_in1.reset
+		.reset_in0      (cpu_jtag_debug_module_reset_reset),      // reset_in0.reset
+		.reset_in1      (sys_sdram_pll_0_reset_source_reset),     // reset_in1.reset
 		.clk            (c0_out_clk_clk),                         //       clk.clk
 		.reset_out      (rst_controller_001_reset_out_reset),     // reset_out.reset
 		.reset_req      (rst_controller_001_reset_out_reset_req), //          .reset_req
@@ -1063,8 +1128,8 @@ module DE2_115_SD_CARD_NIOS (
 		.USE_RESET_REQUEST_IN15    (0),
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller_002 (
-		.reset_in0      (~reset_reset_n),                     // reset_in0.reset
-		.reset_in1      (cpu_jtag_debug_module_reset_reset),  // reset_in1.reset
+		.reset_in0      (cpu_jtag_debug_module_reset_reset),  // reset_in0.reset
+		.reset_in1      (sys_sdram_pll_0_reset_source_reset), // reset_in1.reset
 		.clk            (c2_out_clk_clk),                     //       clk.clk
 		.reset_out      (rst_controller_002_reset_out_reset), // reset_out.reset
 		.reset_req      (),                                   // (terminated)
@@ -1126,7 +1191,7 @@ module DE2_115_SD_CARD_NIOS (
 		.USE_RESET_REQUEST_IN15    (0),
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller_003 (
-		.reset_in0      (~reset_reset_n),                         // reset_in0.reset
+		.reset_in0      (sys_sdram_pll_0_reset_source_reset),     // reset_in0.reset
 		.clk            (c0_out_clk_clk),                         //       clk.clk
 		.reset_out      (rst_controller_003_reset_out_reset),     // reset_out.reset
 		.reset_req      (rst_controller_003_reset_out_reset_req), //          .reset_req
@@ -1161,6 +1226,132 @@ module DE2_115_SD_CARD_NIOS (
 		.reset_req_in14 (1'b0),                                   // (terminated)
 		.reset_in15     (1'b0),                                   // (terminated)
 		.reset_req_in15 (1'b0)                                    // (terminated)
+	);
+
+	altera_reset_controller #(
+		.NUM_RESET_INPUTS          (1),
+		.OUTPUT_RESET_SYNC_EDGES   ("deassert"),
+		.SYNC_DEPTH                (2),
+		.RESET_REQUEST_PRESENT     (0),
+		.RESET_REQ_WAIT_TIME       (1),
+		.MIN_RST_ASSERTION_TIME    (3),
+		.RESET_REQ_EARLY_DSRT_TIME (1),
+		.USE_RESET_REQUEST_IN0     (0),
+		.USE_RESET_REQUEST_IN1     (0),
+		.USE_RESET_REQUEST_IN2     (0),
+		.USE_RESET_REQUEST_IN3     (0),
+		.USE_RESET_REQUEST_IN4     (0),
+		.USE_RESET_REQUEST_IN5     (0),
+		.USE_RESET_REQUEST_IN6     (0),
+		.USE_RESET_REQUEST_IN7     (0),
+		.USE_RESET_REQUEST_IN8     (0),
+		.USE_RESET_REQUEST_IN9     (0),
+		.USE_RESET_REQUEST_IN10    (0),
+		.USE_RESET_REQUEST_IN11    (0),
+		.USE_RESET_REQUEST_IN12    (0),
+		.USE_RESET_REQUEST_IN13    (0),
+		.USE_RESET_REQUEST_IN14    (0),
+		.USE_RESET_REQUEST_IN15    (0),
+		.ADAPT_RESET_REQUEST       (0)
+	) rst_controller_004 (
+		.reset_in0      (~reset_reset_n),                     // reset_in0.reset
+		.clk            (sys_sdram_pll_0_sdram_clk_clk),      //       clk.clk
+		.reset_out      (rst_controller_004_reset_out_reset), // reset_out.reset
+		.reset_req      (),                                   // (terminated)
+		.reset_req_in0  (1'b0),                               // (terminated)
+		.reset_in1      (1'b0),                               // (terminated)
+		.reset_req_in1  (1'b0),                               // (terminated)
+		.reset_in2      (1'b0),                               // (terminated)
+		.reset_req_in2  (1'b0),                               // (terminated)
+		.reset_in3      (1'b0),                               // (terminated)
+		.reset_req_in3  (1'b0),                               // (terminated)
+		.reset_in4      (1'b0),                               // (terminated)
+		.reset_req_in4  (1'b0),                               // (terminated)
+		.reset_in5      (1'b0),                               // (terminated)
+		.reset_req_in5  (1'b0),                               // (terminated)
+		.reset_in6      (1'b0),                               // (terminated)
+		.reset_req_in6  (1'b0),                               // (terminated)
+		.reset_in7      (1'b0),                               // (terminated)
+		.reset_req_in7  (1'b0),                               // (terminated)
+		.reset_in8      (1'b0),                               // (terminated)
+		.reset_req_in8  (1'b0),                               // (terminated)
+		.reset_in9      (1'b0),                               // (terminated)
+		.reset_req_in9  (1'b0),                               // (terminated)
+		.reset_in10     (1'b0),                               // (terminated)
+		.reset_req_in10 (1'b0),                               // (terminated)
+		.reset_in11     (1'b0),                               // (terminated)
+		.reset_req_in11 (1'b0),                               // (terminated)
+		.reset_in12     (1'b0),                               // (terminated)
+		.reset_req_in12 (1'b0),                               // (terminated)
+		.reset_in13     (1'b0),                               // (terminated)
+		.reset_req_in13 (1'b0),                               // (terminated)
+		.reset_in14     (1'b0),                               // (terminated)
+		.reset_req_in14 (1'b0),                               // (terminated)
+		.reset_in15     (1'b0),                               // (terminated)
+		.reset_req_in15 (1'b0)                                // (terminated)
+	);
+
+	altera_reset_controller #(
+		.NUM_RESET_INPUTS          (1),
+		.OUTPUT_RESET_SYNC_EDGES   ("deassert"),
+		.SYNC_DEPTH                (2),
+		.RESET_REQUEST_PRESENT     (0),
+		.RESET_REQ_WAIT_TIME       (1),
+		.MIN_RST_ASSERTION_TIME    (3),
+		.RESET_REQ_EARLY_DSRT_TIME (1),
+		.USE_RESET_REQUEST_IN0     (0),
+		.USE_RESET_REQUEST_IN1     (0),
+		.USE_RESET_REQUEST_IN2     (0),
+		.USE_RESET_REQUEST_IN3     (0),
+		.USE_RESET_REQUEST_IN4     (0),
+		.USE_RESET_REQUEST_IN5     (0),
+		.USE_RESET_REQUEST_IN6     (0),
+		.USE_RESET_REQUEST_IN7     (0),
+		.USE_RESET_REQUEST_IN8     (0),
+		.USE_RESET_REQUEST_IN9     (0),
+		.USE_RESET_REQUEST_IN10    (0),
+		.USE_RESET_REQUEST_IN11    (0),
+		.USE_RESET_REQUEST_IN12    (0),
+		.USE_RESET_REQUEST_IN13    (0),
+		.USE_RESET_REQUEST_IN14    (0),
+		.USE_RESET_REQUEST_IN15    (0),
+		.ADAPT_RESET_REQUEST       (0)
+	) rst_controller_005 (
+		.reset_in0      (~reset_reset_n),                     // reset_in0.reset
+		.clk            (clk_50_clk_in_clk),                  //       clk.clk
+		.reset_out      (rst_controller_005_reset_out_reset), // reset_out.reset
+		.reset_req      (),                                   // (terminated)
+		.reset_req_in0  (1'b0),                               // (terminated)
+		.reset_in1      (1'b0),                               // (terminated)
+		.reset_req_in1  (1'b0),                               // (terminated)
+		.reset_in2      (1'b0),                               // (terminated)
+		.reset_req_in2  (1'b0),                               // (terminated)
+		.reset_in3      (1'b0),                               // (terminated)
+		.reset_req_in3  (1'b0),                               // (terminated)
+		.reset_in4      (1'b0),                               // (terminated)
+		.reset_req_in4  (1'b0),                               // (terminated)
+		.reset_in5      (1'b0),                               // (terminated)
+		.reset_req_in5  (1'b0),                               // (terminated)
+		.reset_in6      (1'b0),                               // (terminated)
+		.reset_req_in6  (1'b0),                               // (terminated)
+		.reset_in7      (1'b0),                               // (terminated)
+		.reset_req_in7  (1'b0),                               // (terminated)
+		.reset_in8      (1'b0),                               // (terminated)
+		.reset_req_in8  (1'b0),                               // (terminated)
+		.reset_in9      (1'b0),                               // (terminated)
+		.reset_req_in9  (1'b0),                               // (terminated)
+		.reset_in10     (1'b0),                               // (terminated)
+		.reset_req_in10 (1'b0),                               // (terminated)
+		.reset_in11     (1'b0),                               // (terminated)
+		.reset_req_in11 (1'b0),                               // (terminated)
+		.reset_in12     (1'b0),                               // (terminated)
+		.reset_req_in12 (1'b0),                               // (terminated)
+		.reset_in13     (1'b0),                               // (terminated)
+		.reset_req_in13 (1'b0),                               // (terminated)
+		.reset_in14     (1'b0),                               // (terminated)
+		.reset_req_in14 (1'b0),                               // (terminated)
+		.reset_in15     (1'b0),                               // (terminated)
+		.reset_req_in15 (1'b0)                                // (terminated)
 	);
 
 endmodule

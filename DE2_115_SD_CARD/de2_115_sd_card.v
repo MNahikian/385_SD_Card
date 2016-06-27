@@ -344,7 +344,18 @@ inout		        [6:0]		EX_IO
 								 // Handshake IO
 								  .to_hw_port_export(to_hw_port),
 								  .to_hw_sig_export(to_hw_sig),
-								  .to_sw_sig_export(to_sw_sig)
+								  .to_sw_sig_export(to_sw_sig),
+								  
+								 // SDRAM Controller
+								  .sdram_controller_addr(DRAM_ADDR),                                         //                    sdram_controller.addr
+								  .sdram_controller_ba(DRAM_BA),                                             //                                    .ba
+								  .sdram_controller_cas_n(DRAM_CAS_N),                                       //                                    .cas_n
+								  .sdram_controller_cke(DRAM_CKE),                                           //                                    .cke
+								  .sdram_controller_cs_n(DRAM_CS_N),                                         //                                    .cs_n
+								  .sdram_controller_dq(DRAM_DQ),                                             //                                    .dq
+								  .sdram_controller_dqm(DRAM_DQM),                                           //                                    .dqm
+								  .sdram_controller_ras_n(DRAM_RAS_N),                                       //                                    .ras_n
+								  .sdram_controller_we_n(DRAM_WE_N)                                          //                                    .we_n
 							  );
 							  
 	

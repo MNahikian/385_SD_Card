@@ -3,3 +3,8 @@ PLLJITTER	35
 PLLSPEmax	84
 PLLSPEmin	-53
 
+PLL_Name	DE2_115_SD_CARD_NIOS:DE2_115_qsys_inst|DE2_115_SD_CARD_NIOS_sys_sdram_pll_0:sys_sdram_pll_0|altera_up_altpll:sys_pll|altpll:PLL_for_DE_Series_Boards|altpll_3lb2:auto_generated|pll1
+PLLJITTER	35
+PLLSPEmax	84
+PLLSPEmin	-53
+

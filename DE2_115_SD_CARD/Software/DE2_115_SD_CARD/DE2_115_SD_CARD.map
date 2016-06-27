@@ -285,6 +285,7 @@ Name             Origin             Length             Attributes
 cfi_flash        0x0000000001800000 0x0000000000800000
 reset            0x0000000002040000 0x0000000000000020
 onchip_memory2   0x0000000002040020 0x000000000003ffe0
+sdram_controller 0x0000000010000000 0x0000000008000000
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
@@ -310,6 +311,7 @@ END GROUP
 LOAD c:/altera/15.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.1/mno-hw-mul\libgcc.a
                 0x0000000001800000                __alt_mem_cfi_flash = 0x1800000
                 0x0000000002040000                __alt_mem_onchip_memory2 = 0x2040000
+                0x0000000010000000                __alt_mem_sdram_controller = 0x10000000
 
 .entry          0x0000000002040000       0x20
  *(.entry)
@@ -1352,6 +1354,14 @@ LOAD c:/altera/15.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4
                 0x0000000002062390                end = ABSOLUTE (.)
                 0x0000000002062390                __alt_stack_base = ABSOLUTE (.)
                 0x0000000002062390                PROVIDE (_alt_partition_onchip_memory2_load_addr, LOADADDR (.onchip_memory2))
+
+.sdram_controller
+                0x0000000010000000        0x0 load address 0x0000000002062390
+                0x0000000010000000                PROVIDE (_alt_partition_sdram_controller_start, ABSOLUTE (.))
+ *(.sdram_controller .sdram_controller. sdram_controller.*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                PROVIDE (_alt_partition_sdram_controller_end, ABSOLUTE (.))
+                0x0000000002062390                PROVIDE (_alt_partition_sdram_controller_load_addr, LOADADDR (.sdram_controller))
 
 .stab
  *(.stab)

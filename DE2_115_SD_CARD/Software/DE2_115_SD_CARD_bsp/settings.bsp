@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 23, 2016 3:51:19 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1466715079056</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jun 27, 2016 3:53:05 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1467060785178</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mitch\Dropbox\385_SD_Card\DE2_115_SD_CARD\Software\DE2_115_SD_CARD_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\DE2_115_SD_CARD_NIOS.sopcinfo</SopcDesignFile>
@@ -1065,6 +1065,12 @@
                 <addressRange>0x02081050 - 0x02081057</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sdram_controller</slaveDescriptor>
+                <addressRange>0x10000000 - 0x17FFFFFF</addressRange>
+                <addressSpan>134217728</addressSpan>
+                <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
