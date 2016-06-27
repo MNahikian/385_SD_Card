@@ -287,11 +287,20 @@ int main()
     const alt_u32 LED_NG_PATTERN = 0xFF;
     const alt_u32 LED_PASS_PATTERN = 0x00;
     const char temp[] = "Test String\0";
+    const long arbnum1 = 0xAABB;
+    const long arbnum2 = 0x1234;
+    const long arbnum3 = 0xDEAD;
     FAT_HANDLE hFat;
 
     LCD_Open();
 
     printf("========== DE2-115 SDCARD Demo ==========\n");
+
+    memset(SDRAM_CONTROLLER_BASE, 0, 200);
+    memcpy(SDRAM_CONTROLLER_BASE, &arbnum1, 2);
+    memcpy(SDRAM_CONTROLLER_BASE+0x10, &arbnum2, 2);
+    memcpy(SDRAM_CONTROLLER_BASE+0x40, &arbnum3, 2);
+
     LCD_TextOut("SD -> Memory\n");usleep(1000000);
     
     while(1){
