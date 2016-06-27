@@ -1,7 +1,7 @@
-# $File: //acds/rel/14.1/ip/sopc/components/altera_avalon_dc_fifo/altera_avalon_dc_fifo.sdc $
-# $Revision: #2 $
-# $Date: 2014/10/24 $
-# $Author: jyeap $
+# $File: //acds/rel/15.0/ip/sopc/components/altera_avalon_dc_fifo/altera_avalon_dc_fifo.sdc $
+# $Revision: #1 $
+# $Date: 2015/02/08 $
+# $Author: swbranch $
 #-------------------------------------------------------------------------------
 # TimeQuest constraints to constrain the timing across asynchronous clock domain crossings.
 # The idea is to minimize skew to less than one clock period to keep the gray encoding, 

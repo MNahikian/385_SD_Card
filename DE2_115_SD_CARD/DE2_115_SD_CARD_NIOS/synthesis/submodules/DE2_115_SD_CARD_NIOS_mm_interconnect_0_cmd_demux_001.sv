@@ -1,4 +1,4 @@
-// (C) 2001-2014 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/10/06 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 
 // -------------------------------------
@@ -31,7 +31,7 @@
 //   ST_DATA_W:           102
 //   ST_CHANNEL_W:        8
 //   NUM_OUTPUTS:         3
-//   VALID_WIDTH:         8
+//   VALID_WIDTH:         1
 // ------------------------------------------
 
 //------------------------------------------
@@ -45,7 +45,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_cmd_demux_001
     // -------------------
     // Sink
     // -------------------
-    input  [8-1      : 0]   sink_valid,
+    input  [1-1      : 0]   sink_valid,
     input  [102-1    : 0]   sink_data, // ST_DATA_W=102
     input  [8-1 : 0]   sink_channel, // ST_CHANNEL_W=8
     input                         sink_startofpacket,
@@ -99,21 +99,21 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_cmd_demux_001
         src0_endofpacket   = sink_endofpacket;
         src0_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src0_valid         = sink_channel[0] && sink_valid[0];
+        src0_valid         = sink_channel[0] && sink_valid;
 
         src1_data          = sink_data;
         src1_startofpacket = sink_startofpacket;
         src1_endofpacket   = sink_endofpacket;
         src1_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src1_valid         = sink_channel[1] && sink_valid[1];
+        src1_valid         = sink_channel[1] && sink_valid;
 
         src2_data          = sink_data;
         src2_startofpacket = sink_startofpacket;
         src2_endofpacket   = sink_endofpacket;
         src2_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src2_valid         = sink_channel[2] && sink_valid[2];
+        src2_valid         = sink_channel[2] && sink_valid;
 
     end
 

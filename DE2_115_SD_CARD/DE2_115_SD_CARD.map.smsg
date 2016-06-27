@@ -1,5 +1,5 @@
-Warning (10273): Verilog HDL warning at de2_115_sd_card.v(388): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at de2_115_sd_card.v(389): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at de2_115_sd_card.v(396): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at de2_115_sd_card.v(397): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(67): object "HEX0" differs only in case from object "Hex0" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(68): object "HEX1" differs only in case from object "Hex1" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(69): object "HEX2" differs only in case from object "Hex2" in the same scope

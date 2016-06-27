@@ -93,15 +93,15 @@ OBJ_DIR := ./obj
 
 # This following VERSION comment indicates the version of the tool used to 
 # generate this makefile. A makefile variable is provided for VERSION as well. 
-# ACDS_VERSION: 14.1
-ACDS_VERSION := 14.1
+# ACDS_VERSION: 15.0
+ACDS_VERSION := 15.0
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 186
+# BUILD_NUMBER: 145
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := C:/Users/Mitch/Dropbox/385_SD_Card/DE2_115_SD_CARD/DE2_115_SD_CARD_NIOS.sopcinfo
+SOPC_FILE := ../../DE2_115_SD_CARD_NIOS.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

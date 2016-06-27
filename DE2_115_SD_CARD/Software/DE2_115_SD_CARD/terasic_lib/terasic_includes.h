@@ -53,8 +53,6 @@
 #define DEBUG_DUMP  /*printf */ 
 
 
-typedef int bool;
-#define TRUE    1
-#define FALSE   0
+typedef enum { FALSE, TRUE } bool;
 
 #endif /*TERASIC_INCLUDES_H_*/

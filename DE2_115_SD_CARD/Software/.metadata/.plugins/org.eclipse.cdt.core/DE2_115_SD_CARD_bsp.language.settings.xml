@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.2024935641" name="Nios II">
+	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.265725377" name="Nios II">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="altera.tool.Nios2GCCBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.8.3/include">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.9.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.8.3/include-fixed">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.9.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/nios2-elf/include">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/nios2-elf/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="NIOS2" value="1">
@@ -250,13 +250,19 @@
 					<entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__GCC_IEC_559" value="0">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__GCC_IEC_559_COMPLEX" value="0">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__GNUC_GNU_INLINE__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="8">
+					<entry kind="macro" name="__GNUC_MINOR__" value="9">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="3">
+					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC__" value="4">
@@ -610,7 +616,7 @@
 					<entry kind="macro" name="__USING_SJLJ_EXCEPTIONS__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;4.8.3 20140320 (prerelease)&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;4.9.1&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="2147483647">
@@ -637,6 +643,9 @@
 					<entry kind="macro" name="__nios2__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__nios2_arch__" value="1">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__nios2_little_endian" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -651,22 +660,22 @@
 					</entry>
 				</language>
 				<language id="org.eclipse.cdt.core.g++">
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/nios2-elf/include/c++/4.8.3">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/nios2-elf/include/c++/4.9.1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/nios2-elf/include/c++/4.8.3/nios2-elf">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/nios2-elf/include/c++/4.9.1/nios2-elf">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/nios2-elf/include/c++/4.8.3/backward">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/nios2-elf/include/c++/4.9.1/backward">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.8.3/include">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.9.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.8.3/include-fixed">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/lib/gcc/nios2-elf/4.9.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/altera/14.1/nios2eds/bin/gnu/H-x86_64-mingw32/nios2-elf/include">
+					<entry kind="includePath" name="C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/nios2-elf/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="NIOS2" value="1">
@@ -912,13 +921,19 @@
 					<entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__GCC_IEC_559" value="0">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__GCC_IEC_559_COMPLEX" value="0">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__GNUC_GNU_INLINE__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="8">
+					<entry kind="macro" name="__GNUC_MINOR__" value="9">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="3">
+					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC__" value="4">
@@ -1281,7 +1296,7 @@
 					<entry kind="macro" name="__USING_SJLJ_EXCEPTIONS__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;4.8.3 20140320 (prerelease)&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;4.9.1&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="2147483647">
@@ -1309,6 +1324,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__nios2__" value="1">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__nios2_arch__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__nios2_little_endian" value="1">

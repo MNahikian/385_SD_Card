@@ -34,55 +34,180 @@
 // Supported SDCARD: SD, HCSD
 
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
 
-volatile unsigned int *TO_HW_PORT  	= (unsigned int*)0x140; //make a pointer to access the PIO block
-volatile unsigned int *TO_HW_SIG   	= (unsigned int*)0x150; //make a pointer to access the PIO block
-volatile unsigned int *TO_SW_SIG   	= (unsigned int*)0x160; //make a pointer to access the PIO block
+#define UP 0
+#define DOWN 1
+#define KEY0 0x1
+#define KEY1 0x2
+#define KEY2 0x4
+#define KEY3 0x8
 
+static FILE*fp=0;
+static const char* selector[] = {">\0", " \0"};
+
+bool LCD_Open(void){
+	fp = fopen(LCD_NAME, "w");
+	if(fp)
+		return TRUE;
+	return FALSE;
+}
+bool LCD_TextOut(char* pText){
+	if(!fp)return FALSE;
+	fwrite(pText, strlen(pText), 1, fp);
+	return TRUE;
+}
+bool LCD_Clear(void){
+	char szText[32]="\n\n";
+	if(!fp) return FALSE;
+	fwrite(szText, strlen(szText), 1, fp);
+	return TRUE;
+}
+void LCD_Close(void){
+	if(fp) fclose(fp);
+	fp = 0;
+}
+
+char *substring(char *string, int position, int length)
+{
+   char *pointer;
+   int c;
+
+   pointer = malloc(length+1);
+
+   if (pointer == NULL){
+      printf("Unable to allocate memory.\n");
+      exit(1);
+   }
+
+   for (c = 0 ; c < length ; c++){
+      *(pointer+c) = *(string+position);
+      string++;
+   }
+
+   *(pointer+c) = '\0';
+
+   return pointer;
+}
+
+int selectionList(char selections[][255], int numSelections){
+	char updown = UP;
+	int numSelected = 0;
+	bool selected = FALSE;
+	bool changed = TRUE;
+
+	while(!selected){
+		if(changed){
+			LCD_TextOut(selector[updown]);
+			LCD_TextOut(substring(selections[numSelected-updown], 0, 15));
+			LCD_TextOut("\n");
+			LCD_TextOut(selector[!updown]);
+			LCD_TextOut(substring(selections[numSelected+(!updown)], 0, 15));
+			LCD_TextOut("\n");
+			changed = FALSE;
+		}
+
+		switch((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f){
+			case KEY0:
+				selected = TRUE;
+				break;
+			case KEY1:
+				updown = DOWN;
+				numSelected++;
+				changed = TRUE;
+		        while ((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f & KEY1);
+				break;
+			case KEY2:
+				updown = UP;
+				numSelected--;
+				changed = TRUE;
+		        while ((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f & KEY2);
+				break;
+			default:
+				changed = FALSE;
+				break;
+		}
+
+		if(numSelected < 0) numSelected = 0;
+		if(numSelected >= numSelections) numSelected = numSelections-1;
+
+	}
+
+	return numSelected;
+}
 
 bool Fat_Test(FAT_HANDLE hFat){
-	int dummy;
-	*TO_HW_SIG = 0;
+    IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
     bool bSuccess;
     int nCount = 0;
-    char* pDumpFile[256];
+    char pDumpFile[256];
+    char filenames[Fat_FileCount(hFat)][255]; // Filename buffer
+    char tempName[255];
+    alt_u8 numWrite;
+    int i;
+
     FAT_BROWSE_HANDLE hBrowse;
     FILE_CONTEXT FileContext;
-    
+
     bSuccess = Fat_FileBrowseBegin(hFat, &hBrowse);
     if (bSuccess){
         while(Fat_FileBrowseNext(&hBrowse, &FileContext)){
             if (FileContext.bLongFilename){
+            	numWrite = 0;
                 alt_u16 *pData16;
                 alt_u8 *pData8;
                 pData16 = (alt_u16 *)FileContext.szName;
                 pData8 = FileContext.szName;
                 printf("[%d]", nCount);
+
                 while(*pData16){
-                    if (*pData8)
+
+                    if (*pData8){
                         printf("%c", *pData8);
-                    pData8++;
-                    if (*pData8)
+                        tempName[numWrite++] = *pData8;
+                    }pData8++;
+
+                    if (*pData8){
                         printf("%c", *pData8);
-                    pData8++;                    
-                    //    
+                        tempName[numWrite++] = *pData8;
+                    }pData8++;
+
                     pData16++;
                 }
+
                 printf("\n");
             }else{
                 printf("[%d]%s\n", nCount, FileContext.szName);
-            }                
+                numWrite = strlen(FileContext.szName);
+                strcpy(tempName, FileContext.szName);
+            }
+            //printf("numWrite: %d\n", numWrite);
+            tempName[numWrite] = '\0';
+            //printf("tempName: %s\n", tempName);
+            strcpy(filenames[nCount], tempName);
+            //printf("filenames[%d]: %s\n", nCount, filenames[nCount]);
             nCount++;
-        }    
+        }
+
+        //for(i=0; i<sizeof(filenames)/sizeof(filenames[0]); i++)
+        	//printf("%s\n", filenames[i]);
+
+
         printf("Select file by Name: \n");
-        scanf("%s", pDumpFile);
+        //scanf("%s", pDumpFile);
+        strcpy(pDumpFile, filenames[selectionList(filenames, sizeof(filenames)/sizeof(filenames[0]))]);
     }
+
 
     if (bSuccess && pDumpFile && strlen(pDumpFile)){
         FAT_FILE_HANDLE hFile;
-        unsigned int transfer_16bit = 0;
+        alt_u32 transfer_16bit = 0;
+
+        LCD_TextOut("Writing File...\n");usleep(1000000);
+
         hFile =  Fat_FileOpen(hFat, pDumpFile);
         if (hFile){
             char szRead[2];
@@ -93,10 +218,8 @@ bool Fat_Test(FAT_HANDLE hFat){
             printf("%s dump:\n", pDumpFile);
 
             //Prepare io_module for data transfer
-            *TO_HW_SIG = 1;
-            while(*TO_SW_SIG != 1) printf("OK, Whatever. \n");		//Wait for first prepare
-
-            printf("WTF\n");
+            IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x1);
+            while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 1);	//Wait for first prepare
 
             while(bSuccess && nTotalReadSize < nFileSize){
 
@@ -117,33 +240,32 @@ bool Fat_Test(FAT_HANDLE hFat){
                     nTotalReadSize += nReadSize;
                 }else{
                     bSuccess = FALSE;
+                    LCD_TextOut("File read fail!\n");usleep(1000000);
                     printf("\nFaied to read the file \"%s\"\n", pDumpFile);
                 }     
 
                 //Transfer 16 bits
 
-                printf("Begin Transfer...\n");
-               	*TO_HW_PORT = transfer_16bit;
+                //printf("Begin Transfer...\n");
+               	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_PORT_BASE, transfer_16bit);
 
-               	printf("Send 0...\n");
-               	*TO_HW_SIG = 0;
-               	while(*TO_SW_SIG != 2)printf("%d\n", *TO_SW_SIG);		//Wait for set_mem
+               	//printf("Send 0...\n");
+               	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
+               	while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 2);	//Wait for set_mem
 
-               	printf("Send 1...\n");
-               	*TO_HW_SIG = 1;
-               	while(*TO_SW_SIG != 1)printf("This shouldn't be necessary...\n");		//Wait for prepare
-
-               	printf("Press Key3 to continue...\n");
-
-               	//Debug: wait for key-press
-//               	while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & 0x08) == 0x08);
-//               	usleep(400*1000); // de-bounce
-//               	*TO_HW_PORT &= ~0xFFFF;
+               	//printf("Send 1...\n");
+               	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x1);
+                while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 1);	//Wait for prepare
 
             } // while
 
-           	*TO_HW_SIG = 2;
-           	while(*TO_SW_SIG != 0)printf("THIS GUY\n");	 //Wait to return to Wait
+           	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x2);
+           	while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 0);	 //Wait to return to Wait
+
+           	if(bSuccess){
+           		printf("Done reading %s to memory.\n", pDumpFile);
+           		LCD_TextOut("Done Writing!\n");usleep(1000000);
+           	}
 
             if (bSuccess)
                 printf("\n");
@@ -151,6 +273,7 @@ bool Fat_Test(FAT_HANDLE hFat){
         }else{            
             bSuccess = FALSE;
             printf("Cannot find the file \"%s\"\n", pDumpFile);
+       		LCD_TextOut("File not found!\n");usleep(1000000);
         }            
     }
     
@@ -163,28 +286,39 @@ int main()
     const alt_u32 LED_TEST_PATTERN = 0xF0;
     const alt_u32 LED_NG_PATTERN = 0xFF;
     const alt_u32 LED_PASS_PATTERN = 0x00;
+    const char temp[] = "Test String\0";
     FAT_HANDLE hFat;
-    
+
+    LCD_Open();
+
     printf("========== DE2-115 SDCARD Demo ==========\n");
+    LCD_TextOut("SD -> Memory\n");usleep(1000000);
     
     while(1){
         printf("Processing...\r\n");
+        LCD_TextOut("Mounting...\n");usleep(1000000);
+
         IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_TEST_PATTERN);
+
         hFat = Fat_Mount(FAT_SD_CARD, 0);
         if (hFat){
             printf("sdcard mount success!\n");
+            LCD_TextOut("Mount success!\n");usleep(1000000);
             printf("Root Directory Item Count:%d\n", Fat_FileCount(hFat));
             Fat_Test(hFat);
             Fat_Unmount(hFat);
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_PASS_PATTERN);
             
+            LCD_TextOut("Press KEY3 to\nrestart.\n");
             printf("===== Test Done =====\r\nPress KEY3 to test again.\r\n");
         }else{
             printf("Failed to mount the SDCARD!\r\nPlease insert the SDCARD into DE2-115 board and press KEY3.\r\n");
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_NG_PATTERN);
+
+            LCD_TextOut("Mount failed!\nKEY3: Re-mount\n");usleep(1000000);
         }
         // wait users to press BUTTON3
-        while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & 0x08) == 0x08);
+        while ((IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE) & KEY3) == KEY3);
         IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_TEST_PATTERN);
         usleep(400*1000); // debounce
     } // while            
