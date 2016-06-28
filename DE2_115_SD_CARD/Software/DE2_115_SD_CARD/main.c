@@ -45,9 +45,12 @@
 #define KEY1 0x2
 #define KEY2 0x4
 #define KEY3 0x8
+#define NUMMEMTYPES 2
 
 static FILE*fp=0;
 static const char* selector[] = {">\0", " \0"};
+const char memoryTypes[NUMMEMTYPES][255] = {"SRAM\0", "SDRAM\0"};
+typedef enum {SRAM, SDRAM} memtype;
 
 bool LCD_Open(void){
 	fp = fopen(LCD_NAME, "w");
@@ -113,6 +116,7 @@ int selectionList(char selections[][255], int numSelections){
 		switch((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f){
 			case KEY0:
 				selected = TRUE;
+		        while ((~IORD_ALTERA_AVALON_PIO_DATA(KEY_BASE))&0x0f & KEY0);
 				break;
 			case KEY1:
 				updown = DOWN;
@@ -131,8 +135,14 @@ int selectionList(char selections[][255], int numSelections){
 				break;
 		}
 
-		if(numSelected < 0) numSelected = 0;
-		if(numSelected >= numSelections) numSelected = numSelections-1;
+		if(numSelected < 0){
+			numSelected = 0;
+			changed = FALSE;
+		}
+		if(numSelected >= numSelections){
+			numSelected = numSelections-1;
+			changed = FALSE;
+		}
 
 	}
 
@@ -147,6 +157,7 @@ bool Fat_Test(FAT_HANDLE hFat){
     char filenames[Fat_FileCount(hFat)][255]; // Filename buffer
     char tempName[255];
     alt_u8 numWrite;
+    memtype memType;
     int i;
 
     FAT_BROWSE_HANDLE hBrowse;
@@ -201,6 +212,8 @@ bool Fat_Test(FAT_HANDLE hFat){
         strcpy(pDumpFile, filenames[selectionList(filenames, sizeof(filenames)/sizeof(filenames[0]))]);
     }
 
+    printf("Select a memory...\n");
+    memType = selectionList(memoryTypes, NUMMEMTYPES);
 
     if (bSuccess && pDumpFile && strlen(pDumpFile)){
         FAT_FILE_HANDLE hFile;
@@ -247,7 +260,11 @@ bool Fat_Test(FAT_HANDLE hFat){
                 //Transfer 16 bits
 
                 //printf("Begin Transfer...\n");
-               	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_PORT_BASE, transfer_16bit);
+                if(memType == SRAM){
+                   	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_PORT_BASE, transfer_16bit);
+                }else if(memType == SDRAM){
+                    memcpy(SDRAM_CONTROLLER_BASE+(nTotalReadSize-sizeof(szRead)), &transfer_16bit, 2);
+                }
 
                	//printf("Send 0...\n");
                	IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x0);
@@ -295,11 +312,6 @@ int main()
     LCD_Open();
 
     printf("========== DE2-115 SDCARD Demo ==========\n");
-
-    memset(SDRAM_CONTROLLER_BASE, 0, 200);
-    memcpy(SDRAM_CONTROLLER_BASE, &arbnum1, 2);
-    memcpy(SDRAM_CONTROLLER_BASE+0x10, &arbnum2, 2);
-    memcpy(SDRAM_CONTROLLER_BASE+0x40, &arbnum3, 2);
 
     LCD_TextOut("SD -> Memory\n");usleep(1000000);
     
