@@ -1,6 +1,6 @@
-20:07:24 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
+16:22:24 **** Build of configuration Nios II for project DE2_115_SD_CARD_bsp ****
 make all 
 [BSP build complete]
 
-20:07:25 Build Finished (took 572ms)
+16:22:25 Build Finished (took 577ms)
 
