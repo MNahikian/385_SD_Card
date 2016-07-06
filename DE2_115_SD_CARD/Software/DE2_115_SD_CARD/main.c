@@ -38,7 +38,6 @@
 #include <unistd.h>
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
-#include "..\DE2_115_SD_CARD_bsp\HAL\inc\altera_up_sd_card_avalon_interface.h"
 
 #define UP 0
 #define DOWN 1

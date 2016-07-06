@@ -21,9 +21,7 @@ obj/default/main.o: main.c terasic_lib\terasic_includes.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_dev.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_warning.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h terasic_lib\debug.h \
- terasic_fat\FatFileSystem.h terasic_fat\FatConfig.h \
- ..\DE2_115_SD_CARD_bsp\HAL\inc\altera_up_sd_card_avalon_interface.h \
- ..\DE2_115_SD_CARD_bsp\HAL\inc\..\..\..\DE2_115_SD_CARD\terasic_lib\terasic_includes.h
+ terasic_fat\FatFileSystem.h terasic_fat\FatConfig.h
 
 terasic_lib\terasic_includes.h:
 
@@ -78,7 +76,3 @@ terasic_lib\debug.h:
 terasic_fat\FatFileSystem.h:
 
 terasic_fat\FatConfig.h:
-
-..\DE2_115_SD_CARD_bsp\HAL\inc\altera_up_sd_card_avalon_interface.h:
-
-..\DE2_115_SD_CARD_bsp\HAL\inc\..\..\..\DE2_115_SD_CARD\terasic_lib\terasic_includes.h:
