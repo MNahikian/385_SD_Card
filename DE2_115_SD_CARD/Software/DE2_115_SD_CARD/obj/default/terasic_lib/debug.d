@@ -21,7 +21,11 @@ obj/default/terasic_lib/debug.o: terasic_lib/debug.c \
  ../DE2_115_SD_CARD_bsp//drivers/inc/altera_avalon_timer.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_dev.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_warning.h \
- ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h terasic_lib/debug.h
+ ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h terasic_lib/debug.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h \
+ terasic_lib/../booldef.h
 
 terasic_lib/terasic_includes.h:
 
@@ -72,3 +76,11 @@ terasic_lib/terasic_includes.h:
 ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h:
 
 terasic_lib/debug.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h:
+
+terasic_lib/../booldef.h:

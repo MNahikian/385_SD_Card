@@ -22,7 +22,11 @@ obj/default/terasic_sdcard/sd_hal.o: terasic_sdcard/sd_hal.c \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_dev.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_warning.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h \
- terasic_sdcard/..\terasic_lib\debug.h terasic_sdcard/sd_hal.h \
+ terasic_sdcard/..\terasic_lib\debug.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h \
+ terasic_sdcard/..\terasic_lib\../booldef.h terasic_sdcard/sd_hal.h \
  terasic_sdcard/sd_hw.h terasic_sdcard/crc16.h
 
 terasic_sdcard/..\terasic_lib\terasic_includes.h:
@@ -74,6 +78,14 @@ terasic_sdcard/..\terasic_lib\terasic_includes.h:
 ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h:
 
 terasic_sdcard/..\terasic_lib\debug.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h:
+
+terasic_sdcard/..\terasic_lib\../booldef.h:
 
 terasic_sdcard/sd_hal.h:
 

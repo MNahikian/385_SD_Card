@@ -22,7 +22,11 @@ obj/default/terasic_fat/FatInternal.o: terasic_fat/FatInternal.c \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_dev.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_warning.h \
  ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h \
- terasic_fat/..\terasic_lib\debug.h terasic_fat/FatFileSystem.h \
+ terasic_fat/..\terasic_lib\debug.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h \
+ ../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h \
+ terasic_fat/..\terasic_lib\../booldef.h terasic_fat/FatFileSystem.h \
  terasic_fat/FatConfig.h terasic_fat/FatInternal.h \
  terasic_fat/..\terasic_sdcard\sd_lib.h \
  terasic_fat/..\terasic_sdcard\..\terasic_lib\terasic_includes.h
@@ -76,6 +80,14 @@ terasic_fat/..\terasic_lib\terasic_includes.h:
 ../DE2_115_SD_CARD_bsp//HAL/inc/sys/alt_stdio.h:
 
 terasic_fat/..\terasic_lib\debug.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_file.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/os/alt_sem.h:
+
+../DE2_115_SD_CARD_bsp//HAL/inc/priv/alt_no_error.h:
+
+terasic_fat/..\terasic_lib\../booldef.h:
 
 terasic_fat/FatFileSystem.h:
 

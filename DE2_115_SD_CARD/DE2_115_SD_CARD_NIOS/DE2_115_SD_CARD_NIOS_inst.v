@@ -28,6 +28,15 @@
 		.sd_cmd_external_connection_export                               (<connected-to-sd_cmd_external_connection_export>),                               //          sd_cmd_external_connection.export
 		.sd_dat_external_connection_export                               (<connected-to-sd_dat_external_connection_export>),                               //          sd_dat_external_connection.export
 		.sd_wp_n_external_connection_export                              (<connected-to-sd_wp_n_external_connection_export>),                              //         sd_wp_n_external_connection.export
+		.sdram_controller_addr                                           (<connected-to-sdram_controller_addr>),                                           //                    sdram_controller.addr
+		.sdram_controller_ba                                             (<connected-to-sdram_controller_ba>),                                             //                                    .ba
+		.sdram_controller_cas_n                                          (<connected-to-sdram_controller_cas_n>),                                          //                                    .cas_n
+		.sdram_controller_cke                                            (<connected-to-sdram_controller_cke>),                                            //                                    .cke
+		.sdram_controller_cs_n                                           (<connected-to-sdram_controller_cs_n>),                                           //                                    .cs_n
+		.sdram_controller_dq                                             (<connected-to-sdram_controller_dq>),                                             //                                    .dq
+		.sdram_controller_dqm                                            (<connected-to-sdram_controller_dqm>),                                            //                                    .dqm
+		.sdram_controller_ras_n                                          (<connected-to-sdram_controller_ras_n>),                                          //                                    .ras_n
+		.sdram_controller_we_n                                           (<connected-to-sdram_controller_we_n>),                                           //                                    .we_n
 		.seg7_conduit_end_export                                         (<connected-to-seg7_conduit_end_export>),                                         //                    seg7_conduit_end.export
 		.sma_in_external_connection_export                               (<connected-to-sma_in_external_connection_export>),                               //          sma_in_external_connection.export
 		.sma_out_external_connection_export                              (<connected-to-sma_out_external_connection_export>),                              //         sma_out_external_connection.export
@@ -40,14 +49,9 @@
 		.tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash    (<connected-to-tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash>),    //                                    .write_n_to_the_cfi_flash
 		.tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash   (<connected-to-tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash>),   //                                    .select_n_to_the_cfi_flash
 		.tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash     (<connected-to-tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash>),     //                                    .read_n_to_the_cfi_flash
-		.sdram_controller_addr                                           (<connected-to-sdram_controller_addr>),                                           //                    sdram_controller.addr
-		.sdram_controller_ba                                             (<connected-to-sdram_controller_ba>),                                             //                                    .ba
-		.sdram_controller_cas_n                                          (<connected-to-sdram_controller_cas_n>),                                          //                                    .cas_n
-		.sdram_controller_cke                                            (<connected-to-sdram_controller_cke>),                                            //                                    .cke
-		.sdram_controller_cs_n                                           (<connected-to-sdram_controller_cs_n>),                                           //                                    .cs_n
-		.sdram_controller_dq                                             (<connected-to-sdram_controller_dq>),                                             //                                    .dq
-		.sdram_controller_dqm                                            (<connected-to-sdram_controller_dqm>),                                            //                                    .dqm
-		.sdram_controller_ras_n                                          (<connected-to-sdram_controller_ras_n>),                                          //                                    .ras_n
-		.sdram_controller_we_n                                           (<connected-to-sdram_controller_we_n>)                                            //                                    .we_n
+		.new_sd_card_b_SD_cmd                                            (<connected-to-new_sd_card_b_SD_cmd>),                                            //                         new_sd_card.b_SD_cmd
+		.new_sd_card_b_SD_dat                                            (<connected-to-new_sd_card_b_SD_dat>),                                            //                                    .b_SD_dat
+		.new_sd_card_b_SD_dat3                                           (<connected-to-new_sd_card_b_SD_dat3>),                                           //                                    .b_SD_dat3
+		.new_sd_card_o_SD_clock                                          (<connected-to-new_sd_card_o_SD_clock>)                                           //                                    .o_SD_clock
 	);
 

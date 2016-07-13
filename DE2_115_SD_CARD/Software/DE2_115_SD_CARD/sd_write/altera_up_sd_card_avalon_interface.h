@@ -1,10 +1,12 @@
 #ifndef __ALTERA_UP_SD_CARD_AVALON_INTERFACE_H__
 #define __ALTERA_UP_SD_CARD_AVALON_INTERFACE_H__
 
-#include <stddef.h>
-#include <alt_types.h>
-#include <sys/alt_dev.h>
-#include "..\..\..\DE2_115_SD_CARD\terasic_lib\terasic_includes.h"
+//#include <stddef.h>
+//#include <alt_types.h>
+//#include <sys/alt_dev.h>
+//#include "booldef.h"
+#include "..\terasic_lib\terasic_includes.h"
+//#include "..\..\..\DE2_115_SD_CARD\terasic_lib\terasic_includes.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -15,8 +15,8 @@
    <frequency preferredWidth="422" />
   </columns>
  </clocktable>
- <window width="1920" height="1040" x="0" y="0" />
+ <window width="1936" height="1056" x="-8" y="-8" />
  <library
-   expandedCategories="Library/University Program/Clock,Library,Library/University Program,Library/Memory Interfaces and Controllers/SDRAM,Library/Interface Protocols,Library/University Program/Generic IO,Library/University Program/Communications,Library/Memory Interfaces and Controllers,Library/University Program/Memory,Project" />
+   expandedCategories="Library,Library/University Program,Library/University Program/Memory,Project" />
  <hdlexample language="VERILOG" />
 </preferences>

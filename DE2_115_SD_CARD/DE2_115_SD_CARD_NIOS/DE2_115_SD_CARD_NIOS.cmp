@@ -20,6 +20,10 @@
 			lcd_external_E                                                  : out   std_logic;                                        -- E
 			ledg_external_connection_export                                 : out   std_logic_vector(8 downto 0);                     -- export
 			ledr_external_connection_export                                 : out   std_logic_vector(17 downto 0);                    -- export
+			new_sd_card_b_SD_cmd                                            : inout std_logic                     := 'X';             -- b_SD_cmd
+			new_sd_card_b_SD_dat                                            : inout std_logic                     := 'X';             -- b_SD_dat
+			new_sd_card_b_SD_dat3                                           : inout std_logic                     := 'X';             -- b_SD_dat3
+			new_sd_card_o_SD_clock                                          : out   std_logic;                                        -- o_SD_clock
 			reset_reset_n                                                   : in    std_logic                     := 'X';             -- reset_n
 			rs232_external_connection_rxd                                   : in    std_logic                     := 'X';             -- rxd
 			rs232_external_connection_txd                                   : out   std_logic;                                        -- txd

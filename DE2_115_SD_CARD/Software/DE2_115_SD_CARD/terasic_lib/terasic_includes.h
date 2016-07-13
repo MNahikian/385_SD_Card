@@ -49,10 +49,11 @@
 #include "system.h"
 #include <fcntl.h>
 #include "debug.h"
+#include <priv/alt_file.h>
+#include "sys/alt_dev.h"
+//#include "altera_up_sd_card_avalon_interface.h"
+#include "../booldef.h"
 
 #define DEBUG_DUMP  /*printf */ 
-
-
-typedef enum { FALSE, TRUE } bool;
 
 #endif /*TERASIC_INCLUDES_H_*/

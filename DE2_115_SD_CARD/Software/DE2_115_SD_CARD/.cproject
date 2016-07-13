@@ -507,4 +507,9 @@
 			</profile>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Nios II">
+			<resource resourceType="PROJECT" workspacePath="/DE2_115_SD_CARD"/>
+		</configuration>
+	</storageModule>
 </cproject>

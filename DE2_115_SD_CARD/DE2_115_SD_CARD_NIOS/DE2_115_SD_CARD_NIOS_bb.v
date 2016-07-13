@@ -29,6 +29,15 @@ module DE2_115_SD_CARD_NIOS (
 	sd_cmd_external_connection_export,
 	sd_dat_external_connection_export,
 	sd_wp_n_external_connection_export,
+	sdram_controller_addr,
+	sdram_controller_ba,
+	sdram_controller_cas_n,
+	sdram_controller_cke,
+	sdram_controller_cs_n,
+	sdram_controller_dq,
+	sdram_controller_dqm,
+	sdram_controller_ras_n,
+	sdram_controller_we_n,
 	seg7_conduit_end_export,
 	sma_in_external_connection_export,
 	sma_out_external_connection_export,
@@ -41,15 +50,10 @@ module DE2_115_SD_CARD_NIOS (
 	tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash,
 	tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash,
 	tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash,
-	sdram_controller_addr,
-	sdram_controller_ba,
-	sdram_controller_cas_n,
-	sdram_controller_cke,
-	sdram_controller_cs_n,
-	sdram_controller_dq,
-	sdram_controller_dqm,
-	sdram_controller_ras_n,
-	sdram_controller_we_n);	
+	new_sd_card_b_SD_cmd,
+	new_sd_card_b_SD_dat,
+	new_sd_card_b_SD_dat3,
+	new_sd_card_o_SD_clock);	
 
 	input		altpll_areset_conduit_export;
 	output		altpll_c1_clk;
@@ -80,6 +84,15 @@ module DE2_115_SD_CARD_NIOS (
 	inout		sd_cmd_external_connection_export;
 	inout	[3:0]	sd_dat_external_connection_export;
 	input		sd_wp_n_external_connection_export;
+	output	[12:0]	sdram_controller_addr;
+	output	[1:0]	sdram_controller_ba;
+	output		sdram_controller_cas_n;
+	output		sdram_controller_cke;
+	output		sdram_controller_cs_n;
+	inout	[31:0]	sdram_controller_dq;
+	output	[3:0]	sdram_controller_dqm;
+	output		sdram_controller_ras_n;
+	output		sdram_controller_we_n;
 	output	[63:0]	seg7_conduit_end_export;
 	input		sma_in_external_connection_export;
 	output		sma_out_external_connection_export;
@@ -92,13 +105,8 @@ module DE2_115_SD_CARD_NIOS (
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash;
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash;
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash;
-	output	[12:0]	sdram_controller_addr;
-	output	[1:0]	sdram_controller_ba;
-	output		sdram_controller_cas_n;
-	output		sdram_controller_cke;
-	output		sdram_controller_cs_n;
-	inout	[31:0]	sdram_controller_dq;
-	output	[3:0]	sdram_controller_dqm;
-	output		sdram_controller_ras_n;
-	output		sdram_controller_we_n;
+	inout		new_sd_card_b_SD_cmd;
+	inout		new_sd_card_b_SD_dat;
+	inout		new_sd_card_b_SD_dat3;
+	output		new_sd_card_o_SD_clock;
 endmodule

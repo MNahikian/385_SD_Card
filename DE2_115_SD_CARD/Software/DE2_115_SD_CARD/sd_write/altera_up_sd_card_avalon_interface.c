@@ -28,8 +28,11 @@
 *                                                                             *
 ******************************************************************************/
 
+#ifndef __ALTERA_UP_SD_CARD_AVALON_INTERFACE_C__
+#define __ALTERA_UP_SD_CARD_AVALON_INTERFACE_C__
+
 #include <errno.h>
-#include <priv/alt_file.h>
+//#include <priv/alt_file.h>
 #include <stdio.h>
 #include <string.h>
 #include "altera_up_sd_card_avalon_interface.h"
@@ -1268,7 +1271,9 @@ alt_up_sd_card_dev* alt_up_sd_card_open_dev(const char* name)
 	// for details)
 	alt_up_sd_card_dev *dev = (alt_up_sd_card_dev *) alt_find_dev(name, &alt_dev_list);
 
-	if (dev != NULL)
+	printf("Dev pointer: %x\n", dev);
+
+	if (dev != NULL)s
 	{
 		aux_status_register = ((short int *) SD_CARD_AUX_STATUS(dev->base));
 		status_register = ((int *) SD_CARD_STATUS(dev->base));
@@ -1293,6 +1298,9 @@ bool alt_up_sd_card_is_Present(void)
     {
         result = TRUE;
     }
+
+    printf("Result : %d\n", result);
+
     return result;
 }
 
@@ -1852,3 +1860,4 @@ bool alt_up_sd_card_fclose(short int file_handle)
     return result;
 }
 
+#endif

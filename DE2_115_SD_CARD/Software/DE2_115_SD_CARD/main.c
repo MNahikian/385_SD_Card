@@ -38,6 +38,9 @@
 #include <unistd.h>
 #include ".\terasic_lib\terasic_includes.h"
 #include ".\terasic_fat\FatFileSystem.h"
+#include ".\sd_write\altera_up_sd_card_avalon_interface.h"
+#include ".\sd_write\altera_up_sd_card_avalon_interface.c"
+//#include "..\DE2_115_SD_CARD_bsp\HAL\inc\altera_up_sd_card_avalon_interface.h"
 
 #define UP 0
 #define DOWN 1
@@ -58,7 +61,7 @@ bool LCD_Open(void){
 		return TRUE;
 	return FALSE;
 }
-bool LCD_TextOut(char* pText){
+bool LCD_TextOut(const char* pText){
 	if(!fp)return FALSE;
 	fwrite(pText, strlen(pText), 1, fp);
 	return TRUE;
@@ -96,7 +99,7 @@ char *substring(char *string, int position, int length)
    return pointer;
 }
 
-int selectionList(char selections[][255], int numSelections){
+int selectionList(const char selections[][255], int numSelections){
 	char updown = UP;
 	int numSelected = 0;
 	bool selected = FALSE;
@@ -249,7 +252,7 @@ bool Fat_Test(FAT_HANDLE hFat){
                         transfer_16bit |= (alt_u8)szRead[i] << i*8;
                     }
                     printf("\n");
-                    printf("instruction: %04x\n", transfer_16bit);
+
                     nTotalReadSize += nReadSize;
                 }else{
                     bSuccess = FALSE;
@@ -298,6 +301,12 @@ bool Fat_Test(FAT_HANDLE hFat){
 }
 
 
+#define SD_BUFFER_SIZE 256
+short int sd_fileh;
+
+char buffer[SD_BUFFER_SIZE] = "WELCOME TO THE INTERFACE!!\r\n\0";
+
+
 int main()
 {
     const alt_u32 LED_TEST_PATTERN = 0xF0;
@@ -326,6 +335,45 @@ int main()
             printf("sdcard mount success!\n");
             LCD_TextOut("Mount success!\n");usleep(1000000);
             printf("Root Directory Item Count:%d\n", Fat_FileCount(hFat));
+
+
+            //***************************************************************************************************
+                alt_up_sd_card_dev *sd_card_dev = alt_up_sd_card_open_dev(SD_CMD_NAME);
+
+                  if(sd_card_dev != 0)
+                  {
+                      if(alt_up_sd_card_is_Present())
+                      {
+                          if(alt_up_sd_card_is_FAT16())
+                              printf("Card is FAT16\n");
+                          else
+                              printf("Card is not FAT16\n");
+
+                          sd_fileh = alt_up_sd_card_fopen("file.txt", TRUE);
+
+                          if (sd_fileh < 0)
+                              printf("Problem creating file. Error %i", sd_fileh);
+                          else
+                          {
+                              printf("SD Accessed Successfully, writing data...");
+                              int index = 0;
+                              while (buffer[index] != '\0')
+                              {
+                                  alt_up_sd_card_write(sd_fileh, buffer[index]);
+                                  index = index + 1;
+                              }
+                              printf("Done!\n");
+
+                              printf("Closing File...");
+                              alt_up_sd_card_fclose(sd_fileh);
+                              printf("Done!\n");
+                          }
+                      }
+                  }
+
+            //***************************************************************************************************
+
+
             Fat_Test(hFat);
             Fat_Unmount(hFat);
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_PASS_PATTERN);
