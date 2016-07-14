@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/DE2_115_SD_CARD/altera_up_avalon_character_lcd_regs.h" element2="/DE2_115_SD_CARD/altera_up_avalon_character_lcd.c" element3="/DE2_115_SD_CARD/altera_up_avalon_character_lcd.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1465940940503"/>
+</session>

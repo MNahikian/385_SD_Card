@@ -5,7 +5,7 @@
   <columns>
    <connections preferredWidth="335" />
    <irq preferredWidth="34" />
-   <name preferredWidth="210" />
+   <name preferredWidth="280" />
   </columns>
  </systemtable>
  <clocktable>

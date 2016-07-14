@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;sd_write&apos;" description="Move 1 resources to &apos;sd_write&apos;" destination="sd_write" element1="/DE2_115_SD_CARD_bsp/HAL/src/altera_up_sd_card_avalon_interface.c" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1467852305936" updateReferences="true"/>
+</session>
