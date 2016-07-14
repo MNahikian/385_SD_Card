@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'DE2_115_SD_CARD_NIOS'
  * SOPC Builder design path: ../../DE2_115_SD_CARD_NIOS.sopcinfo
  *
- * Generated: Mon Jun 27 17:46:57 CDT 2016
+ * Generated: Wed Jul 13 13:47:37 CDT 2016
  */
 
 /*
@@ -53,6 +53,20 @@
 
 /* Include definitions from linker script generator */
 #include "linker.h"
+
+
+/*
+ * Altera_UP_SD_Card_Avalon_Interface_0 configuration
+ *
+ */
+
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_BASE 0x1000000
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_IRQ -1
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME "/dev/Altera_UP_SD_Card_Avalon_Interface_0"
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_SPAN 1024
+#define ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_TYPE "Altera_UP_SD_Card_Avalon_Interface"
+#define ALT_MODULE_CLASS_Altera_UP_SD_Card_Avalon_Interface_0 Altera_UP_SD_Card_Avalon_Interface
 
 
 /*
@@ -132,6 +146,7 @@
 #define __ALTERA_AVALON_UART
 #define __ALTERA_GENERIC_TRISTATE_CONTROLLER
 #define __ALTERA_NIOS2_QSYS
+#define __ALTERA_UP_SD_CARD_AVALON_INTERFACE
 #define __ALTPLL
 #define __SEG7_IF
 

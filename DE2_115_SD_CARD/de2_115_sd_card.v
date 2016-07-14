@@ -336,10 +336,16 @@ inout		        [6:0]		EX_IO
 								  .tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash(FL_WE_N),
 								  
 								 // sdcard
-								  .sd_clk_external_connection_export(SD_CLK),
-								  .sd_cmd_external_connection_export(SD_CMD),
-								  .sd_dat_external_connection_export(SD_DAT),
-								  .sd_wp_n_external_connection_export (SD_WP_N),
+								 // .sd_clk_external_connection_export(SD_CLK),
+								 // .sd_cmd_external_connection_export(SD_CMD),
+								 // .sd_dat_external_connection_export(SD_DAT),
+								 // .sd_wp_n_external_connection_export (SD_WP_N),
+								  
+								  .new_sd_card_b_SD_cmd(SD_CMD),                                            //                         new_sd_card.b_SD_cmd
+								  .new_sd_card_b_SD_dat(SD_DAT[0]),                                            //                                    .b_SD_dat
+								  .new_sd_card_b_SD_dat3(SD_DAT[3]),                                           //                                    .b_SD_dat3
+								  .new_sd_card_o_SD_clock(SD_CLK),                                          //                                    .o_SD_clock
+		
 								  
 								 // Handshake IO
 								  .to_hw_port_export(to_hw_port),

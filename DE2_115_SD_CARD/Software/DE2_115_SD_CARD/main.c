@@ -317,6 +317,7 @@ int main()
     const long arbnum2 = 0x1234;
     const long arbnum3 = 0xDEAD;
     FAT_HANDLE hFat;
+    alt_up_sd_card_dev *sd_card_dev;
 
     LCD_Open();
 
@@ -330,15 +331,17 @@ int main()
 
         IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_TEST_PATTERN);
 
-        hFat = Fat_Mount(FAT_SD_CARD, 0);
-        if (hFat){
+        //hFat = Fat_Mount(FAT_SD_CARD, 0);
+        if (TRUE){//hFat){
             printf("sdcard mount success!\n");
             LCD_TextOut("Mount success!\n");usleep(1000000);
-            printf("Root Directory Item Count:%d\n", Fat_FileCount(hFat));
+            //printf("Root Directory Item Count:%d\n", Fat_FileCount(hFat));
 
 
             //***************************************************************************************************
-                alt_up_sd_card_dev *sd_card_dev = alt_up_sd_card_open_dev(SD_CMD_NAME);
+                sd_card_dev = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
+
+                printf("pointer: %x\n", sd_card_dev);
 
                   if(sd_card_dev != 0)
                   {
@@ -374,8 +377,8 @@ int main()
             //***************************************************************************************************
 
 
-            Fat_Test(hFat);
-            Fat_Unmount(hFat);
+            //Fat_Test(hFat);
+            //Fat_Unmount(hFat);
             IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, LED_PASS_PATTERN);
             
             LCD_TextOut("Press KEY3 to\nrestart.\n");

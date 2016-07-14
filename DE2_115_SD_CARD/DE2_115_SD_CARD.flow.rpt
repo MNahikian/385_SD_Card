@@ -1,5 +1,5 @@
 Flow report for DE2_115_SD_CARD
-Mon Jun 27 16:28:03 2016
+Wed Jul 13 16:43:12 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -41,20 +41,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 27 16:27:37 2016      ;
+; Flow Status                        ; Successful - Wed Jul 13 16:42:23 2016      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; DE2_115_SD_CARD                            ;
 ; Top-level Entity Name              ; DE2_115_SD_CARD                            ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 6,350 / 114,480 ( 6 % )                    ;
-;     Total combinational functions  ; 4,752 / 114,480 ( 4 % )                    ;
-;     Dedicated logic registers      ; 4,640 / 114,480 ( 4 % )                    ;
-; Total registers                    ; 4759                                       ;
+; Total logic elements               ; 7,780 / 114,480 ( 7 % )                    ;
+;     Total combinational functions  ; 5,936 / 114,480 ( 5 % )                    ;
+;     Dedicated logic registers      ; 5,541 / 114,480 ( 5 % )                    ;
+; Total registers                    ; 5660                                       ;
 ; Total pins                         ; 518 / 529 ( 98 % )                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 2,113,888 / 3,981,312 ( 53 % )             ;
+; Total memory bits                  ; 2,117,984 / 3,981,312 ( 53 % )             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
 ; Total PLLs                         ; 2 / 4 ( 50 % )                             ;
 +------------------------------------+--------------------------------------------+
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/27/2016 16:24:31 ;
+; Start date & time ; 07/13/2016 16:38:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_115_SD_CARD     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589186.146706267007020        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589186.146844592613204        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; MISC_FILE                           ; DE2_115_SD_CARD.dpf                   ; --            ; --          ; --         ;
@@ -95,11 +95,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:42     ; 1.0                     ; 1085 MB             ; 00:02:55                           ;
-; Fitter                    ; 00:01:10     ; 1.3                     ; 1575 MB             ; 00:01:27                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 684 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:23     ; 1.0                     ; 926 MB              ; 00:00:11                           ;
-; Total                     ; 00:03:20     ; --                      ; --                  ; 00:04:38                           ;
+; Analysis & Synthesis      ; 00:02:00     ; 1.0                     ; 1101 MB             ; 00:03:14                           ;
+; Fitter                    ; 00:01:21     ; 1.4                     ; 1556 MB             ; 00:01:44                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 692 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:46     ; 1.0                     ; 941 MB              ; 00:00:13                           ;
+; Total                     ; 00:04:12     ; --                      ; --                  ; 00:05:16                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

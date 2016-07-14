@@ -1273,7 +1273,7 @@ alt_up_sd_card_dev* alt_up_sd_card_open_dev(const char* name)
 
 	printf("Dev pointer: %x\n", dev);
 
-	if (dev != NULL)s
+	if (dev != NULL)
 	{
 		aux_status_register = ((short int *) SD_CARD_AUX_STATUS(dev->base));
 		status_register = ((int *) SD_CARD_STATUS(dev->base));

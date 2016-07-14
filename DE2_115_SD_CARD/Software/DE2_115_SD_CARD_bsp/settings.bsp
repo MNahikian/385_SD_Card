@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 27, 2016 5:46:57 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1467067617463</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jul 13, 2016 4:55:24 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1468446924748</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mitch\Dropbox\385_SD_Card\DE2_115_SD_CARD\Software\DE2_115_SD_CARD_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\DE2_115_SD_CARD_NIOS.sopcinfo</SopcDesignFile>
@@ -1028,6 +1028,12 @@
                 <slaveDescriptor>to_sw_sig</slaveDescriptor>
                 <addressRange>0x00000160 - 0x0000016F</addressRange>
                 <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>Altera_UP_SD_Card_Avalon_Interface_0</slaveDescriptor>
+                <addressRange>0x01000000 - 0x010003FF</addressRange>
+                <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
