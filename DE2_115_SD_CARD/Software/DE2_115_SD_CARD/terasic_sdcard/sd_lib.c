@@ -308,6 +308,8 @@ bool SDLIB_WriteBlock512(alt_u32 block_number, alt_u8 *szDataWrite)
 
     bSuccess = SD_WriteData(szDataWrite, 512);  // Write 512 bytes
     
+    printf("End of SDLIB_WriteBlock512\n bSuccess: %d\n", bSuccess);
+
     //
     return bSuccess;
 }

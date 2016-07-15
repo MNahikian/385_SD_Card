@@ -348,6 +348,19 @@ bool fatReadSecter(VOLUME_INFO *pVol, alt_u32 nSecter){
     return bSuccess;          
 }     
 
+bool fatWriteSecter(VOLUME_INFO *pVol, alt_u32 nSecter){
+    bool bSuccess = TRUE;
+    if (nSecter != pVol->Secter_Index){
+        if (!pVol->WriteBlock512(pVol->DiskHandle, nSecter, pVol->Secter_Data)){
+            pVol->Secter_Index = -1;
+            bSuccess = FALSE;
+        }else{
+            pVol->Secter_Index = nSecter;
+        }
+    }
+    return bSuccess;
+}
+
 //=================================================================================
 //// add in v2.0
 FAT_DIRECTORY* fatFindDirectory(VOLUME_INFO *pVol, alt_u32 nDirectoryIndex){

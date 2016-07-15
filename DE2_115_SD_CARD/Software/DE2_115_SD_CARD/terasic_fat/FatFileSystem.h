@@ -123,6 +123,7 @@ bool Fat_DumpFilename(char *pFilename, bool bLongFilename);
 FAT_FILE_HANDLE Fat_FileOpen(FAT_HANDLE Fat, const char *pFilename);
 unsigned int Fat_FileSize(FAT_FILE_HANDLE hFileHandle);
 bool Fat_FileRead(FAT_FILE_HANDLE hFileHandle, void *pBuffer, const int nBufferSize);
+bool Fat_FileWrite(FAT_FILE_HANDLE hFileHandle, void *pBuffer, const int nBufferSize);
 bool Fat_FileSeek(FAT_FILE_HANDLE hFileHandle, const FAT_SEEK_POS SeekPos, const int nOffset);
 void Fat_FileClose(FAT_FILE_HANDLE hFileHandle);
 bool Fat_FileExist(FAT_HANDLE Fat, const char *pFilename);

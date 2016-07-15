@@ -301,7 +301,7 @@ FAT_FILE_HANDLE Fat_FileOpen(FAT_HANDLE Fat, const char *pFilename){
             }    
         } // while 
         
-        if (bFind){
+        if (bFind){ //File Exists
             pFile = malloc(sizeof(FAT_FILE_INFO));
             if (pFile){
                 pFile->OpenAttribute = FILE_OPEN_READ; 
@@ -312,7 +312,9 @@ FAT_FILE_HANDLE Fat_FileOpen(FAT_HANDLE Fat, const char *pFilename){
                 pFile->ClusterSeq = 0;
                 pFile->Fat = Fat;
             }    
-        }    
+        }else{ //File does not exist
+
+        }
     }  
 
     
@@ -445,6 +447,124 @@ bool Fat_FileRead(FAT_FILE_HANDLE hFileHandle, void *pBuffer, const int nBufferS
     return bSuccess;
 }
 
+bool Fat_FileWrite(FAT_FILE_HANDLE hFileHandle, void *pBuffer, const int nBufferSize){
+		FAT_FILE_INFO *f = (FAT_FILE_INFO *)hFileHandle;
+	    VOLUME_INFO *pVol;
+	    alt_u32 Pos, PhysicalSecter, NextCluster, Cluster;
+	    alt_u32 BytesPerCluster, nWriteCount=0, nClusterSeq;
+	    int s;
+	    bool bSuccess= TRUE;
+
+	    if (!f || !f->Fat)
+	        return FALSE;
+	    pVol = (VOLUME_INFO *)f->Fat;
+
+	    if (!f->IsOpened){
+	        FAT_DEBUG(("[FAT] Fat_FileWrite, file not opened\r\n"));
+	        return bSuccess;
+	    }
+
+	    BytesPerCluster = pVol->nBytesPerCluster; //gVolumeInfo.BPB_BytsPerSec * gVolumeInfo.BPB_SecPerCluster;
+	    Pos = f->SeekPos;
+	    if (BytesPerCluster == 32768){
+	        nClusterSeq = Pos >> 15;
+	        Pos -= (f->ClusterSeq << 15);
+	    }else if (BytesPerCluster == 16384){
+	        nClusterSeq = Pos >> 14;
+	        Pos -= (f->ClusterSeq << 14);
+	    }else if (BytesPerCluster == 2048){
+	        nClusterSeq = Pos >> 11;
+	        Pos -= (f->ClusterSeq << 11);
+	    }else{
+	        nClusterSeq = Pos/BytesPerCluster;
+	        Pos -= f->ClusterSeq*BytesPerCluster;
+	    }
+
+
+	    Cluster = f->Cluster;
+	    if (nClusterSeq != f->ClusterSeq){
+	        Cluster = f->Cluster;  //11/20/2007, richard
+	        // move to first clustor for reading
+	        while (Pos >= BytesPerCluster && bSuccess){
+	            // go to next cluster
+	            NextCluster = fatNextCluster(pVol, Cluster);
+	            if (NextCluster == 0){
+	                bSuccess = FALSE;
+	                FAT_DEBUG(("[FAT] Fat_FileWrite, no next Cluster, current Cluster=%d\r\n", Cluster));
+	            }else{
+	                Cluster = NextCluster;
+	            }
+	            Pos -= BytesPerCluster;
+	            f->Cluster = Cluster;
+	            f->ClusterSeq++;
+	        }
+	    }
+
+	    // reading
+	    while(nWriteCount < nBufferSize && bSuccess){
+	        if (pVol->BPB_SecPerCluster == 32)
+	            PhysicalSecter = ((Cluster-2) << 5) + pVol->DataEntrySecter; // -2: FAT0 & FAT1 are reserved
+	        else if (pVol->BPB_SecPerCluster == 64)
+	            PhysicalSecter = ((Cluster-2) << 6) + pVol->DataEntrySecter; // -2: FAT0 & FAT1 are reserved
+	        else
+	            PhysicalSecter = (Cluster-2)*pVol->BPB_SecPerCluster + pVol->DataEntrySecter; // -2: FAT0 & FAT1 are reserved
+	        for(s=0;s<pVol->BPB_SecPerCluster && nWriteCount < nBufferSize && bSuccess;s++){
+	            if (Pos >= pVol->BPB_BytsPerSec){
+	                Pos -= pVol->BPB_BytsPerSec;
+	            }else{
+
+	                if (bSuccess){
+	                    // copy data from user buffer
+
+	                    int nCopyCount;
+	                    nCopyCount = pVol->BPB_BytsPerSec;
+	                    if (Pos)
+	                        nCopyCount -= Pos;
+	                    if (nCopyCount > (nBufferSize-nWriteCount))
+	                        nCopyCount = nBufferSize-nWriteCount;
+	                    if (nCopyCount == 512){
+	                        memcpy(pVol->Secter_Data, (char *)pBuffer+nWriteCount, 512);
+	                        nWriteCount += nCopyCount;
+	                        if (Pos > 0)
+	                            Pos = 0;
+	                    }else{
+	                        memcpy(pVol->Secter_Data+Pos, (void *)((char *)pBuffer+nWriteCount), nCopyCount);
+	                        nWriteCount += nCopyCount;
+	                        if (Pos > 0)
+	                            Pos = 0;
+	                    }
+	                }    // if bSuccess
+
+
+	                // read secter data
+	                bSuccess = fatWriteSecter(pVol, PhysicalSecter);
+
+	            }
+	            PhysicalSecter++;
+	        }
+
+	        // next cluster
+	        if (nWriteCount < nBufferSize){
+	            NextCluster = fatNextCluster(pVol, Cluster);
+	            if (NextCluster == 0){
+	                bSuccess = FALSE;
+	                FAT_DEBUG(("[FAT] Fat_FileWrite, no next cluster\r\n"));
+	            }else{
+	                Cluster = NextCluster;
+	            }
+	            //
+	            f->ClusterSeq++;
+	            f->Cluster = Cluster;
+	        }
+	    }
+
+	    if (bSuccess){
+	        f->SeekPos += nBufferSize;
+	    }
+
+
+	    return bSuccess;
+}
 
 bool Fat_FileSeek(FAT_FILE_HANDLE hFileHandle, const FAT_SEEK_POS SeekPos, const int nOffset){
     FAT_FILE_INFO *f = (FAT_FILE_INFO *)hFileHandle;

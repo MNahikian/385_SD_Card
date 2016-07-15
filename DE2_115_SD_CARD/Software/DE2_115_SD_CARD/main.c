@@ -234,6 +234,12 @@ bool Fat_Test(FAT_HANDLE hFat){
             IOWR_ALTERA_AVALON_PIO_DATA(TO_HW_SIG_BASE, 0x1);
             while(IORD_ALTERA_AVALON_PIO_DATA(TO_SW_SIG_BASE) != 1);	//Wait for first prepare
 
+            if(Fat_FileWrite(hFile, pDumpFile, strlen(pDumpFile))){
+            	printf("Hopefully Wrote to file....\n");
+            }else{
+                printf("Write failed =(\n");
+            }
+
             while(bSuccess && nTotalReadSize < nFileSize){
 
                 nReadSize = sizeof(szRead);

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 27, 2016 5:46:57 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1467067617463</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jul 15, 2016 2:03:27 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1468609407213</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Mitch\Dropbox\385_SD_Card\DE2_115_SD_CARD\Software\DE2_115_SD_CARD_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\DE2_115_SD_CARD_NIOS.sopcinfo</SopcDesignFile>

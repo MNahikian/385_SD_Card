@@ -172,6 +172,7 @@ bool fatDelClusterList(VOLUME_INFO *pVol, alt_u32 StartCluster);
 //===============
 // add for v2.0
 bool fatReadSecter(VOLUME_INFO *pVol, alt_u32 nSecter);
+bool fatWriteSecter(VOLUME_INFO *pVol, alt_u32 nSecter);
 FAT_DIRECTORY* fatFindDirectory(VOLUME_INFO *pVol, alt_u32 nDirectoryIndex);
 alt_u32 fatFindUnusedDirectory(VOLUME_INFO *pVol);
 bool fatIsUnusedDir(FAT_DIRECTORY *pDir);
