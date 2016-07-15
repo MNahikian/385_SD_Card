@@ -9,7 +9,7 @@
 module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		input  wire        altpll_c0_clk,                                          //                                        altpll_c0.clk
 		input  wire        altpll_c2_clk,                                          //                                        altpll_c2.clk
-		input  wire        clk_50_clk_clk,                                         //                                       clk_50_clk.clk
+		input  wire        sys_sdram_pll_0_sys_clk_clk,                            //                          sys_sdram_pll_0_sys_clk.clk
 		input  wire        clock_crossing_io_m0_reset_reset_bridge_in_reset_reset, // clock_crossing_io_m0_reset_reset_bridge_in_reset.reset
 		input  wire        epp_i2c_scl_reset_reset_bridge_in_reset_reset,          //          epp_i2c_scl_reset_reset_bridge_in_reset.reset
 		input  wire        ir_reset_reset_bridge_in_reset_reset,                   //                   ir_reset_reset_bridge_in_reset.reset
@@ -2777,7 +2777,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.AV_SETUP_WAIT_CYCLES           (0),
 		.AV_DATA_HOLD_CYCLES            (0)
 	) to_sw_sig_s1_translator (
-		.clk                    (clk_50_clk_clk),                              //                      clk.clk
+		.clk                    (sys_sdram_pll_0_sys_clk_clk),                 //                      clk.clk
 		.reset                  (to_sw_sig_reset_reset_bridge_in_reset_reset), //                    reset.reset
 		.uav_address            (to_sw_sig_s1_agent_m0_address),               // avalon_universal_slave_0.address
 		.uav_burstcount         (to_sw_sig_s1_agent_m0_burstcount),            //                         .burstcount
@@ -2841,7 +2841,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.AV_SETUP_WAIT_CYCLES           (0),
 		.AV_DATA_HOLD_CYCLES            (0)
 	) to_hw_sig_s1_translator (
-		.clk                    (clk_50_clk_clk),                              //                      clk.clk
+		.clk                    (sys_sdram_pll_0_sys_clk_clk),                 //                      clk.clk
 		.reset                  (to_sw_sig_reset_reset_bridge_in_reset_reset), //                    reset.reset
 		.uav_address            (to_hw_sig_s1_agent_m0_address),               // avalon_universal_slave_0.address
 		.uav_burstcount         (to_hw_sig_s1_agent_m0_burstcount),            //                         .burstcount
@@ -2905,7 +2905,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.AV_SETUP_WAIT_CYCLES           (0),
 		.AV_DATA_HOLD_CYCLES            (0)
 	) to_hw_port_s1_translator (
-		.clk                    (clk_50_clk_clk),                              //                      clk.clk
+		.clk                    (sys_sdram_pll_0_sys_clk_clk),                 //                      clk.clk
 		.reset                  (to_sw_sig_reset_reset_bridge_in_reset_reset), //                    reset.reset
 		.uav_address            (to_hw_port_s1_agent_m0_address),              // avalon_universal_slave_0.address
 		.uav_burstcount         (to_hw_port_s1_agent_m0_burstcount),           //                         .burstcount
@@ -5884,7 +5884,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_WRITERESPONSE         (0),
 		.ECC_ENABLE                (0)
 	) to_sw_sig_s1_agent (
-		.clk                     (clk_50_clk_clk),                                //             clk.clk
+		.clk                     (sys_sdram_pll_0_sys_clk_clk),                   //             clk.clk
 		.reset                   (to_sw_sig_reset_reset_bridge_in_reset_reset),   //       clk_reset.reset
 		.m0_address              (to_sw_sig_s1_agent_m0_address),                 //              m0.address
 		.m0_burstcount           (to_sw_sig_s1_agent_m0_burstcount),              //                .burstcount
@@ -5943,7 +5943,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_sw_sig_s1_agent_rsp_fifo (
-		.clk               (clk_50_clk_clk),                                //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                   //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset),   // clk_reset.reset
 		.in_data           (to_sw_sig_s1_agent_rf_source_data),             //        in.data
 		.in_valid          (to_sw_sig_s1_agent_rf_source_valid),            //          .valid
@@ -5984,7 +5984,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_sw_sig_s1_agent_rdata_fifo (
-		.clk               (clk_50_clk_clk),                              //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.in_data           (to_sw_sig_s1_agent_rdata_fifo_src_data),      //        in.data
 		.in_valid          (to_sw_sig_s1_agent_rdata_fifo_src_valid),     //          .valid
@@ -6050,7 +6050,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_WRITERESPONSE         (0),
 		.ECC_ENABLE                (0)
 	) to_hw_sig_s1_agent (
-		.clk                     (clk_50_clk_clk),                                //             clk.clk
+		.clk                     (sys_sdram_pll_0_sys_clk_clk),                   //             clk.clk
 		.reset                   (to_sw_sig_reset_reset_bridge_in_reset_reset),   //       clk_reset.reset
 		.m0_address              (to_hw_sig_s1_agent_m0_address),                 //              m0.address
 		.m0_burstcount           (to_hw_sig_s1_agent_m0_burstcount),              //                .burstcount
@@ -6109,7 +6109,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_hw_sig_s1_agent_rsp_fifo (
-		.clk               (clk_50_clk_clk),                                //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                   //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset),   // clk_reset.reset
 		.in_data           (to_hw_sig_s1_agent_rf_source_data),             //        in.data
 		.in_valid          (to_hw_sig_s1_agent_rf_source_valid),            //          .valid
@@ -6150,7 +6150,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_hw_sig_s1_agent_rdata_fifo (
-		.clk               (clk_50_clk_clk),                              //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.in_data           (to_hw_sig_s1_agent_rdata_fifo_src_data),      //        in.data
 		.in_valid          (to_hw_sig_s1_agent_rdata_fifo_src_valid),     //          .valid
@@ -6216,7 +6216,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_WRITERESPONSE         (0),
 		.ECC_ENABLE                (0)
 	) to_hw_port_s1_agent (
-		.clk                     (clk_50_clk_clk),                                 //             clk.clk
+		.clk                     (sys_sdram_pll_0_sys_clk_clk),                    //             clk.clk
 		.reset                   (to_sw_sig_reset_reset_bridge_in_reset_reset),    //       clk_reset.reset
 		.m0_address              (to_hw_port_s1_agent_m0_address),                 //              m0.address
 		.m0_burstcount           (to_hw_port_s1_agent_m0_burstcount),              //                .burstcount
@@ -6275,7 +6275,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_hw_port_s1_agent_rsp_fifo (
-		.clk               (clk_50_clk_clk),                                 //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                    //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset),    // clk_reset.reset
 		.in_data           (to_hw_port_s1_agent_rf_source_data),             //        in.data
 		.in_valid          (to_hw_port_s1_agent_rf_source_valid),            //          .valid
@@ -6316,7 +6316,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.USE_ALMOST_FULL_IF  (0),
 		.USE_ALMOST_EMPTY_IF (0)
 	) to_hw_port_s1_agent_rdata_fifo (
-		.clk               (clk_50_clk_clk),                              //       clk.clk
+		.clk               (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset             (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.in_data           (to_hw_port_s1_agent_rdata_fifo_src_data),     //        in.data
 		.in_valid          (to_hw_port_s1_agent_rdata_fifo_src_valid),    //          .valid
@@ -6637,7 +6637,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.sink_data          (to_sw_sig_s1_agent_rp_data),                  //          .data
 		.sink_startofpacket (to_sw_sig_s1_agent_rp_startofpacket),         //          .startofpacket
 		.sink_endofpacket   (to_sw_sig_s1_agent_rp_endofpacket),           //          .endofpacket
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready          (router_018_src_ready),                        //       src.ready
 		.src_valid          (router_018_src_valid),                        //          .valid
@@ -6653,7 +6653,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.sink_data          (to_hw_sig_s1_agent_rp_data),                  //          .data
 		.sink_startofpacket (to_hw_sig_s1_agent_rp_startofpacket),         //          .startofpacket
 		.sink_endofpacket   (to_hw_sig_s1_agent_rp_endofpacket),           //          .endofpacket
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready          (router_019_src_ready),                        //       src.ready
 		.src_valid          (router_019_src_valid),                        //          .valid
@@ -6669,7 +6669,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.sink_data          (to_hw_port_s1_agent_rp_data),                 //          .data
 		.sink_startofpacket (to_hw_port_s1_agent_rp_startofpacket),        //          .startofpacket
 		.sink_endofpacket   (to_hw_port_s1_agent_rp_endofpacket),          //          .endofpacket
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready          (router_020_src_ready),                        //       src.ready
 		.src_valid          (router_020_src_valid),                        //          .valid
@@ -7150,7 +7150,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_cmd_mux cmd_mux_017 (
-		.clk                 (clk_50_clk_clk),                              //       clk.clk
+		.clk                 (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset               (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready           (cmd_mux_017_src_ready),                       //       src.ready
 		.src_valid           (cmd_mux_017_src_valid),                       //          .valid
@@ -7167,7 +7167,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_cmd_mux cmd_mux_018 (
-		.clk                 (clk_50_clk_clk),                              //       clk.clk
+		.clk                 (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset               (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready           (cmd_mux_018_src_ready),                       //       src.ready
 		.src_valid           (cmd_mux_018_src_valid),                       //          .valid
@@ -7184,7 +7184,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_cmd_mux cmd_mux_019 (
-		.clk                 (clk_50_clk_clk),                              //       clk.clk
+		.clk                 (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset               (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.src_ready           (cmd_mux_019_src_ready),                       //       src.ready
 		.src_valid           (cmd_mux_019_src_valid),                       //          .valid
@@ -7490,7 +7490,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017 rsp_demux_017 (
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.sink_ready         (router_018_src_ready),                        //      sink.ready
 		.sink_channel       (router_018_src_channel),                      //          .channel
@@ -7507,7 +7507,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017 rsp_demux_018 (
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.sink_ready         (router_019_src_ready),                        //      sink.ready
 		.sink_channel       (router_019_src_channel),                      //          .channel
@@ -7524,7 +7524,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	);
 
 	DE2_115_SD_CARD_NIOS_mm_interconnect_1_rsp_demux_017 rsp_demux_019 (
-		.clk                (clk_50_clk_clk),                              //       clk.clk
+		.clk                (sys_sdram_pll_0_sys_clk_clk),                 //       clk.clk
 		.reset              (to_sw_sig_reset_reset_bridge_in_reset_reset), // clk_reset.reset
 		.sink_ready         (router_020_src_ready),                        //      sink.ready
 		.sink_channel       (router_020_src_channel),                      //          .channel
@@ -8263,7 +8263,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	) crosser_017 (
 		.in_clk            (altpll_c2_clk),                                          //        in_clk.clk
 		.in_reset          (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), //  in_clk_reset.reset
-		.out_clk           (clk_50_clk_clk),                                         //       out_clk.clk
+		.out_clk           (sys_sdram_pll_0_sys_clk_clk),                            //       out_clk.clk
 		.out_reset         (to_sw_sig_reset_reset_bridge_in_reset_reset),            // out_clk_reset.reset
 		.in_ready          (cmd_demux_src17_ready),                                  //            in.ready
 		.in_valid          (cmd_demux_src17_valid),                                  //              .valid
@@ -8297,7 +8297,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	) crosser_018 (
 		.in_clk            (altpll_c2_clk),                                          //        in_clk.clk
 		.in_reset          (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), //  in_clk_reset.reset
-		.out_clk           (clk_50_clk_clk),                                         //       out_clk.clk
+		.out_clk           (sys_sdram_pll_0_sys_clk_clk),                            //       out_clk.clk
 		.out_reset         (to_sw_sig_reset_reset_bridge_in_reset_reset),            // out_clk_reset.reset
 		.in_ready          (cmd_demux_src18_ready),                                  //            in.ready
 		.in_valid          (cmd_demux_src18_valid),                                  //              .valid
@@ -8331,7 +8331,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 	) crosser_019 (
 		.in_clk            (altpll_c2_clk),                                          //        in_clk.clk
 		.in_reset          (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), //  in_clk_reset.reset
-		.out_clk           (clk_50_clk_clk),                                         //       out_clk.clk
+		.out_clk           (sys_sdram_pll_0_sys_clk_clk),                            //       out_clk.clk
 		.out_reset         (to_sw_sig_reset_reset_bridge_in_reset_reset),            // out_clk_reset.reset
 		.in_ready          (cmd_demux_src19_ready),                                  //            in.ready
 		.in_valid          (cmd_demux_src19_valid),                                  //              .valid
@@ -8941,7 +8941,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.READY_SYNC_DEPTH    (2),
 		.USE_OUTPUT_PIPELINE (0)
 	) crosser_037 (
-		.in_clk            (clk_50_clk_clk),                                         //        in_clk.clk
+		.in_clk            (sys_sdram_pll_0_sys_clk_clk),                            //        in_clk.clk
 		.in_reset          (to_sw_sig_reset_reset_bridge_in_reset_reset),            //  in_clk_reset.reset
 		.out_clk           (altpll_c2_clk),                                          //       out_clk.clk
 		.out_reset         (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), // out_clk_reset.reset
@@ -8975,7 +8975,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.READY_SYNC_DEPTH    (2),
 		.USE_OUTPUT_PIPELINE (0)
 	) crosser_038 (
-		.in_clk            (clk_50_clk_clk),                                         //        in_clk.clk
+		.in_clk            (sys_sdram_pll_0_sys_clk_clk),                            //        in_clk.clk
 		.in_reset          (to_sw_sig_reset_reset_bridge_in_reset_reset),            //  in_clk_reset.reset
 		.out_clk           (altpll_c2_clk),                                          //       out_clk.clk
 		.out_reset         (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), // out_clk_reset.reset
@@ -9009,7 +9009,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.READY_SYNC_DEPTH    (2),
 		.USE_OUTPUT_PIPELINE (0)
 	) crosser_039 (
-		.in_clk            (clk_50_clk_clk),                                         //        in_clk.clk
+		.in_clk            (sys_sdram_pll_0_sys_clk_clk),                            //        in_clk.clk
 		.in_reset          (to_sw_sig_reset_reset_bridge_in_reset_reset),            //  in_clk_reset.reset
 		.out_clk           (altpll_c2_clk),                                          //       out_clk.clk
 		.out_reset         (clock_crossing_io_m0_reset_reset_bridge_in_reset_reset), // out_clk_reset.reset
@@ -9542,7 +9542,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.outUseReady     (1),
 		.outReadyLatency (0)
 	) avalon_st_adapter_017 (
-		.in_clk_0_clk   (clk_50_clk_clk),                              // in_clk_0.clk
+		.in_clk_0_clk   (sys_sdram_pll_0_sys_clk_clk),                 // in_clk_0.clk
 		.in_rst_0_reset (to_sw_sig_reset_reset_bridge_in_reset_reset), // in_rst_0.reset
 		.in_0_data      (to_sw_sig_s1_agent_rdata_fifo_out_data),      //     in_0.data
 		.in_0_valid     (to_sw_sig_s1_agent_rdata_fifo_out_valid),     //         .valid
@@ -9571,7 +9571,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.outUseReady     (1),
 		.outReadyLatency (0)
 	) avalon_st_adapter_018 (
-		.in_clk_0_clk   (clk_50_clk_clk),                              // in_clk_0.clk
+		.in_clk_0_clk   (sys_sdram_pll_0_sys_clk_clk),                 // in_clk_0.clk
 		.in_rst_0_reset (to_sw_sig_reset_reset_bridge_in_reset_reset), // in_rst_0.reset
 		.in_0_data      (to_hw_sig_s1_agent_rdata_fifo_out_data),      //     in_0.data
 		.in_0_valid     (to_hw_sig_s1_agent_rdata_fifo_out_valid),     //         .valid
@@ -9600,7 +9600,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_1 (
 		.outUseReady     (1),
 		.outReadyLatency (0)
 	) avalon_st_adapter_019 (
-		.in_clk_0_clk   (clk_50_clk_clk),                              // in_clk_0.clk
+		.in_clk_0_clk   (sys_sdram_pll_0_sys_clk_clk),                 // in_clk_0.clk
 		.in_rst_0_reset (to_sw_sig_reset_reset_bridge_in_reset_reset), // in_rst_0.reset
 		.in_0_data      (to_hw_port_s1_agent_rdata_fifo_out_data),     //     in_0.data
 		.in_0_valid     (to_hw_port_s1_agent_rdata_fifo_out_valid),    //         .valid

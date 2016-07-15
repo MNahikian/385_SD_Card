@@ -1,5 +1,5 @@
-Warning (10273): Verilog HDL warning at de2_115_sd_card.v(396): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at de2_115_sd_card.v(397): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at de2_115_sd_card.v(407): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at de2_115_sd_card.v(408): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(67): object "HEX0" differs only in case from object "Hex0" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(68): object "HEX1" differs only in case from object "Hex1" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card.v(69): object "HEX2" differs only in case from object "Hex2" in the same scope
@@ -14,8 +14,8 @@ Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_int
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
-Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_009.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
-Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_009.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_010.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_0_router_010.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_1_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_1_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at de2_115_sd_card_nios_mm_interconnect_1_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope

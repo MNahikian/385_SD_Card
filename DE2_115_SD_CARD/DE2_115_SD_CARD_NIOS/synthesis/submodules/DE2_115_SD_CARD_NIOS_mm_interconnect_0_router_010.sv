@@ -1,4 +1,4 @@
-// (C) 2001-2014 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -24,9 +24,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/14.1/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2014/10/06 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 
 // -------------------------------------------------------
@@ -49,14 +49,14 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router_010_default_decode
                DEFAULT_RD_CHANNEL = -1,
                DEFAULT_DESTID = 0 
    )
-  (output [63 - 60 : 0] default_destination_id,
+  (output [66 - 63 : 0] default_destination_id,
    output [9-1 : 0] default_wr_channel,
    output [9-1 : 0] default_rd_channel,
    output [9-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
-    DEFAULT_DESTID[63 - 60 : 0];
+    DEFAULT_DESTID[66 - 63 : 0];
 
   generate
     if (DEFAULT_CHANNEL == -1) begin : no_default_channel_assignment
@@ -93,7 +93,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router_010
     // Command Sink (Input)
     // -------------------
     input                       sink_valid,
-    input  [77-1 : 0]    sink_data,
+    input  [80-1 : 0]    sink_data,
     input                       sink_startofpacket,
     input                       sink_endofpacket,
     output                      sink_ready,
@@ -102,7 +102,7 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router_010
     // Command Source (Output)
     // -------------------
     output                          src_valid,
-    output reg [77-1    : 0] src_data,
+    output reg [80-1    : 0] src_data,
     output reg [9-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
@@ -112,18 +112,18 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router_010
     // -------------------------------------------------------
     // Local parameters and variables
     // -------------------------------------------------------
-    localparam PKT_ADDR_H = 34;
+    localparam PKT_ADDR_H = 37;
     localparam PKT_ADDR_L = 9;
-    localparam PKT_DEST_ID_H = 63;
-    localparam PKT_DEST_ID_L = 60;
-    localparam PKT_PROTECTION_H = 67;
-    localparam PKT_PROTECTION_L = 65;
-    localparam ST_DATA_W = 77;
+    localparam PKT_DEST_ID_H = 66;
+    localparam PKT_DEST_ID_L = 63;
+    localparam PKT_PROTECTION_H = 70;
+    localparam PKT_PROTECTION_L = 68;
+    localparam ST_DATA_W = 80;
     localparam ST_CHANNEL_W = 9;
     localparam DECODER_TYPE = 1;
 
-    localparam PKT_TRANS_WRITE = 37;
-    localparam PKT_TRANS_READ  = 38;
+    localparam PKT_TRANS_WRITE = 40;
+    localparam PKT_TRANS_READ  = 41;
 
     localparam PKT_ADDR_W = PKT_ADDR_H-PKT_ADDR_L + 1;
     localparam PKT_DEST_ID_W = PKT_DEST_ID_H-PKT_DEST_ID_L + 1;

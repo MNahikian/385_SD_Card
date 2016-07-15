@@ -84,12 +84,17 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
    element audio.avalon_slave
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "34082816";
@@ -666,6 +671,27 @@
          type = "long";
       }
    }
+   element sdram_controller
+   {
+      datum _sortIndex
+      {
+         value = "34";
+         type = "int";
+      }
+   }
+   element sdram_controller.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435456";
+         type = "String";
+      }
+   }
    element seg7
    {
       datum _sortIndex
@@ -768,6 +794,14 @@
       {
          value = "224";
          type = "long";
+      }
+   }
+   element sys_sdram_pll_0
+   {
+      datum _sortIndex
+      {
+         value = "35";
+         type = "int";
       }
    }
    element timer
@@ -1007,6 +1041,11 @@
  <interface
    name="sd_wp_n_external_connection"
    internal="sd_wp_n.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sdram_controller"
+   internal="sdram_controller.wire"
    type="conduit"
    dir="end" />
  <interface
@@ -1320,8 +1359,8 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="cpuReset" value="false" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="26" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='seg7.avalon_slave' start='0x0' end='0x20' /><slave name='timer.s1' start='0x20' end='0x40' /><slave name='rs232.s1' start='0x40' end='0x60' /><slave name='key.s1' start='0x60' end='0x70' /><slave name='lcd.control_slave' start='0x70' end='0x80' /><slave name='sd_clk.s1' start='0x80' end='0x90' /><slave name='sd_cmd.s1' start='0x90' end='0xA0' /><slave name='sd_dat.s1' start='0xA0' end='0xB0' /><slave name='sd_wp_n.s1' start='0xB0' end='0xC0' /><slave name='epp_i2c_scl.s1' start='0xC0' end='0xD0' /><slave name='epp_i2c_sda.s1' start='0xD0' end='0xE0' /><slave name='sw.s1' start='0xE0' end='0xF0' /><slave name='i2c_scl.s1' start='0xF0' end='0x100' /><slave name='i2c_sda.s1' start='0x100' end='0x110' /><slave name='ledg.s1' start='0x110' end='0x120' /><slave name='ledr.s1' start='0x120' end='0x130' /><slave name='ir.s1' start='0x130' end='0x140' /><slave name='to_hw_port.s1' start='0x140' end='0x150' /><slave name='to_hw_sig.s1' start='0x150' end='0x160' /><slave name='to_sw_sig.s1' start='0x160' end='0x170' /><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /><slave name='altpll.pll_slave' start='0x2081020' end='0x2081030' /><slave name='sma_in.s1' start='0x2081030' end='0x2081040' /><slave name='sma_out.s1' start='0x2081040' end='0x2081050' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2081050' end='0x2081058' /></address-map>]]></parameter>
+  <parameter name="dataAddrWidth" value="29" />
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='seg7.avalon_slave' start='0x0' end='0x20' /><slave name='timer.s1' start='0x20' end='0x40' /><slave name='rs232.s1' start='0x40' end='0x60' /><slave name='key.s1' start='0x60' end='0x70' /><slave name='lcd.control_slave' start='0x70' end='0x80' /><slave name='sd_clk.s1' start='0x80' end='0x90' /><slave name='sd_cmd.s1' start='0x90' end='0xA0' /><slave name='sd_dat.s1' start='0xA0' end='0xB0' /><slave name='sd_wp_n.s1' start='0xB0' end='0xC0' /><slave name='epp_i2c_scl.s1' start='0xC0' end='0xD0' /><slave name='epp_i2c_sda.s1' start='0xD0' end='0xE0' /><slave name='sw.s1' start='0xE0' end='0xF0' /><slave name='i2c_scl.s1' start='0xF0' end='0x100' /><slave name='i2c_sda.s1' start='0x100' end='0x110' /><slave name='ledg.s1' start='0x110' end='0x120' /><slave name='ledr.s1' start='0x120' end='0x130' /><slave name='ir.s1' start='0x130' end='0x140' /><slave name='to_hw_port.s1' start='0x140' end='0x150' /><slave name='to_hw_sig.s1' start='0x150' end='0x160' /><slave name='to_sw_sig.s1' start='0x160' end='0x170' /><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /><slave name='altpll.pll_slave' start='0x2081020' end='0x2081030' /><slave name='sma_in.s1' start='0x2081030' end='0x2081040' /><slave name='sma_out.s1' start='0x2081040' end='0x2081050' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2081050' end='0x2081058' /><slave name='sdram_controller.s1' start='0x10000000' end='0x18000000' /></address-map>]]></parameter>
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dcache_lineSize" value="32" />
   <parameter name="dcache_numTCDM" value="0" />
@@ -1347,8 +1386,8 @@
   <parameter name="icache_size" value="4096" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="26" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="29" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='cfi_flash.uas' start='0x1800000' end='0x2000000' /><slave name='onchip_memory2.s1' start='0x2040000' end='0x2080000' /><slave name='cpu.jtag_debug_module' start='0x2080800' end='0x2081000' /><slave name='sdram_controller.s1' start='0x10000000' end='0x18000000' /></address-map>]]></parameter>
   <parameter name="internalIrqMaskSystemInfo" value="31" />
   <parameter name="manuallyAssignCpuID" value="true" />
   <parameter name="mmu_TLBMissExcOffset" value="0" />
@@ -1679,6 +1718,35 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="1" />
  </module>
+ <module
+   name="sdram_controller"
+   kind="altera_avalon_new_sdram_controller"
+   version="15.0"
+   enabled="1">
+  <parameter name="TAC" value="5.5" />
+  <parameter name="TMRD" value="3" />
+  <parameter name="TRCD" value="20.0" />
+  <parameter name="TRFC" value="70.0" />
+  <parameter name="TRP" value="20.0" />
+  <parameter name="TWR" value="14.0" />
+  <parameter name="casLatency" value="3" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="columnWidth" value="10" />
+  <parameter name="componentName">$${FILENAME}_sdram_controller</parameter>
+  <parameter name="dataWidth" value="32" />
+  <parameter name="generateSimulationModel" value="false" />
+  <parameter name="initNOPDelay" value="0.0" />
+  <parameter name="initRefreshCommands" value="2" />
+  <parameter name="masteredTristateBridgeSlave" value="0" />
+  <parameter name="model">single_Micron_MT48LC4M32B2_7_chip</parameter>
+  <parameter name="numberOfBanks" value="4" />
+  <parameter name="numberOfChipSelects" value="1" />
+  <parameter name="pinsSharedViaTriState" value="false" />
+  <parameter name="powerUpDelay" value="200.0" />
+  <parameter name="refreshPeriod" value="7.8125" />
+  <parameter name="registerDataIn" value="true" />
+  <parameter name="rowWidth" value="13" />
+ </module>
  <module name="seg7" kind="SEG7_IF" version="1.0" enabled="1">
   <parameter name="ADDR_WIDTH" value="3" />
   <parameter name="AUTO_CLOCK_SINK_CLOCK_RATE" value="100000000" />
@@ -1727,6 +1795,21 @@
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="18" />
+ </module>
+ <module
+   name="sys_sdram_pll_0"
+   kind="altera_up_avalon_sys_sdram_pll"
+   version="15.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="CIII_boards" value="DE0" />
+  <parameter name="CIV_boards" value="DE2-115" />
+  <parameter name="CV_boards" value="DE1-SoC" />
+  <parameter name="device_family" value="Cyclone IV E" />
+  <parameter name="gui_outclk" value="50.0" />
+  <parameter name="gui_refclk" value="50.0" />
+  <parameter name="other_boards" value="None" />
  </module>
  <module name="timer" kind="altera_avalon_timer" version="15.0" enabled="1">
   <parameter name="alwaysRun" value="false" />
@@ -1875,6 +1958,15 @@
    kind="avalon"
    version="15.0"
    start="cpu.data_master"
+   end="sdram_controller.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.0"
+   start="cpu.data_master"
    end="cfi_flash.uas">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x01800000" />
@@ -1896,6 +1988,15 @@
    end="onchip_memory2.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x02040000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.0"
+   start="cpu.instruction_master"
+   end="sdram_controller.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2129,13 +2230,35 @@
    version="15.0"
    start="altpll.c2"
    end="clock_crossing_io.m0_clk" />
- <connection kind="clock" version="15.0" start="clk_50.clk" end="to_hw_port.clk" />
- <connection kind="clock" version="15.0" start="clk_50.clk" end="to_hw_sig.clk" />
- <connection kind="clock" version="15.0" start="clk_50.clk" end="to_sw_sig.clk" />
  <connection
    kind="clock"
    version="15.0"
    start="clk_50.clk"
+   end="sys_sdram_pll_0.ref_clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="sys_sdram_pll_0.sdram_clk"
+   end="sdram_controller.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="sys_sdram_pll_0.sys_clk"
+   end="to_hw_sig.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="sys_sdram_pll_0.sys_clk"
+   end="to_sw_sig.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="sys_sdram_pll_0.sys_clk"
+   end="to_hw_port.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="sys_sdram_pll_0.sys_clk"
    end="altpll.inclk_interface" />
  <connection kind="interrupt" version="15.0" start="cpu.d_irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
@@ -2161,128 +2284,12 @@
    kind="reset"
    version="15.0"
    start="clk_50.clk_reset"
-   end="seg7.clock_sink_reset" />
+   end="sys_sdram_pll_0.ref_reset" />
  <connection
    kind="reset"
    version="15.0"
    start="clk_50.clk_reset"
-   end="altpll.inclk_interface_reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="clock_crossing_io.m0_reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="i2c_sda.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="tri_state_bridge_flash_bridge_0.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="tri_state_flash_bridge_pinSharer_0.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="cfi_flash.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="jtag_uart.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="key.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sd_clk.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sd_dat.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sd_wp_n.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="i2c_scl.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="sw.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="epp_i2c_sda.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sd_cmd.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sma_in.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="sma_out.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="timer.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="ledg.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="ledr.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="ir.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="rs232.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="to_hw_port.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="to_sw_sig.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="to_hw_sig.reset" />
- <connection kind="reset" version="15.0" start="clk_50.clk_reset" end="lcd.reset" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="onchip_memory2.reset1" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="cpu.reset_n" />
- <connection
-   kind="reset"
-   version="15.0"
-   start="clk_50.clk_reset"
-   end="clock_crossing_io.s0_reset" />
+   end="sdram_controller.reset" />
  <connection
    kind="reset"
    version="15.0"
@@ -2432,6 +2439,156 @@
    kind="reset"
    version="15.0"
    start="cpu.jtag_debug_module_reset"
+   end="clock_crossing_io.s0_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="seg7.clock_sink_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="altpll.inclk_interface_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="clock_crossing_io.m0_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="to_sw_sig.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="to_hw_sig.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="to_hw_port.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sd_wp_n.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sd_dat.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sd_cmd.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sd_clk.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="ir.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="lcd.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="epp_i2c_sda.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="i2c_sda.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="i2c_scl.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="rs232.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="ledr.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="ledg.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sw.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="key.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="timer.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sma_out.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="sma_in.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="jtag_uart.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="cfi_flash.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="tri_state_flash_bridge_pinSharer_0.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="tri_state_bridge_flash_bridge_0.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="onchip_memory2.reset1" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
+   end="cpu.reset_n" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="sys_sdram_pll_0.reset_source"
    end="clock_crossing_io.s0_reset" />
  <connection
    kind="tristate_conduit"
