@@ -1,0 +1,10 @@
+RemoteFileSystems/
+
+# Ignore eclipse build files
+*/obj/
+*_app/*_app.*
+*_bsp/drivers/
+*_bsp/HAL/
+*/*.elf
+*/*.map
+*/*.objdump
