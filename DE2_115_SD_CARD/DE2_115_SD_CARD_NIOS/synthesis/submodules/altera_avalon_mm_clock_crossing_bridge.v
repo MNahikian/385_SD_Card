@@ -1,20 +1,20 @@
-// (C) 2001-2015 Altera Corporation. All rights reserved.
-// Your use of Altera Corporation's design tools, logic functions and other 
+// (C) 2001-2018 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
-// files any of the foregoing (including device programming or simulation 
+// files from any of the foregoing (including device programming or simulation 
 // files), and any associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License Subscription 
-// Agreement, Altera MegaCore Function License Agreement, or other applicable 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
 // license agreement, including, without limitation, that your use is for the 
-// sole purpose of programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the applicable 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
 // agreement for further details.
 
 
-// $Id: //acds/rel/15.0/ip/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge.v#1 $
+// $Id: //acds/rel/18.1std/ip/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge.v#1 $
 // $Revision: #1 $
-// $Date: 2015/02/08 $
-// $Author: swbranch $
+// $Date: 2018/07/18 $
+// $Author: psgswbuild $
 // --------------------------------------
 // Avalon-MM clock crossing bridge
 //
@@ -189,9 +189,9 @@ module altera_avalon_mm_clock_crossing_bridge
                 if (m0_read_accepted & m0_readdatavalid)
                     pending_read_count <= pending_read_count;
                 else if (m0_readdatavalid)
-                    pending_read_count <= pending_read_count - 1;
+                    pending_read_count <= pending_read_count - 1'd1;
                 else if (m0_read_accepted)
-                    pending_read_count <= pending_read_count + 1; 
+                    pending_read_count <= pending_read_count + 1'd1;
             end
         end
     end
@@ -208,9 +208,9 @@ module altera_avalon_mm_clock_crossing_bridge
             else begin
                 if (m0_read_accepted & m0_readdatavalid)
                     pending_read_count <= pending_read_count +
-                                            m0_burstcount_words - 1;
+                                            m0_burstcount_words - 1'd1;
                 else if (m0_readdatavalid)
-                    pending_read_count <= pending_read_count - 1;  
+                    pending_read_count <= pending_read_count - 1'd1;
                 else if (m0_read_accepted)
                     pending_read_count <= pending_read_count +
                                             m0_burstcount_words;  

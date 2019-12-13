@@ -6,7 +6,7 @@ set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY DE2_115_SD_CARD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
-set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:02:28 JANUARY 27,2010"
 
 #============================================================
@@ -1181,6 +1181,7 @@ set_location_assignment PIN_G24 -to HSMC_CLKOUT_N1
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name MISC_FILE DE2_115_SD_CARD.dpf
 set_global_assignment -name QSYS_FILE DE2_115_SD_CARD_NIOS.qsys
 set_global_assignment -name SDC_FILE DE2_115_SD_CARD.sdc
 set_global_assignment -name VERILOG_FILE de2_115_sd_card.v
@@ -1251,10 +1252,8 @@ set_global_assignment -name VERILOG_FILE DE2_115_SD_CARD_NIOS/synthesis/submodul
 set_global_assignment -name VERILOG_FILE DE2_115_SD_CARD_NIOS/synthesis/submodules/altera_avalon_mm_clock_crossing_bridge.v
 set_global_assignment -name VERILOG_FILE DE2_115_SD_CARD_NIOS/synthesis/submodules/altera_avalon_dc_fifo.v
 set_global_assignment -name VERILOG_FILE DE2_115_SD_CARD_NIOS/synthesis/DE2_115_SD_CARD_NIOS.v
-set_global_assignment -name SDC_FILE DE2_115_SD_CARD.SDC
 set_global_assignment -name SYSTEMVERILOG_FILE io_module.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tristate.sv
-set_global_assignment -name MISC_FILE DE2_115_SD_CARD.dpf
 set_global_assignment -name SYSTEMVERILOG_FILE HexDriver.sv
 set_global_assignment -name SYSTEMVERILOG_FILE LCD_Controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE LCD_TEST.sv

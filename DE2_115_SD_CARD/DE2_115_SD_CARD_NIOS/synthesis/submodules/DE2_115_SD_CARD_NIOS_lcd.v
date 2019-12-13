@@ -1,4 +1,4 @@
-//Legal Notice: (C)2016 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -50,11 +50,12 @@ module DE2_115_SD_CARD_NIOS_lcd (
   input            write;
   input   [  7: 0] writedata;
 
-  wire             LCD_E;
-  wire             LCD_RS;
-  wire             LCD_RW;
-  wire    [  7: 0] LCD_data;
-  wire    [  7: 0] readdata;
+
+wire             LCD_E;
+wire             LCD_RS;
+wire             LCD_RW;
+wire    [  7: 0] LCD_data;
+wire    [  7: 0] readdata;
   assign LCD_RW = address[0];
   assign LCD_RS = address[1];
   assign LCD_E = read | write;
