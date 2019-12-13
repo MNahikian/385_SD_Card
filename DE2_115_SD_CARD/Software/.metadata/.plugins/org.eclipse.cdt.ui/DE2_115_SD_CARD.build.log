@@ -1,9 +1,0 @@
-20:08:18 **** Incremental Build of configuration Nios II for project DE2_115_SD_CARD ****
-make all 
-Info: Building ../DE2_115_SD_CARD_bsp/
-C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE2_115_SD_CARD_bsp/
-[BSP build complete]
-[DE2_115_SD_CARD build complete]
-
-20:08:19 Build Finished (took 674ms)
-

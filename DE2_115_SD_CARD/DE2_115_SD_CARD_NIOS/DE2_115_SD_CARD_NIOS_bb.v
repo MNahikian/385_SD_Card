@@ -4,7 +4,6 @@ module DE2_115_SD_CARD_NIOS (
 	altpll_c1_clk,
 	altpll_c3_clk,
 	altpll_locked_conduit_export,
-	altpll_phasedone_conduit_export,
 	c0_out_clk_clk,
 	c2_out_clk_clk,
 	clk_50_clk_in_clk,
@@ -29,7 +28,15 @@ module DE2_115_SD_CARD_NIOS (
 	sd_cmd_external_connection_export,
 	sd_dat_external_connection_export,
 	sd_wp_n_external_connection_export,
-	seg7_conduit_end_export,
+	sdram_controller_addr,
+	sdram_controller_ba,
+	sdram_controller_cas_n,
+	sdram_controller_cke,
+	sdram_controller_cs_n,
+	sdram_controller_dq,
+	sdram_controller_dqm,
+	sdram_controller_ras_n,
+	sdram_controller_we_n,
 	sma_in_external_connection_export,
 	sma_out_external_connection_export,
 	sw_external_connection_export,
@@ -40,22 +47,12 @@ module DE2_115_SD_CARD_NIOS (
 	tri_state_bridge_flash_bridge_0_out_tri_state_bridge_flash_data,
 	tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash,
 	tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash,
-	tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash,
-	sdram_controller_addr,
-	sdram_controller_ba,
-	sdram_controller_cas_n,
-	sdram_controller_cke,
-	sdram_controller_cs_n,
-	sdram_controller_dq,
-	sdram_controller_dqm,
-	sdram_controller_ras_n,
-	sdram_controller_we_n);	
+	tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash);	
 
 	input		altpll_areset_conduit_export;
 	output		altpll_c1_clk;
 	output		altpll_c3_clk;
 	output		altpll_locked_conduit_export;
-	output		altpll_phasedone_conduit_export;
 	output		c0_out_clk_clk;
 	output		c2_out_clk_clk;
 	input		clk_50_clk_in_clk;
@@ -80,7 +77,15 @@ module DE2_115_SD_CARD_NIOS (
 	inout		sd_cmd_external_connection_export;
 	inout	[3:0]	sd_dat_external_connection_export;
 	input		sd_wp_n_external_connection_export;
-	output	[63:0]	seg7_conduit_end_export;
+	output	[12:0]	sdram_controller_addr;
+	output	[1:0]	sdram_controller_ba;
+	output		sdram_controller_cas_n;
+	output		sdram_controller_cke;
+	output		sdram_controller_cs_n;
+	inout	[31:0]	sdram_controller_dq;
+	output	[3:0]	sdram_controller_dqm;
+	output		sdram_controller_ras_n;
+	output		sdram_controller_we_n;
 	input		sma_in_external_connection_export;
 	output		sma_out_external_connection_export;
 	input	[17:0]	sw_external_connection_export;
@@ -92,13 +97,4 @@ module DE2_115_SD_CARD_NIOS (
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash;
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash;
 	output	[0:0]	tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash;
-	output	[12:0]	sdram_controller_addr;
-	output	[1:0]	sdram_controller_ba;
-	output		sdram_controller_cas_n;
-	output		sdram_controller_cke;
-	output		sdram_controller_cs_n;
-	inout	[31:0]	sdram_controller_dq;
-	output	[3:0]	sdram_controller_dqm;
-	output		sdram_controller_ras_n;
-	output		sdram_controller_we_n;
 endmodule

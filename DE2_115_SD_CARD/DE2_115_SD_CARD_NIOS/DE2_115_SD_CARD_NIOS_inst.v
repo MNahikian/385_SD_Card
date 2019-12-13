@@ -3,7 +3,6 @@
 		.altpll_c1_clk                                                   (<connected-to-altpll_c1_clk>),                                                   //                           altpll_c1.clk
 		.altpll_c3_clk                                                   (<connected-to-altpll_c3_clk>),                                                   //                           altpll_c3.clk
 		.altpll_locked_conduit_export                                    (<connected-to-altpll_locked_conduit_export>),                                    //               altpll_locked_conduit.export
-		.altpll_phasedone_conduit_export                                 (<connected-to-altpll_phasedone_conduit_export>),                                 //            altpll_phasedone_conduit.export
 		.c0_out_clk_clk                                                  (<connected-to-c0_out_clk_clk>),                                                  //                          c0_out_clk.clk
 		.c2_out_clk_clk                                                  (<connected-to-c2_out_clk_clk>),                                                  //                          c2_out_clk.clk
 		.clk_50_clk_in_clk                                               (<connected-to-clk_50_clk_in_clk>),                                               //                       clk_50_clk_in.clk
@@ -28,7 +27,15 @@
 		.sd_cmd_external_connection_export                               (<connected-to-sd_cmd_external_connection_export>),                               //          sd_cmd_external_connection.export
 		.sd_dat_external_connection_export                               (<connected-to-sd_dat_external_connection_export>),                               //          sd_dat_external_connection.export
 		.sd_wp_n_external_connection_export                              (<connected-to-sd_wp_n_external_connection_export>),                              //         sd_wp_n_external_connection.export
-		.seg7_conduit_end_export                                         (<connected-to-seg7_conduit_end_export>),                                         //                    seg7_conduit_end.export
+		.sdram_controller_addr                                           (<connected-to-sdram_controller_addr>),                                           //                    sdram_controller.addr
+		.sdram_controller_ba                                             (<connected-to-sdram_controller_ba>),                                             //                                    .ba
+		.sdram_controller_cas_n                                          (<connected-to-sdram_controller_cas_n>),                                          //                                    .cas_n
+		.sdram_controller_cke                                            (<connected-to-sdram_controller_cke>),                                            //                                    .cke
+		.sdram_controller_cs_n                                           (<connected-to-sdram_controller_cs_n>),                                           //                                    .cs_n
+		.sdram_controller_dq                                             (<connected-to-sdram_controller_dq>),                                             //                                    .dq
+		.sdram_controller_dqm                                            (<connected-to-sdram_controller_dqm>),                                            //                                    .dqm
+		.sdram_controller_ras_n                                          (<connected-to-sdram_controller_ras_n>),                                          //                                    .ras_n
+		.sdram_controller_we_n                                           (<connected-to-sdram_controller_we_n>),                                           //                                    .we_n
 		.sma_in_external_connection_export                               (<connected-to-sma_in_external_connection_export>),                               //          sma_in_external_connection.export
 		.sma_out_external_connection_export                              (<connected-to-sma_out_external_connection_export>),                              //         sma_out_external_connection.export
 		.sw_external_connection_export                                   (<connected-to-sw_external_connection_export>),                                   //              sw_external_connection.export
@@ -39,15 +46,6 @@
 		.tri_state_bridge_flash_bridge_0_out_tri_state_bridge_flash_data (<connected-to-tri_state_bridge_flash_bridge_0_out_tri_state_bridge_flash_data>), //                                    .tri_state_bridge_flash_data
 		.tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash    (<connected-to-tri_state_bridge_flash_bridge_0_out_write_n_to_the_cfi_flash>),    //                                    .write_n_to_the_cfi_flash
 		.tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash   (<connected-to-tri_state_bridge_flash_bridge_0_out_select_n_to_the_cfi_flash>),   //                                    .select_n_to_the_cfi_flash
-		.tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash     (<connected-to-tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash>),     //                                    .read_n_to_the_cfi_flash
-		.sdram_controller_addr                                           (<connected-to-sdram_controller_addr>),                                           //                    sdram_controller.addr
-		.sdram_controller_ba                                             (<connected-to-sdram_controller_ba>),                                             //                                    .ba
-		.sdram_controller_cas_n                                          (<connected-to-sdram_controller_cas_n>),                                          //                                    .cas_n
-		.sdram_controller_cke                                            (<connected-to-sdram_controller_cke>),                                            //                                    .cke
-		.sdram_controller_cs_n                                           (<connected-to-sdram_controller_cs_n>),                                           //                                    .cs_n
-		.sdram_controller_dq                                             (<connected-to-sdram_controller_dq>),                                             //                                    .dq
-		.sdram_controller_dqm                                            (<connected-to-sdram_controller_dqm>),                                            //                                    .dqm
-		.sdram_controller_ras_n                                          (<connected-to-sdram_controller_ras_n>),                                          //                                    .ras_n
-		.sdram_controller_we_n                                           (<connected-to-sdram_controller_we_n>)                                            //                                    .we_n
+		.tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash     (<connected-to-tri_state_bridge_flash_bridge_0_out_read_n_to_the_cfi_flash>)      //                                    .read_n_to_the_cfi_flash
 	);
 

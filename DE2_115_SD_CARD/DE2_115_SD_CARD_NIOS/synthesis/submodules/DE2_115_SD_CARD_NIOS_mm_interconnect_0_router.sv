@@ -1,13 +1,13 @@
-// (C) 2001-2015 Altera Corporation. All rights reserved.
-// Your use of Altera Corporation's design tools, logic functions and other 
+// (C) 2001-2018 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
-// files any of the foregoing (including device programming or simulation 
+// files from any of the foregoing (including device programming or simulation 
 // files), and any associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License Subscription 
-// Agreement, Altera MegaCore Function License Agreement, or other applicable 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
 // license agreement, including, without limitation, that your use is for the 
-// sole purpose of programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the applicable 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
 // agreement for further details.
 
 
@@ -24,10 +24,10 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/15.0/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/18.1std/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2015/02/08 $
-// $Author: swbranch $
+// $Date: 2018/07/18 $
+// $Author: psgswbuild $
 
 // -------------------------------------------------------
 // Merlin Router
@@ -135,9 +135,9 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router
     // during address decoding
     // -------------------------------------------------------
     localparam PAD0 = log2ceil(64'h200 - 64'h0); 
-    localparam PAD1 = log2ceil(64'h2000000 - 64'h1800000); 
-    localparam PAD2 = log2ceil(64'h2080000 - 64'h2040000); 
-    localparam PAD3 = log2ceil(64'h2081000 - 64'h2080800); 
+    localparam PAD1 = log2ceil(64'h10c0000 - 64'h1080000); 
+    localparam PAD2 = log2ceil(64'h1101000 - 64'h1100800); 
+    localparam PAD3 = log2ceil(64'h2000000 - 64'h1800000); 
     localparam PAD4 = log2ceil(64'h2081030 - 64'h2081020); 
     localparam PAD5 = log2ceil(64'h2081040 - 64'h2081030); 
     localparam PAD6 = log2ceil(64'h2081050 - 64'h2081040); 
@@ -207,22 +207,22 @@ module DE2_115_SD_CARD_NIOS_mm_interconnect_0_router
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
-    // ( 0x1800000 .. 0x2000000 )
-    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 29'h1800000   ) begin
-            src_channel = 9'b100000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
-    end
-
-    // ( 0x2040000 .. 0x2080000 )
-    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 29'h2040000   ) begin
+    // ( 0x1080000 .. 0x10c0000 )
+    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 29'h1080000   ) begin
             src_channel = 9'b000010000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
-    // ( 0x2080800 .. 0x2081000 )
-    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 29'h2080800   ) begin
+    // ( 0x1100800 .. 0x1101000 )
+    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 29'h1100800   ) begin
             src_channel = 9'b000000010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
+    end
+
+    // ( 0x1800000 .. 0x2000000 )
+    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 29'h1800000   ) begin
+            src_channel = 9'b100000000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
     end
 
     // ( 0x2081020 .. 0x2081030 )

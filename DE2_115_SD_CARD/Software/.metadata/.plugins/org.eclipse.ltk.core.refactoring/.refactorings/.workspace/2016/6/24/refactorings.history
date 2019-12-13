@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;DE2_115_SD_CARD/LCD_Display.h&apos;" deleteContents="false" description="Delete resource &apos;DE2_115_SD_CARD/LCD_Display.h&apos;" element1="/DE2_115_SD_CARD/LCD_Display.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1465323229571"/>
-</session>

@@ -1,4 +1,4 @@
-//Legal Notice: (C)2016 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -52,23 +52,24 @@ module DE2_115_SD_CARD_NIOS_rs232_tx (
   input   [  7: 0] tx_data;
   input            tx_wr_strobe;
 
-  reg              baud_clk_en;
-  reg     [  9: 0] baud_rate_counter;
-  wire             baud_rate_counter_is_zero;
-  reg              do_load_shifter;
-  wire             do_shift;
-  reg              pre_txd;
-  wire             shift_done;
-  wire    [  9: 0] tx_load_val;
-  reg              tx_overrun;
-  reg              tx_ready;
-  reg              tx_shift_empty;
-  wire             tx_shift_reg_out;
-  wire    [  9: 0] tx_shift_register_contents;
-  wire             tx_wr_strobe_onset;
-  reg              txd;
-  wire    [  9: 0] unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx6_in;
-  reg     [  9: 0] unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx6_out;
+
+reg              baud_clk_en;
+reg     [  9: 0] baud_rate_counter;
+wire             baud_rate_counter_is_zero;
+reg              do_load_shifter;
+wire             do_shift;
+reg              pre_txd;
+wire             shift_done;
+wire    [  9: 0] tx_load_val;
+reg              tx_overrun;
+reg              tx_ready;
+reg              tx_shift_empty;
+wire             tx_shift_reg_out;
+wire    [  9: 0] tx_shift_register_contents;
+wire             tx_wr_strobe_onset;
+reg              txd;
+wire    [  9: 0] unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx6_in;
+reg     [  9: 0] unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx6_out;
   assign tx_wr_strobe_onset = tx_wr_strobe && begintransfer;
   assign tx_load_val = {{1 {1'b1}},
     tx_data,
@@ -212,15 +213,16 @@ module DE2_115_SD_CARD_NIOS_rs232_rx_stimulus_source (
   input            rx_char_ready;
   input            rxd;
 
-  reg     [  7: 0] d1_stim_data;
-  reg              delayed_unxrx_char_readyxx0;
-  wire             do_send_stim_data;
-  wire             pickup_pulse;
-  wire             source_rxd;
-  wire    [  7: 0] stim_data;
-  wire             unused_empty;
-  wire             unused_overrun;
-  wire             unused_ready;
+
+reg     [  7: 0] d1_stim_data;
+reg              delayed_unxrx_char_readyxx0;
+wire             do_send_stim_data;
+wire             pickup_pulse;
+wire             source_rxd;
+wire    [  7: 0] stim_data;
+wire             unused_empty;
+wire             unused_overrun;
+wire             unused_ready;
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
@@ -319,38 +321,39 @@ module DE2_115_SD_CARD_NIOS_rs232_rx (
   input            rxd;
   input            status_wr_strobe;
 
-  reg              baud_clk_en;
-  wire    [  9: 0] baud_load_value;
-  reg     [  9: 0] baud_rate_counter;
-  wire             baud_rate_counter_is_zero;
-  reg              break_detect;
-  reg              delayed_unxrx_in_processxx3;
-  reg              delayed_unxsync_rxdxx1;
-  reg              delayed_unxsync_rxdxx2;
-  reg              do_start_rx;
-  reg              framing_error;
-  wire             got_new_char;
-  wire    [  8: 0] half_bit_cell_divisor;
-  wire             is_break;
-  wire             is_framing_error;
-  wire             parity_error;
-  wire    [  7: 0] raw_data_in;
-  reg              rx_char_ready;
-  reg     [  7: 0] rx_data;
-  wire             rx_in_process;
-  reg              rx_overrun;
-  wire             rx_rd_strobe_onset;
-  wire             rxd_edge;
-  wire             rxd_falling;
-  wire    [  9: 0] rxd_shift_reg;
-  wire             sample_enable;
-  wire             shift_reg_start_bit_n;
-  wire             source_rxd;
-  wire             stop_bit;
-  wire             sync_rxd;
-  wire             unused_start_bit;
-  wire    [  9: 0] unxshiftxrxd_shift_regxshift_reg_start_bit_nxx7_in;
-  reg     [  9: 0] unxshiftxrxd_shift_regxshift_reg_start_bit_nxx7_out;
+
+reg              baud_clk_en;
+wire    [  9: 0] baud_load_value;
+reg     [  9: 0] baud_rate_counter;
+wire             baud_rate_counter_is_zero;
+reg              break_detect;
+reg              delayed_unxrx_in_processxx3;
+reg              delayed_unxsync_rxdxx1;
+reg              delayed_unxsync_rxdxx2;
+reg              do_start_rx;
+reg              framing_error;
+wire             got_new_char;
+wire    [  8: 0] half_bit_cell_divisor;
+wire             is_break;
+wire             is_framing_error;
+wire             parity_error;
+wire    [  7: 0] raw_data_in;
+reg              rx_char_ready;
+reg     [  7: 0] rx_data;
+wire             rx_in_process;
+reg              rx_overrun;
+wire             rx_rd_strobe_onset;
+wire             rxd_edge;
+wire             rxd_falling;
+wire    [  9: 0] rxd_shift_reg;
+wire             sample_enable;
+wire             shift_reg_start_bit_n;
+wire             source_rxd;
+wire             stop_bit;
+wire             sync_rxd;
+wire             unused_start_bit;
+wire    [  9: 0] unxshiftxrxd_shift_regxshift_reg_start_bit_nxx7_in;
+reg     [  9: 0] unxshiftxrxd_shift_regxshift_reg_start_bit_nxx7_out;
   DE2_115_SD_CARD_NIOS_rs232_rx_stimulus_source the_DE2_115_SD_CARD_NIOS_rs232_rx_stimulus_source
     (
       .baud_divisor  (baud_divisor),
@@ -607,44 +610,45 @@ module DE2_115_SD_CARD_NIOS_rs232_regs (
   input            write_n;
   input   [ 15: 0] writedata;
 
-  wire             any_error;
-  wire    [  9: 0] baud_divisor;
-  reg     [ 12: 0] control_reg;
-  wire             control_wr_strobe;
-  wire             cts_edge;
-  reg              cts_status_bit;
-  reg              d1_rx_char_ready;
-  reg              d1_tx_ready;
-  wire             dataavailable;
-  reg              dcts_status_bit;
-  reg              delayed_unxcts_status_bitxx5;
-  reg              delayed_unxtx_readyxx4;
-  wire    [  9: 0] divisor_constant;
-  wire             do_force_break;
-  wire             do_write_char;
-  wire             eop_status_bit;
-  wire             ie_any_error;
-  wire             ie_break_detect;
-  wire             ie_dcts;
-  wire             ie_framing_error;
-  wire             ie_parity_error;
-  wire             ie_rx_char_ready;
-  wire             ie_rx_overrun;
-  wire             ie_tx_overrun;
-  wire             ie_tx_ready;
-  wire             ie_tx_shift_empty;
-  reg              irq;
-  wire             qualified_irq;
-  reg     [ 15: 0] readdata;
-  wire             readyfordata;
-  wire             rts_control_bit;
-  wire             rts_n;
-  wire             rx_rd_strobe;
-  wire    [ 15: 0] selected_read_data;
-  wire    [ 12: 0] status_reg;
-  wire             status_wr_strobe;
-  reg     [  7: 0] tx_data;
-  wire             tx_wr_strobe;
+
+wire             any_error;
+wire    [  9: 0] baud_divisor;
+reg     [ 12: 0] control_reg;
+wire             control_wr_strobe;
+wire             cts_edge;
+reg              cts_status_bit;
+reg              d1_rx_char_ready;
+reg              d1_tx_ready;
+wire             dataavailable;
+reg              dcts_status_bit;
+reg              delayed_unxcts_status_bitxx5;
+reg              delayed_unxtx_readyxx4;
+wire    [  9: 0] divisor_constant;
+wire             do_force_break;
+wire             do_write_char;
+wire             eop_status_bit;
+wire             ie_any_error;
+wire             ie_break_detect;
+wire             ie_dcts;
+wire             ie_framing_error;
+wire             ie_parity_error;
+wire             ie_rx_char_ready;
+wire             ie_rx_overrun;
+wire             ie_tx_overrun;
+wire             ie_tx_ready;
+wire             ie_tx_shift_empty;
+reg              irq;
+wire             qualified_irq;
+reg     [ 15: 0] readdata;
+wire             readyfordata;
+wire             rts_control_bit;
+wire             rts_n;
+wire             rx_rd_strobe;
+wire    [ 15: 0] selected_read_data;
+wire    [ 12: 0] status_reg;
+wire             status_wr_strobe;
+reg     [  7: 0] tx_data;
+wire             tx_wr_strobe;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
@@ -869,28 +873,29 @@ module DE2_115_SD_CARD_NIOS_rs232 (
   input            write_n;
   input   [ 15: 0] writedata;
 
-  wire    [  9: 0] baud_divisor;
-  wire             break_detect;
-  wire             clk_en;
-  wire             dataavailable;
-  wire             do_force_break;
-  wire             framing_error;
-  wire             irq;
-  wire             parity_error;
-  wire    [ 15: 0] readdata;
-  wire             readyfordata;
-  wire             rts_n;
-  wire             rx_char_ready;
-  wire    [  7: 0] rx_data;
-  wire             rx_overrun;
-  wire             rx_rd_strobe;
-  wire             status_wr_strobe;
-  wire    [  7: 0] tx_data;
-  wire             tx_overrun;
-  wire             tx_ready;
-  wire             tx_shift_empty;
-  wire             tx_wr_strobe;
-  wire             txd;
+
+wire    [  9: 0] baud_divisor;
+wire             break_detect;
+wire             clk_en;
+wire             dataavailable;
+wire             do_force_break;
+wire             framing_error;
+wire             irq;
+wire             parity_error;
+wire    [ 15: 0] readdata;
+wire             readyfordata;
+wire             rts_n;
+wire             rx_char_ready;
+wire    [  7: 0] rx_data;
+wire             rx_overrun;
+wire             rx_rd_strobe;
+wire             status_wr_strobe;
+wire    [  7: 0] tx_data;
+wire             tx_overrun;
+wire             tx_ready;
+wire             tx_shift_empty;
+wire             tx_wr_strobe;
+wire             txd;
   assign clk_en = 1;
   DE2_115_SD_CARD_NIOS_rs232_tx the_DE2_115_SD_CARD_NIOS_rs232_tx
     (

@@ -1,0 +1,11 @@
+db/
+incremental_db/
+simulation/
+output_files/
+
+# I think these are just log files
+*.rpt
+# Ignore backup files
+*.bak
+# Ignore individual workspace
+*.qws
